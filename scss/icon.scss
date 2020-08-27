@@ -6,3 +6,52 @@
 //
 
 @import "compass/css3/font-face";
+
+@include font-face("icon", font-files(
+  "icomoon/fonts/icomoon.eot",
+  "icomoon/fonts/icomoon.woff",
+  "icomoon/fonts/icomoon.ttf",
+  "icomoon/fonts/icomoon.svg"));
+
+*[class^="icon-"]:before, *[class*=" icon-"]:before {
+  font-family: "icon";
+
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+}
+
+.icon-email:before { content: "\e900"; }
+.icon-instagram:before { content: "\e901"; }
+.icon-snapchat:before { content: "\e90b"; }
+.icon-facebook:before { content: "\e90c"; }
+.icon-phone:before { content: "\e90d"; }
+.icon-linkedin:before { content: "\e90e"; }
+.icon-twitter:before { content: "\e90f"; }
+.icon-youtube:before { content: "\e910"; }
+.icon-tiktok:before { content: "\e911"; }
+.icon-discord:before { content: "\e912"; }
+.icon-slack:before { content: "\e913"; }
+.icon-skype:before { content: "\e914"; }
+.icon-reddit:before { content: "\e915"; }
+.icon-groupme:before { content: "\e916"; }
+.icon-whatsapp:before { content: "\e917"; }
+.icon-line:before { content: "\e918"; }
+.icon-www:before { content: "\e919"; }
+.icon-ion-checkmark-circled---IoniconsCopy-6:before { content: "\e91a"; }
+.icon-user---anticoncopy-3:before { content: "\e91b"; }
+.icon-Address-Card---FontAwesomeCopy-3:before { content: "\e91c"; }
+.icon-qrcode---FontAwesome:before { content: "\e91d"; }
+.icon-chain:before { content: "\f0c1"; }
+.icon-link:before { content: "\f0c1"; }
+.icon-error:before { content: "\e91e"; }
+.icon-content_copy:before { content: "\e902"; }
+.icon-createmode_editedit:before { content: "\e903"; }
+.icon-save:before { content: "\e904"; }
+.icon-remove_red_eyevisibility:before { content: "\e905"; }
+.icon-cancel:before { content: "\e90a"; }
+.icon-chevron-right:before { content: "\e906"; }
+.icon-menu:before { content: "\e907"; }
+.icon-plus:before { content: "\e908"; }
+.icon-x:before { content: "\e909"; }
