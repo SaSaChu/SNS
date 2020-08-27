@@ -7,22 +7,6 @@
 
 @import "Ginkgo";
 
-body {
-  position: relative;
-
-  display: inline-block;
-  width: 100%;
-
-  margin: 0;
-  padding: 0;
-  color: rgba(90, 90, 90, 1.00);
-
-  font-size: 12px;
-  text-align: center;
-  font-family: 'Roboto', sans-serif, "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
-}
-
-
 
 // 顏色
 $deep_blue: rgba(9, 32, 88, 1); // 主色・深藍

@@ -7,17 +7,18 @@
 
 @import "Ginkgo";
 
-html {
-  height: 100%; 
-  margin: 0; 
-  padding: 0;
-}
+// html {
+//   height: 100%; 
+//   margin: 0; 
+//   padding: 0;
+// }
 
 body {
   position: relative;
 
   display: inline-block;
   width: 100%;
+  height: 100%; 
 
   margin: 0;
   padding: 0;
@@ -52,6 +53,7 @@ body {
 $deep_blue: rgba(9, 32, 88, 1); // 主色・深藍
 $bright_blue: rgba(47, 49, 229, 1); // 主色・亮藍
 $gray: rgba(165, 165, 165, 1.00); // 主色・輔助灰
+$green: rgba(109, 181, 58, 1.00); // 輔助色・綠色
 
 
 // 內頁
@@ -127,9 +129,10 @@ $gray: rgba(165, 165, 165, 1.00); // 主色・輔助灰
         background-color: white;
         @include border-radius(10px);
         @include box-shadow(0 1px 4px 0 rgba(0, 35, 11, .2));
-        // d
-      height: 500px;
+        padding: 35px 0;
+        @include clearfix();
 
+        // 手機才會出現
         &.cent_mobile {
           display: none;
 
@@ -162,6 +165,188 @@ $gray: rgba(165, 165, 165, 1.00); // 主色・輔助灰
 
 
 
+
+
+
+
+// 區塊
+.cent_box {
+  display: inline-block;
+  float: left;
+  padding: 0 35px;
+  text-align: left;
+
+  @include range-width(0, 450px) {
+    padding: 0 20px;
+  }
+
+  &.cent_box35 {
+    width: 35%;
+
+    @include range-width(0, 450px) {
+      width: 100%;
+    }
+  }
+
+  &.cent_box65 {
+    width: 65%;
+
+    @include range-width(0, 450px) {
+      width: 100%;
+      padding-top: 30px;
+    }
+  }
+
+  &.cent_box50 {
+    width: 50%;
+
+    @include range-width(0, 450px) {
+      width: 100%;
+    }
+  }
+}
+
+.all_box, .team_pic_box, .team_type_box {
+  display: inline-block;
+  width: 100%;
+
+  @include range-width(0, 450px) {
+
+    .team_pic_box {
+      width: 30%;
+      float: left;
+    }
+
+    .team_type_box {
+      width: 65%;
+      float: right;
+    }
+  }
+}
+
+.team_pic_box, .team_type_box {
+  margin-top: 20px;
+
+  @include range-width(0, 450px) {
+    margin-top: 0;
+  }
+}
+
+.team_pic_box {
+  text-align: center;
+
+  @include range-width(0, 450px) {
+    text-align: left;
+  }
+
+  img {
+    display: inline-block;
+    width: 100%;
+    max-width: 95px;
+  }
+}
+
+
+
+// 輸入框相關
+input {
+  outline: 0;
+}
+
+.toEnter {
+  display: inline-block;
+  width: 100%;
+  padding: 8px 15px;
+  @include border-radius(30px);
+
+  font-size: 1.2rem;
+  color: $deep_blue;
+  font-weight: 700;
+  text-align: left;
+}
+
+.inEnter {
+  display: inline-block;
+  width: calc(100% - 50px * 2);
+  padding: 8px 15px 8px 0;
+  border: 0;
+
+  font-size: 1.2rem;
+  color: $deep_blue;
+  font-weight: 700;
+  text-align: left;
+
+  &.addEnter {
+    color: rgba(210, 210, 210, 1.00);
+    font-weight: 400;
+  }
+}
+
+.input_box {
+  display: inline-block;
+  width: 100%;
+  @include border-radius(30px);
+  margin-bottom: 18px;
+}
+.social_box {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  @include border-radius(20px);
+  line-height: 40px;
+  text-align: center;
+  background-color: $deep_blue;
+  border: 1px solid $deep_blue;
+  margin-right: 15px;
+  
+  color: white;
+  font-size: 1.2rem;
+}
+
+
+
+// 線條
+.borderGray {
+  border: 1px solid rgba(165, 165, 165, .5); // gray
+}
+.borderGray_left {
+  border-left: 1px dotted rgba(165, 165, 165, .5); // gray
+
+  @include range-width(0, 450px) {
+    border-top: 1px dotted rgba(165, 165, 165, .5); // gray
+    border-left: 0
+  }
+}
+.borderBlue {
+  border: 1px solid $deep_blue; // gray
+}
+
+
+
+// 按鈕
+.btn_status_box {
+  display: inline-block;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  @include border-radius(20px);
+  line-height: 40px;
+  text-align: center;
+  background-color: transparent;
+  font-size: 1.2rem;
+  float: right;
+
+  &.c_green {
+    color: $green;
+  }
+
+  &.c_gray {
+    color: $gray;
+  }
+}
+
+
+
 // 連結
 a {
   display: inline-block;
@@ -170,7 +355,7 @@ a {
   @include transition(all .3s);
 }
 
-.btn_login {
+.link_login {
   padding: 8px 14px;
   background-color: white;
   @include border-radius(30px);
@@ -184,7 +369,7 @@ a {
   }
 }
 
-.btn_blueLine, .btn_brightBlue {
+.link_blueLine, .link_brightBlue {
   padding: 12px 16px;
   font-size: 1rem;
   @include border-radius(30px);
@@ -208,7 +393,7 @@ a {
   }
 }
 
-.btn_blueLine {
+.link_blueLine {
   color: $bright_blue;
   background-color: white;
   border: 1px solid $bright_blue;
@@ -220,7 +405,7 @@ a {
   }
 }
 
-.btn_brightBlue {
+.link_brightBlue {
   color: white;
   background-color: $bright_blue;
   border: 1px solid $bright_blue;
@@ -293,6 +478,15 @@ a {
   }
 }
 
+.team_title {
+  display: inline-block;
+  width: 100%;
+  color: $deep_blue;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
 
 
 // 靠左・靠右
@@ -356,6 +550,20 @@ p {
   font-weight: 300;
 }
 
+.team_type {
+  display: inline-block;
+  width: 100%;
+  color: $deep_blue;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.bright_type13 {
+  color: $bright_blue;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
 
 
 // 空間
@@ -373,6 +581,10 @@ p {
   @include range-width(0, 450px) {
     margin-right: 0;
   }
+}
+
+.padTB15 {
+  padding: 15px 0;
 }
 
 
