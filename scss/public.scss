@@ -7,6 +7,12 @@
 
 @import "Ginkgo";
 
+html {
+  height: 100%; 
+  margin: 0; 
+  padding: 0;
+}
+
 body {
   position: relative;
 
@@ -29,6 +35,15 @@ body {
     background: linear-gradient(to bottom,  rgba(94,184,254,1) 0%,rgba(99,217,227,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5eb8fe', endColorstr='#63d9e3',GradientType=0 ); /* IE6-9 */
   }
+
+  &.bg_color_p {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#5eb8fe+0,63d9e3+100 */
+    background: rgba(197, 227, 248, 1.00); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(94,184,254, .5) 0%, rgba(99,217,227, .5) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(94,184,254, .5) 0%,rgba(99,217,227,.5) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(94,184,254, .5) 0%,rgba(99,217,227,.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5e3f8', endColorstr='#c7ebf2',GradientType=0 ); /* IE6-9 */
+  }
 }
 
 
@@ -36,179 +51,114 @@ body {
 // 顏色
 $deep_blue: rgba(9, 32, 88, 1); // 主色・深藍
 $bright_blue: rgba(47, 49, 229, 1); // 主色・亮藍
+$gray: rgba(165, 165, 165, 1.00); // 主色・輔助灰
 
 
-
-// 首頁
-.i_bg {
+// 內頁
+.page_boxs {
   display: inline-block;
   width: 100%;
-  @include clearfix();
-  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
 
-  margin:0px;
-  padding:0px;
-  background-image: url('../img/w_bg.png'); // 需要再調整
-  background-repeat: no-repeat;
-  background-attachment:fixed;
-  background-position: 0 0; 
-  background-size: contain;
-
-  @include range-width(450px, 1400px) {
-    background-size: 60% 100%;
-  }
+  background: url('../img/Oval01.png') left 40% no-repeat,
+              url('../img/Oval02.png') right 50% no-repeat,
+              url('../img/Oval03.png') 3% 110% no-repeat;
 
   @include range-width(0, 450px) {
-    background-size: 107% 58%; 
-    background-position: 0 bottom; 
+    background: url('../img/Oval01.png') left 45% no-repeat,
+                url('../img/Oval02.png') right 70% no-repeat,
+                url('../img/Oval03.png') 3% 110% no-repeat;
   }
 
-  .i_box_l, .i_box_r {
+  .page_box {
     display: inline-block;
-    width: 50%;
-    height: 100vh;
-    @include clearfix();
+    width: 100%;
+    max-width: 990px;
 
     @include range-width(0, 450px) {
-      width: 100%;
       padding: 15px;
-      height: auto;
-    }
-  }
-
-  .i_box_l {
-    float: left;
-    position: relative;
-
-    @include range-width(0, 450px) {
-      position: static;
     }
 
-    .i_cent_img {
-      display: inline-block;
-      position: absolute;
-      top: 20%;
-      right: 0;
-      width: 100%;
-      max-width: 550px;
-      float: right;
-
-      @include range-width(0, 450px) {
-        top: 0;
-        position: static;
-        padding: 0 50px;
-      }
-
-      img {
-        display: inline-block;
-        width: 100%;
-        max-width: 580px;
-      }
-    }
-  }
-
-  .i_box_r {
-    float: right;
-
-    .i_cent_type {
+    header, main, footer {
       display: inline-block;
       width: 100%;
-      max-width: 550px;
-      float: left;
-      padding: 60px 0 0 75px;
+    }
+
+    header {
+      @include clearfix();
+      margin: 50px 0;
 
       @include range-width(0, 450px) {
-        padding: 0;
-        float: none;
+        margin: 15px 0 30px 0;
       }
 
-      .ir_boxs {
+      .link_home {
         display: inline-block;
+        float: left;
         width: 100%;
-        @include clearfix();
-        text-align: left;
-
-        @include range-width(0, 450px) {
-          text-align: center;
-        }
+        max-width: 191px;
+        cursor: pointer;
+        text-decoration: none;
+        border: 0;
 
         img {
           display: inline-block;
           width: 100%;
           max-width: 191px;
-          padding-top: 5px;
+          margin-top: 7px;
+        }
+      }
+
+      nav {
+        display: inline-block;
+        float: right;
+
+        @include range-width(0, 450px) {
+          display: none;
         }
       }
     }
-  }
 
-  .i_footer {
-    display: inline-block;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    @include clearfix();
-    margin: 20px 0;
-
-    @include range-width(0, 450px) {
-      padding: 15px;
-      position: static;
-      margin: 0;
-    }
-
-    .i_footer_boxs {
-      display: inline-block;
-      width: 100%;
-      max-width: 1100px;
-      margin: 0 auto;
-
-      .i_footer_box {
+    main {
+      .cent_boxs {
         display: inline-block;
-        width: 50%;
-        max-width: 550px;
-        float: left;
-        color: $deep_blue;
-        font-size: .9rem;
-        text-align: left;
+        width: 100%;
+        background-color: white;
+        @include border-radius(10px);
+        @include box-shadow(0 1px 4px 0 rgba(0, 35, 11, .2));
+        // d
+      height: 500px;
 
-        @include range-width(0, 450px) {
-          width: 100%;
-          text-align: right;
+        &.cent_mobile {
+          display: none;
 
-            &:last-child {
-              display: none;
-            }
-          }
-
-        .i_link {
-          float: right;
-          color: $deep_blue;
-          font-size: .9rem;
-          font-weight: 400;
-          @include transition(color, .3s);
-
-          &:after {
+          @include range-width(0, 450px) {
             display: inline-block;
-            content: '|';
-            margin: 0 10px;
-          }
-
-          &:first-child {
-            &:after {
-              display: none;
-            }
-          }
-
-          &:hover {
-            color: $bright_blue;
+            margin-bottom: 20px; 
+            // d
+            height: 100px;
           }
         }
+      }
+    }
+
+    footer {
+      @include clearfix();
+      margin: 20px 0;
+      text-align: left;
+
+      @include range-width(0, 450px) {
+        text-align: center;
+      }
+
+      .footer_box {
+        display: inline-block;
+        float: right;
       }
     }
   }
 }
-
 
 
 
@@ -217,6 +167,7 @@ a {
   display: inline-block;
   cursor: pointer;
   text-decoration: none;
+  @include transition(all .3s);
 }
 
 .btn_login {
@@ -226,7 +177,6 @@ a {
   color: $bright_blue;
   font-size: 1rem;
   font-weight: 500;
-  @include transition(all .3s);
 
   &:hover {
     background-color: $bright_blue;
@@ -238,7 +188,6 @@ a {
   padding: 12px 16px;
   font-size: 1rem;
   @include border-radius(30px);
-  @include transition(all .3s);
   
    &:after {
     display: inline-block;
@@ -280,6 +229,67 @@ a {
     color: white;
     background-color: $bright_blue;
     opacity: .8;
+  }
+}
+
+.web_menu {
+  color: $deep_blue;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 37px;
+
+  &:hover {
+    text-decoration: underline;
+    color: $bright_blue;
+  }
+
+  &:nth-child(3) {
+    margin-right: 25px;
+    &:after {
+      display: none;
+    }
+  }
+
+  &.menu_gray {
+    cursor: auto;
+    color: $gray;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &:after {
+    display: inline-block;
+    content: '・';
+    margin: 0 10px;
+  }
+}
+
+.footer_menu {
+  color: $deep_blue;
+  font-size: .9rem;
+  font-weight: 300;
+
+  @include range-width(0, 450px) {
+    display: none;
+  }
+
+  &:after {
+    display: inline-block;
+    content: '|';
+    margin: 0 10px;
+    color: $deep_blue;
+  }
+
+  &:hover {
+    color: $bright_blue;
+  }
+
+  &:last-child {
+    &:after {
+      display: none;
+    }
   }
 }
 
@@ -332,6 +342,18 @@ h3 {
     font-size: 1.2rem;
     margin-bottom: 20px;
   }
+}
+
+p {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.footer_type {
+  color: $deep_blue;
+  font-size: .9rem;
+  font-weight: 300;
 }
 
 
