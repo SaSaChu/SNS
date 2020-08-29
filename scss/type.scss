@@ -4,7 +4,7 @@
 // 顏色
 $deep_blue: rgba(9, 32, 88, 1); // 主色・深藍
 $deep_blue2: rgba(9, 32, 88, .8); // 主色・深藍(透明)
-$deep_blue3: rgba(9, 32, 88, .5); // 主色・深藍(透明)
+$deep_blue3: rgba(133, 142, 166, 1.00); // 主色・深藍(透明1/2)
 $bright_blue: rgba(47, 49, 229, 1); // 主色・亮藍
 $gray: rgba(165, 165, 165, 1.00); // 主色・輔助灰
 $gray2: rgba(165, 165, 165, .5); // 主色・輔助灰(透明)
@@ -59,10 +59,28 @@ p {
   margin: 0;
 }
 
+.icon-chain {
+   transform: rotateY(180deg);
+}
+
 .footer_type {
   color: $deep_blue;
   font-size: .9rem;
   font-weight: 300;
+}
+
+.note_type {
+  display: inline-block;
+  color: $deep_blue;
+  font-size: 1rem;
+
+  @include range-width(0, 450px) {
+    font-size: .9rem;
+  }
+}
+
+.lineHeight45 {
+  line-height: 45px;
 }
 
 .team_type {
@@ -87,11 +105,18 @@ p {
   text-transform: uppercase;
 }
 
+.type_data_title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: $bright_blue;
+}
+
 
 
 // 輸入框相關
 input {
   outline: 0;
+  background-color: transparent;
 }
 
 .toEnter {
@@ -104,6 +129,8 @@ input {
   color: $deep_blue;
   font-weight: 700;
   text-align: left;
+
+  overflow: hidden;
 }
 
 .inEnter {
@@ -116,6 +143,14 @@ input {
   color: $deep_blue;
   font-weight: 700;
   text-align: left;
+
+  overflow: hidden;
+
+  &.in_all {
+    width: calc(100% - 70px);
+    padding: 0;
+    line-height: 40px;
+  }
 }
 
 .addEnter {
@@ -128,6 +163,11 @@ input {
   width: 100%;
   @include border-radius(30px);
   margin-bottom: 18px;
+
+  &.input_box_top15 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
 }
 .social_box {
   display: inline-block;
@@ -138,28 +178,69 @@ input {
   text-align: center;
   background-color: $deep_blue;
   border: 1px solid $deep_blue;
-  margin-right: 15px;
+  margin-right: 9px;
   
   color: white;
   font-size: 1.2rem;
+
+  &.member_box {
+    background-color: $deep_blue3;
+    border: 1px solid $deep_blue3;
+  }
+
+  &.serch_box {
+    background-color: transparent;
+    border: 0;
+    color: $bright_blue;
+  }
 }
+
 
 
 
 // 線條
-.borderGray {
-  border: 1px solid rgba(165, 165, 165, .5); // gray
+.borderGray_TD {
+  border-top: 1px dotted $gray2;
+  border-bottom: 1px dotted $gray2;
+  margin: 20px 0;
 }
+
+.borderGray_D {
+  border-bottom: 1px dotted $gray2;
+  margin: 0 0 20px 0;
+}
+.borderGray_T {
+  border-top: 1px dotted $gray2;
+  border-bottom: 1px dotted $gray2;
+  margin: 20px 0 0 0;
+}
+
 .borderGray_left {
-  border-left: 1px dotted rgba(165, 165, 165, .5); // gray
+  border-left: 1px dotted $gray2;
 
   @include range-width(0, 450px) {
     border-left: 0
   }
 }
-.borderBlue {
-  border: 1px solid $deep_blue; // gray
+
+.borderGray_right {
+  border-right: 1px dotted $gray2;
+
+  @include range-width(0, 450px) {
+    border-right: 0
+  }
 }
+
+.borderBrightblue {
+  border: 1px solid $bright_blue;
+}
+.borderBlue {
+  border: 1px solid $deep_blue;
+}
+.borderGray {
+  border: 1px solid $gray2;
+}
+
 .m_border {
   display: none;
 
@@ -171,3 +252,18 @@ input {
     margin: 30px 20px;
   }
 }
+.m_border_all {
+  display: none;
+
+  @include range-width(0, 450px) {
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    border-top: 1px dotted rgba(165, 165, 165, .5); 
+    margin: 10px 0;
+  }
+}
+
+
+
+

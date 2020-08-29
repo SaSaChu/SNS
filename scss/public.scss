@@ -1,17 +1,19 @@
 @import "Ginkgo";
 
-// html {
-//   height: 100%; 
-//   margin: 0; 
-//   padding: 0;
-// }
+html {
+  height: 100%;
+  min-height: 100%;
+  margin: 0; 
+  padding: 0;
+}
 
 body {
   position: relative;
 
   display: inline-block;
   width: 100%;
-  height: 100%; 
+  min-height: auto;
+  height: 100%;
 
   margin: 0;
   padding: 0;
@@ -45,7 +47,7 @@ body {
 // 顏色
 $deep_blue: rgba(9, 32, 88, 1); // 主色・深藍
 $deep_blue2: rgba(9, 32, 88, .8); // 主色・深藍(透明)
-$deep_blue3: rgba(9, 32, 88, .5); // 主色・深藍(透明)
+$deep_blue3: rgba(133, 142, 166, 1.00); // 主色・深藍(透明1/2)
 $bright_blue: rgba(47, 49, 229, 1); // 主色・亮藍
 $gray: rgba(165, 165, 165, 1.00); // 主色・輔助灰
 $gray2: rgba(165, 165, 165, .5); // 主色・輔助灰(透明)
@@ -58,6 +60,7 @@ $light_blue: rgba(0, 149, 217, 1.00); // 輔助色・淺藍色
 .page_boxs {
   display: inline-block;
   width: 100%;
+  height: 100%;
   max-width: 1100px;
   margin: 0 auto;
 
@@ -256,8 +259,8 @@ $light_blue: rgba(0, 149, 217, 1.00); // 輔助色・淺藍色
 
 // 光箱內容
 .modal {
-  // display: none;
-  display: inline-block;
+  display: none;
+  // display: inline-block;
   position: fixed;
   z-index: 1;
   padding-top: 30%;

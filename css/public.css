@@ -1,10 +1,12 @@
 *, *:after, *:before { vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
 
-body { position: relative; display: inline-block; width: 100%; height: 100%; margin: 0; padding: 0; color: #5a5a5a; font-size: 12px; text-align: center; font-family: 'Roboto', sans-serif, "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; }
+html { height: 100%; min-height: 100%; margin: 0; padding: 0; }
+
+body { position: relative; display: inline-block; width: 100%; min-height: auto; height: 100%; margin: 0; padding: 0; color: #5a5a5a; font-size: 12px; text-align: center; font-family: 'Roboto', sans-serif, "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; }
 body.bg_color { /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#5eb8fe+0,63d9e3+100 */ background: #5eb8fe; /* Old browsers */ background: -moz-linear-gradient(top, #5eb8fe 0%, #63d9e3 100%); /* FF3.6-15 */ background: -webkit-linear-gradient(top, #5eb8fe 0%, #63d9e3 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(to bottom, #5eb8fe 0%, #63d9e3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5eb8fe', endColorstr='#63d9e3',GradientType=0 ); /* IE6-9 */ }
 body.bg_color_p { /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#5eb8fe+0,63d9e3+100 */ background: #c5e3f8; /* Old browsers */ background: -moz-linear-gradient(top, rgba(94, 184, 254, 0.5) 0%, rgba(99, 217, 227, 0.5) 100%); /* FF3.6-15 */ background: -webkit-linear-gradient(top, rgba(94, 184, 254, 0.5) 0%, rgba(99, 217, 227, 0.5) 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(to bottom, rgba(94, 184, 254, 0.5) 0%, rgba(99, 217, 227, 0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5e3f8', endColorstr='#c7ebf2',GradientType=0 ); /* IE6-9 */ }
 
-.page_boxs { display: inline-block; width: 100%; max-width: 1100px; margin: 0 auto; background: url("../img/Oval01.png") left 40% no-repeat, url("../img/Oval02.png") right 50% no-repeat, url("../img/Oval03.png") 3% 110% no-repeat; }
+.page_boxs { display: inline-block; width: 100%; height: 100%; max-width: 1100px; margin: 0 auto; background: url("../img/Oval01.png") left 40% no-repeat, url("../img/Oval02.png") right 50% no-repeat, url("../img/Oval03.png") 3% 110% no-repeat; }
 @media screen and (max-width: 449px) and (min-width: 0) { .page_boxs { background: url("../img/Oval01.png") left 15% no-repeat, url("../img/Oval02.png") right 35% no-repeat, url("../img/Oval03.png") 1% 83% no-repeat; } }
 .page_boxs .page_box { display: inline-block; width: 100%; max-width: 990px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .page_boxs .page_box { padding: 0 15px; } }
@@ -41,7 +43,7 @@ body.bg_color_p { /* Permalink - use to edit and share this gradient: https://co
 .menu_boxs .lastMenu_boxs { display: none; width: 100%; }
 .menu_boxs .lastMenu_boxs.showMenu { display: inline-block; }
 
-.modal { display: inline-block; position: fixed; z-index: 1; padding-top: 30%; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(33, 33, 33, 0.8); }
+.modal { display: none; position: fixed; z-index: 1; padding-top: 30%; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(33, 33, 33, 0.8); }
 @media screen and (max-width: 449px) and (min-width: 0) { .modal { padding-left: 20px; padding-right: 20px; padding-top: 10%; } }
 .modal .modal_boxs { display: inline-block; width: 100%; max-width: 800px; background-color: white; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; padding: 20px 30px; *zoom: 1; }
 .modal .modal_boxs:after { display: table; content: ""; line-height: 0; clear: both; }
@@ -53,7 +55,7 @@ body.bg_color_p { /* Permalink - use to edit and share this gradient: https://co
 .modal .modal_boxs .modal_box:after { display: table; content: ""; line-height: 0; clear: both; }
 .modal .modal_boxs .modal_box .check_social { display: inline-block; width: calc(100% / 6); float: left; margin-bottom: 30px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .modal .modal_boxs .modal_box .check_social { width: calc(100% / 3); } }
-.modal .modal_boxs .modal_box input[type="checkbox"] { display: inline-block; width: 100px; height: 100px; -moz-border-radius: 50px; -webkit-border-radius: 50px; border-radius: 50px; outline: 0; border: 0; -webkit-appearance: none; vertical-align: middle; margin-top: 0; padding: 5px 10px; background: rgba(9, 32, 88, 0.5); color: white; font-size: 3rem; text-align: center; line-height: 90px; }
+.modal .modal_boxs .modal_box input[type="checkbox"] { display: inline-block; width: 100px; height: 100px; -moz-border-radius: 50px; -webkit-border-radius: 50px; border-radius: 50px; outline: 0; border: 0; -webkit-appearance: none; vertical-align: middle; margin-top: 0; padding: 5px 10px; background: #858ea6; color: white; font-size: 3rem; text-align: center; line-height: 90px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .modal .modal_boxs .modal_box input[type="checkbox"] { width: 80px; height: 80px; line-height: 70px; font-size: 2.6rem; } }
 .modal .modal_boxs .modal_box input[type="checkbox"]:checked { background: #092058; }
 .modal .modal_boxs .modal_box input[type="checkbox"]:checked:after { content: ''; top: 50%; left: 50%; position: absolute; background: transparent; border-top: none; border-right: none; }

@@ -4,7 +4,7 @@
 // 顏色
 $deep_blue: rgba(9, 32, 88, 1); // 主色・深藍
 $deep_blue2: rgba(9, 32, 88, .8); // 主色・深藍(透明)
-$deep_blue3: rgba(9, 32, 88, .5); // 主色・深藍(透明)
+$deep_blue3: rgba(133, 142, 166, 1.00); // 主色・深藍(透明1/2)
 $bright_blue: rgba(47, 49, 229, 1); // 主色・亮藍
 $gray: rgba(165, 165, 165, 1.00); // 主色・輔助灰
 $gray2: rgba(165, 165, 165, .5); // 主色・輔助灰(透明)
@@ -57,10 +57,17 @@ $light_blue: rgba(0, 149, 217, 1.00); // 輔助色・淺藍色
   }
 }
 
+.box70 {
+  display: inline-block;
+  width: 70%;
+  float: right;
+}
+
 .all_box, .team_pic_box, .team_type_box {
   display: inline-block;
   width: 100%;
 
+  &.w_cent {text-align: center;}
   &.m_cent {}
 
   @include range-width(0, 450px) {
@@ -127,9 +134,28 @@ $light_blue: rgba(0, 149, 217, 1.00); // 輔助色・淺藍色
   }
 }
 
+.w_not_show {
+  display: none;
+
+  @include range-width(0, 450px) {
+    display: inline-block;
+  }
+}
+.m_not_show {
+  display: inline-block;
+  
+  @include range-width(0, 450px) {
+    display: none;
+  }
+}
+
 
 
 // 空間
+.magD30 {
+  margin-bottom: 30px;
+}
+
 .magTop45 {
   margin-top: 45px;
 
@@ -150,6 +176,10 @@ $light_blue: rgba(0, 149, 217, 1.00); // 輔助色・淺藍色
   padding: 15px 0;
 }
 
+.padTOP30 {
+  padding: 30px 0;
+}
+
 .m_magTOP30 {
   margin-top: 0;
 
@@ -166,6 +196,20 @@ $light_blue: rgba(0, 149, 217, 1.00); // 輔助色・淺藍色
   }
 }
 
+.m_magTop15 {
+  margin-top: 0;
+
+  @include range-width(0, 450px) {
+    margin-top: 15px;
+  }
+}
+
+.m_magTop45 {
+  @include range-width(0, 450px) {
+    margin-top: 45px;
+  }
+}
+
 .m_padSID20 {
   padding: 0;
 
@@ -173,6 +217,10 @@ $light_blue: rgba(0, 149, 217, 1.00); // 輔助色・淺藍色
     padding: 0 20px;
   }
 }
+
+
+
+
 
 
 

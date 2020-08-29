@@ -11,7 +11,10 @@
 .cent_box.cent_box50 { width: 50%; }
 @media screen and (max-width: 449px) and (min-width: 0) { .cent_box.cent_box50 { width: 100%; } }
 
+.box70 { display: inline-block; width: 70%; float: right; }
+
 .all_box, .team_pic_box, .team_type_box { display: inline-block; width: 100%; }
+.all_box.w_cent, .team_pic_box.w_cent, .team_type_box.w_cent { text-align: center; }
 @media screen and (max-width: 449px) and (min-width: 0) { .all_box.m_cent, .team_pic_box.m_cent, .team_type_box.m_cent { text-align: center; }
   .all_box .team_pic_box, .team_pic_box .team_pic_box, .team_type_box .team_pic_box { width: 30%; float: left; } }
 @media screen and (max-width: 449px) and (min-width: 0) and (max-width: 449px) and (min-width: 0) { .all_box .team_pic_box, .team_pic_box .team_pic_box, .team_type_box .team_pic_box { width: 20%; } }
@@ -31,6 +34,14 @@
 
 @media screen and (max-width: 449px) and (min-width: 0) { .m_order_no { float: none; } }
 
+.w_not_show { display: none; }
+@media screen and (max-width: 449px) and (min-width: 0) { .w_not_show { display: inline-block; } }
+
+.m_not_show { display: inline-block; }
+@media screen and (max-width: 449px) and (min-width: 0) { .m_not_show { display: none; } }
+
+.magD30 { margin-bottom: 30px; }
+
 .magTop45 { margin-top: 45px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .magTop45 { margin-top: 0; } }
 
@@ -39,11 +50,18 @@
 
 .padTB15 { padding: 15px 0; }
 
+.padTOP30 { padding: 30px 0; }
+
 .m_magTOP30 { margin-top: 0; }
 @media screen and (max-width: 449px) and (min-width: 0) { .m_magTOP30 { margin-top: 30px; } }
 
 .m_magTD30 { margin: 0; }
 @media screen and (max-width: 449px) and (min-width: 0) { .m_magTD30 { margin: 30px 0; } }
+
+.m_magTop15 { margin-top: 0; }
+@media screen and (max-width: 449px) and (min-width: 0) { .m_magTop15 { margin-top: 15px; } }
+
+@media screen and (max-width: 449px) and (min-width: 0) { .m_magTop45 { margin-top: 45px; } }
 
 .m_padSID20 { padding: 0; }
 @media screen and (max-width: 449px) and (min-width: 0) { .m_padSID20 { padding: 0 20px; } }
