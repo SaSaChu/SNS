@@ -1,11 +1,10 @@
-//
-// @author      OA Wu <comdan66@gmail.com>
-// @copyright   Copyright (c) 2015 - 2019, Ginkgo
-// @license     http://opensource.org/licenses/MIT  MIT License
-// @link        https://www.ioa.tw/
-//
-
 @import "Ginkgo";
+
+html {
+  height: 100%; 
+  margin: 0; 
+  padding: 0;
+}
 
 
 // 顏色
@@ -18,6 +17,7 @@ $bright_blue: rgba(47, 49, 229, 1); // 主色・亮藍
 .i_bg {
   display: inline-block;
   width: 100%;
+  height: 100%;
   @include clearfix();
   position: relative;
 

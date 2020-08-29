@@ -1,0 +1,182 @@
+@import "Ginkgo";
+
+
+// 顏色
+$deep_blue: rgba(9, 32, 88, 1); // 主色・深藍
+$deep_blue2: rgba(9, 32, 88, .8); // 主色・深藍(透明)
+$deep_blue3: rgba(9, 32, 88, .5); // 主色・深藍(透明)
+$bright_blue: rgba(47, 49, 229, 1); // 主色・亮藍
+$gray: rgba(165, 165, 165, 1.00); // 主色・輔助灰
+$gray2: rgba(165, 165, 165, .5); // 主色・輔助灰(透明)
+$green: rgba(109, 181, 58, 1.00); // 輔助色・綠色
+$gray_blue: rgba(131, 143, 171, 1.00); // 輔助色・灰藍色
+$light_blue: rgba(0, 149, 217, 1.00); // 輔助色・淺藍色
+
+
+// 區塊
+.cent_box {
+  display: inline-block;
+  float: left;
+  padding: 0 35px;
+  text-align: left;
+  @include clearfix();
+
+  @include range-width(0, 450px) {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  &.btn_cent {
+    @include range-width(0, 450px) {
+      text-align: center;
+    }
+  }
+
+  &.cent_box35 {
+    width: 35%;
+
+    @include range-width(0, 450px) {
+      width: 100%;
+    }
+  }
+
+  &.cent_box65 {
+    width: 65%;
+
+    @include range-width(0, 450px) {
+      width: 100%;
+    }
+  }
+
+  &.cent_box50 {
+    width: 50%;
+
+    @include range-width(0, 450px) {
+      width: 100%;
+    }
+  }
+}
+
+.all_box, .team_pic_box, .team_type_box {
+  display: inline-block;
+  width: 100%;
+
+  &.m_cent {}
+
+  @include range-width(0, 450px) {
+
+    &.m_cent {
+      text-align: center;
+    }
+
+    .team_pic_box {
+      width: 30%;
+      float: left;
+
+      @include range-width(0, 450px) {
+        width: 20%;
+      }
+    }
+
+    .team_type_box {
+      width: 65%;
+      float: right;
+
+      @include range-width(0, 450px) {
+        width: 80%;
+        padding-left: 15px;
+      }
+    }
+  }
+}
+
+.team_pic_box, .team_type_box {
+  margin-top: 20px;
+
+  @include range-width(0, 450px) {
+    margin-top: 0;
+  }
+}
+
+.team_pic_box {
+  text-align: center;
+
+  @include range-width(0, 450px) {
+    text-align: left;
+  }
+
+  img {
+    display: inline-block;
+    width: 100%;
+    max-width: 95px;
+  }
+}
+
+
+// 靠左・靠右
+.order_left {
+  float: left;
+}
+.order_right {
+  float: right;
+}
+
+.m_order_no {
+  @include range-width(0, 450px) {
+    float: none;
+  }
+}
+
+
+
+// 空間
+.magTop45 {
+  margin-top: 45px;
+
+  @include range-width(0, 450px) {
+    margin-top: 0;
+  }
+}
+
+.magRight20 {
+  margin-right: 20px;
+
+  @include range-width(0, 450px) {
+    margin-right: 0;
+  }
+}
+
+.padTB15 {
+  padding: 15px 0;
+}
+
+.m_magTOP30 {
+  margin-top: 0;
+
+  @include range-width(0, 450px) {
+    margin-top: 30px;
+  }
+}
+
+.m_magTD30 {
+  margin: 0;
+
+  @include range-width(0, 450px) {
+    margin: 30px 0;
+  }
+}
+
+.m_padSID20 {
+  padding: 0;
+
+  @include range-width(0, 450px) {
+    padding: 0 20px;
+  }
+}
+
+
+
+
+
+
+

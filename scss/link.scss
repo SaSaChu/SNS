@@ -1,0 +1,244 @@
+@import "Ginkgo";
+
+// 顏色
+$deep_blue: rgba(9, 32, 88, 1); // 主色・深藍
+$deep_blue2: rgba(9, 32, 88, .8); // 主色・深藍(透明)
+$deep_blue3: rgba(9, 32, 88, .5); // 主色・深藍(透明)
+$bright_blue: rgba(47, 49, 229, 1); // 主色・亮藍
+$gray: rgba(165, 165, 165, 1.00); // 主色・輔助灰
+$gray2: rgba(165, 165, 165, .5); // 主色・輔助灰(透明)
+$green: rgba(109, 181, 58, 1.00); // 輔助色・綠色
+$gray_blue: rgba(131, 143, 171, 1.00); // 輔助色・灰藍色
+$light_blue: rgba(0, 149, 217, 1.00); // 輔助色・淺藍色
+
+
+// 連結
+a {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  @include transition(all .3s);
+}
+
+.link_home {
+  display: inline-block;
+  float: left;
+  width: 100%;
+  max-width: 191px;
+  cursor: pointer;
+  text-decoration: none;
+  border: 0;
+
+  img {
+    display: inline-block;
+    width: 100%;
+    max-width: 191px;
+    margin-top: 7px;
+  }
+}
+
+.link_CreatAcc {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: $light_blue;
+  margin-top: -2px;
+}
+
+.link_login {
+  padding: 8px 14px;
+  background-color: white;
+  @include border-radius(30px);
+  color: $bright_blue;
+  font-size: 1rem;
+  font-weight: 500;
+
+  &:hover {
+    background-color: $bright_blue;
+    color: white;
+  }
+}
+
+.link_blueLine, .link_brightBlue, .link_gray {
+  padding: 12px 16px;
+  font-size: 1rem;
+  @include border-radius(30px);
+
+  &.have_mark {
+    &:after {
+      display: inline-block;
+      content: '\e906';
+      font-family: 'icon';
+      font-size: 1rem;
+      margin-left: 3px;
+    }
+  }
+  
+  @include range-width(0, 450px) {
+    width: 90%;
+    text-align: center;
+    padding: 15px 16px;
+
+    &:last-child {
+      margin-top: 15px;
+    }
+  }
+}
+
+.link_blueLine {
+  color: $bright_blue;
+  background-color: white;
+  border: 1px solid $bright_blue;
+
+  &:hover {
+    color: white;
+    background-color: $bright_blue;
+    opacity: .9;
+  }
+}
+
+.link_brightBlue {
+  color: white;
+  background-color: $bright_blue;
+  border: 1px solid $bright_blue;
+
+  &:hover {
+    color: white;
+    background-color: $bright_blue;
+    opacity: .8;
+  }
+}
+
+.link_gray {
+  cursor: not-allowed;
+  color: white;
+  background-color: $gray2;
+}
+
+.web_menu {
+  color: $deep_blue;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 37px;
+
+  &:hover {
+    text-decoration: underline;
+    color: $bright_blue;
+  }
+
+  &:nth-child(3) {
+    margin-right: 25px;
+    &:after {
+      display: none;
+    }
+  }
+
+  &.menu_gray {
+    cursor: auto;
+    color: $gray;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &:after {
+    display: inline-block;
+    content: '・';
+    margin: 0 10px;
+  }
+}
+
+.footer_menu {
+  color: $deep_blue;
+  font-size: .9rem;
+  font-weight: 300;
+
+  @include range-width(0, 450px) {
+    display: none;
+  }
+
+  &:after {
+    display: inline-block;
+    content: '|';
+    margin: 0 10px;
+    color: $deep_blue;
+  }
+
+  &:hover {
+    color: $bright_blue;
+  }
+
+  &:last-child {
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.team_title {
+  display: inline-block;
+  // width: 100%;
+  color: $deep_blue;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.m_title_type {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: $deep_blue;
+  float: left;
+}
+
+.m_top_type {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: $gray_blue;
+}
+
+
+
+// 按鈕
+button {
+  display: inline-block;
+  outline: 0;
+  cursor: pointer;
+}
+
+.btn_status_box {
+  width: 40px;
+  height: 40px;
+  border: 0;
+  @include border-radius(20px);
+  line-height: 40px;
+  text-align: center;
+  background-color: transparent;
+  font-size: 1.2rem;
+  float: right;
+
+  &.c_green {
+    color: $green;
+  }
+
+  &.c_gray {
+    color: $gray;
+  }
+}
+
+.btn_add {
+  width: 40px;
+  height: 40px;
+  @include border-radius(20px);
+  line-height: 36px;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid $bright_blue;
+  color: $bright_blue;
+  font-size: 1.4rem;
+  // float: left;
+
+  // @include range-width(0, 450px) {
+  //   float: inherit;
+  // }
+}

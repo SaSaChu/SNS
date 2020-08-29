@@ -1,0 +1,173 @@
+@import "Ginkgo";
+
+
+// 顏色
+$deep_blue: rgba(9, 32, 88, 1); // 主色・深藍
+$deep_blue2: rgba(9, 32, 88, .8); // 主色・深藍(透明)
+$deep_blue3: rgba(9, 32, 88, .5); // 主色・深藍(透明)
+$bright_blue: rgba(47, 49, 229, 1); // 主色・亮藍
+$gray: rgba(165, 165, 165, 1.00); // 主色・輔助灰
+$gray2: rgba(165, 165, 165, .5); // 主色・輔助灰(透明)
+$green: rgba(109, 181, 58, 1.00); // 輔助色・綠色
+$gray_blue: rgba(131, 143, 171, 1.00); // 輔助色・灰藍色
+$light_blue: rgba(0, 149, 217, 1.00); // 輔助色・淺藍色
+
+
+
+// 文字
+h1, h2, h3 {
+  color: white;
+  margin: 5px 0;
+}
+
+h1, h2 {
+  font-size: 4rem;
+  @include text-shadow(2px 4px 5px 2px rgba(0, 0, 0, .3));
+
+  @include range-width(0, 450px) {
+    font-size: 2.8rem;
+  }
+}
+
+h1 {
+  font-weight: 900;
+}
+
+h2 {
+  font-weight: 400;
+  margin-top: 25%;
+
+  @include range-width(0, 450px) {
+    margin-top: 10%;
+  }
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-weight: 300;
+  @include text-shadow(2px 2px 4px 2px rgba(0, 0, 0, .3));
+
+  @include range-width(0, 450px) {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+}
+
+p {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.footer_type {
+  color: $deep_blue;
+  font-size: .9rem;
+  font-weight: 300;
+}
+
+.team_type {
+  display: inline-block;
+  width: 100%;
+  color: $deep_blue;
+  font-size: 1.2rem;
+  font-weight: 400;
+
+  @include range-width(0, 450px) {
+    font-size: 1rem;
+  }
+}
+
+.bright_type13 {
+  color: $bright_blue;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.type_uppercase {
+  text-transform: uppercase;
+}
+
+
+
+// 輸入框相關
+input {
+  outline: 0;
+}
+
+.toEnter {
+  display: inline-block;
+  width: 100%;
+  padding: 8px 15px;
+  @include border-radius(30px);
+
+  font-size: 1.2rem;
+  color: $deep_blue;
+  font-weight: 700;
+  text-align: left;
+}
+
+.inEnter {
+  display: inline-block;
+  width: calc(100% - 50px * 2);
+  padding: 8px 15px 8px 0;
+  border: 0;
+
+  font-size: 1.2rem;
+  color: $deep_blue;
+  font-weight: 700;
+  text-align: left;
+}
+
+.addEnter {
+  color: rgba(210, 210, 210, 1.00);
+  font-weight: 400;
+}
+
+.input_box {
+  display: inline-block;
+  width: 100%;
+  @include border-radius(30px);
+  margin-bottom: 18px;
+}
+.social_box {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  @include border-radius(20px);
+  line-height: 40px;
+  text-align: center;
+  background-color: $deep_blue;
+  border: 1px solid $deep_blue;
+  margin-right: 15px;
+  
+  color: white;
+  font-size: 1.2rem;
+}
+
+
+
+// 線條
+.borderGray {
+  border: 1px solid rgba(165, 165, 165, .5); // gray
+}
+.borderGray_left {
+  border-left: 1px dotted rgba(165, 165, 165, .5); // gray
+
+  @include range-width(0, 450px) {
+    border-left: 0
+  }
+}
+.borderBlue {
+  border: 1px solid $deep_blue; // gray
+}
+.m_border {
+  display: none;
+
+  @include range-width(0, 450px) {
+    display: inline-block;
+    width: calc(100% - 20px * 2);
+    height: 1px;
+    border-top: 1px dotted rgba(165, 165, 165, .5); 
+    margin: 30px 20px;
+  }
+}

@@ -1,10 +1,3 @@
-//
-// @author      OA Wu <comdan66@gmail.com>
-// @copyright   Copyright (c) 2015 - 2019, Ginkgo
-// @license     http://opensource.org/licenses/MIT  MIT License
-// @link        https://www.ioa.tw/
-//
-
 @import "Ginkgo";
 
 // html {
@@ -51,9 +44,14 @@ body {
 
 // 顏色
 $deep_blue: rgba(9, 32, 88, 1); // 主色・深藍
+$deep_blue2: rgba(9, 32, 88, .8); // 主色・深藍(透明)
+$deep_blue3: rgba(9, 32, 88, .5); // 主色・深藍(透明)
 $bright_blue: rgba(47, 49, 229, 1); // 主色・亮藍
 $gray: rgba(165, 165, 165, 1.00); // 主色・輔助灰
+$gray2: rgba(165, 165, 165, .5); // 主色・輔助灰(透明)
 $green: rgba(109, 181, 58, 1.00); // 輔助色・綠色
+$gray_blue: rgba(131, 143, 171, 1.00); // 輔助色・灰藍色
+$light_blue: rgba(0, 149, 217, 1.00); // 輔助色・淺藍色
 
 
 // 內頁
@@ -68,9 +66,9 @@ $green: rgba(109, 181, 58, 1.00); // 輔助色・綠色
               url('../img/Oval03.png') 3% 110% no-repeat;
 
   @include range-width(0, 450px) {
-    background: url('../img/Oval01.png') left 45% no-repeat,
-                url('../img/Oval02.png') right 70% no-repeat,
-                url('../img/Oval03.png') 3% 110% no-repeat;
+    background: url('../img/Oval01.png') left 15% no-repeat,
+                url('../img/Oval02.png') right 35% no-repeat,
+                url('../img/Oval03.png') 1% 83% no-repeat;
   }
 
   .page_box {
@@ -79,7 +77,7 @@ $green: rgba(109, 181, 58, 1.00); // 輔助色・綠色
     max-width: 990px;
 
     @include range-width(0, 450px) {
-      padding: 15px;
+      padding: 0 15px;
     }
 
     header, main, footer {
@@ -95,29 +93,26 @@ $green: rgba(109, 181, 58, 1.00); // 輔助色・綠色
         margin: 15px 0 30px 0;
       }
 
-      .link_home {
-        display: inline-block;
-        float: left;
-        width: 100%;
-        max-width: 191px;
-        cursor: pointer;
-        text-decoration: none;
-        border: 0;
-
-        img {
-          display: inline-block;
-          width: 100%;
-          max-width: 191px;
-          margin-top: 7px;
-        }
-      }
-
       nav {
         display: inline-block;
         float: right;
 
         @include range-width(0, 450px) {
           display: none;
+        }
+      }
+
+      .m_Hamburg {
+        display: none;
+
+        @include range-width(0, 450px) {
+          display: inline-block;
+          float: right;
+          width: 30px;
+          height: 30px;
+          color: $deep_blue;
+          font-size: 1.6rem;
+          margin-top: 6px;
         }
       }
     }
@@ -139,8 +134,7 @@ $green: rgba(109, 181, 58, 1.00); // 輔助色・綠色
           @include range-width(0, 450px) {
             display: inline-block;
             margin-bottom: 20px; 
-            // d
-            height: 100px;
+            padding: 20px 0;
           }
         }
       }
@@ -164,428 +158,229 @@ $green: rgba(109, 181, 58, 1.00); // 輔助色・綠色
 }
 
 
-
-
-
-
-
-// 區塊
-.cent_box {
-  display: inline-block;
-  float: left;
-  padding: 0 35px;
-  text-align: left;
-
-  @include range-width(0, 450px) {
-    padding: 0 20px;
-  }
-
-  &.cent_box35 {
-    width: 35%;
-
-    @include range-width(0, 450px) {
-      width: 100%;
-    }
-  }
-
-  &.cent_box65 {
-    width: 65%;
-
-    @include range-width(0, 450px) {
-      width: 100%;
-      padding-top: 30px;
-    }
-  }
-
-  &.cent_box50 {
-    width: 50%;
-
-    @include range-width(0, 450px) {
-      width: 100%;
-    }
-  }
-}
-
-.all_box, .team_pic_box, .team_type_box {
-  display: inline-block;
+// 側選單・開始
+.menu_boxs {
+  display: none;
   width: 100%;
+  height: 100%;
+  z-index: 3;
+  // padding: 0 20px;
 
-  @include range-width(0, 450px) {
+  position: fixed;
+  top: 0;
+  left: 0;
 
-    .team_pic_box {
-      width: 30%;
-      float: left;
+  background-color: white;
+  @include transition(all .3s);
+  @include clearfix();
+
+  &.hovermenu {
+    display: inline-block;
+    left: 0;
+  }
+
+  &.goback {
+    left: 0;
+  }
+
+  .icon-x {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    font-size: 1.6rem;
+    line-height: 30px;
+    color: rgba(45, 68, 136, 1.00);
+    font-weight: 600;
+    float: right;
+    margin-top: 2px;
+  }
+
+  .lastMenu, .threeMenu {
+    display: inline-block;
+    width: 100%;
+    padding: 20px 20px;
+    border-top:1px solid $gray2;
+    text-align: center;
+    font-size: 1.2rem;
+    color: $deep_blue;
+    text-decoration: none;
+    @include transition(all .3s);
+    font-weight: 600;
+
+    &:first-child {
+      padding: 0 10px;
     }
 
-    .team_type_box {
-      width: 65%;
+    &:nth-child(7) {
+      border-bottom: 1px solid $gray2;
+    }
+
+    &.otherMenu{
+      padding-left: 30px;
+      border-bottom: 1px dotted white;
+
+      &:last-child{
+        border-bottom:1px solid white;
+      }
+    }
+
+    &:hover {
+      color: $bright_blue;
+    }
+
+    &.no_acc {
+      color: $gray2;
+    } 
+  }
+
+  .threeMenu {
+    &:after {
+      display: inline-block;
+      content: '\e90a';
+      font-family: 'icomoon';
+      font-size: 1.2rem;
       float: right;
     }
   }
-}
 
-.team_pic_box, .team_type_box {
-  margin-top: 20px;
+  .lastMenu_boxs {
+    display: none;
+    width: 100%;
 
-  @include range-width(0, 450px) {
-    margin-top: 0;
+    &.showMenu {
+      display: inline-block;
+    }
   }
 }
 
-.team_pic_box {
-  text-align: center;
+
+// 光箱內容
+.modal {
+  // display: none;
+  display: inline-block;
+  position: fixed;
+  z-index: 1;
+  padding-top: 30%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(33, 33, 33, .8);
 
   @include range-width(0, 450px) {
-    text-align: left;
+    padding-left: 20px; 
+    padding-right: 20px; 
+    padding-top: 10%;
   }
 
-  img {
+  .modal_boxs {
     display: inline-block;
     width: 100%;
-    max-width: 95px;
-  }
-}
+    max-width: 800px;
+    background-color: white;
+    @include border-radius(4px);
+    padding: 20px 30px;
+    @include clearfix();
 
+    @include range-width(0, 450px) {
+      max-width: auto;
+      padding: 20px 20px;
+      margin-bottom: 30px;
+    }
 
+    // close
+    .close {
+      font-size: 2rem;
+      font-weight: bold;
+      cursor: pointer;
+      color: $deep_blue;
+      float: right;
+    }
+    .lightbox_done {
+      display: inline-block;
+      font-size: 1.2rem;
+      @include border-radius(20px);
+      background-color: $deep_blue;
+      color: white;
+      padding: 8px 15px;
+      float: right;
+      cursor: pointer;
 
-// 輸入框相關
-input {
-  outline: 0;
-}
+      @include range-width(0, 450px) {
+        font-size: 1rem;
+      }
+    }
 
-.toEnter {
-  display: inline-block;
-  width: 100%;
-  padding: 8px 15px;
-  @include border-radius(30px);
+    // cent
+    .modal_box {
+      display: inline-block;
+      width: 100%;
+      margin-top: 30px;
+      @include clearfix();
 
-  font-size: 1.2rem;
-  color: $deep_blue;
-  font-weight: 700;
-  text-align: left;
-}
+      .check_social {
+        display: inline-block;
+        width: calc(100% / 6);
+        float: left;
+        margin-bottom: 30px;
 
-.inEnter {
-  display: inline-block;
-  width: calc(100% - 50px * 2);
-  padding: 8px 15px 8px 0;
-  border: 0;
+        @include range-width(0, 450px) {
+          width: calc(100% / 3);
+        }
+      }
 
-  font-size: 1.2rem;
-  color: $deep_blue;
-  font-weight: 700;
-  text-align: left;
+      input[type="checkbox"]{
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        @include border-radius(50px);
+        outline: 0;
+        border: 0;
+        
+        -webkit-appearance: none;
+        vertical-align:middle;
+        margin-top:0;
+        padding: 5px 10px;
+        background: $deep_blue3;
 
-  &.addEnter {
-    color: rgba(210, 210, 210, 1.00);
-    font-weight: 400;
-  }
-}
+        color: white;
+        font-size: 3rem;
+        text-align: center;
+        line-height: 90px;
 
-.input_box {
-  display: inline-block;
-  width: 100%;
-  @include border-radius(30px);
-  margin-bottom: 18px;
-}
-.social_box {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  @include border-radius(20px);
-  line-height: 40px;
-  text-align: center;
-  background-color: $deep_blue;
-  border: 1px solid $deep_blue;
-  margin-right: 15px;
-  
-  color: white;
-  font-size: 1.2rem;
-}
+        @include range-width(0, 450px) {
+          width: 80px;
+          height: 80px;
+          line-height: 70px;
+          font-size: 2.6rem;
+        }
 
+        &:checked {
+          background: $deep_blue;
 
-
-// 線條
-.borderGray {
-  border: 1px solid rgba(165, 165, 165, .5); // gray
-}
-.borderGray_left {
-  border-left: 1px dotted rgba(165, 165, 165, .5); // gray
-
-  @include range-width(0, 450px) {
-    border-top: 1px dotted rgba(165, 165, 165, .5); // gray
-    border-left: 0
-  }
-}
-.borderBlue {
-  border: 1px solid $deep_blue; // gray
-}
-
-
-
-// 按鈕
-.btn_status_box {
-  display: inline-block;
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-  @include border-radius(20px);
-  line-height: 40px;
-  text-align: center;
-  background-color: transparent;
-  font-size: 1.2rem;
-  float: right;
-
-  &.c_green {
-    color: $green;
-  }
-
-  &.c_gray {
-    color: $gray;
-  }
-}
-
-
-
-// 連結
-a {
-  display: inline-block;
-  cursor: pointer;
-  text-decoration: none;
-  @include transition(all .3s);
-}
-
-.link_login {
-  padding: 8px 14px;
-  background-color: white;
-  @include border-radius(30px);
-  color: $bright_blue;
-  font-size: 1rem;
-  font-weight: 500;
-
-  &:hover {
-    background-color: $bright_blue;
-    color: white;
-  }
-}
-
-.link_blueLine, .link_brightBlue {
-  padding: 12px 16px;
-  font-size: 1rem;
-  @include border-radius(30px);
-  
-   &:after {
-    display: inline-block;
-    content: '\e906';
-    font-family: 'icon';
-    font-size: 1rem;
-    margin-left: 3px;
-  }
-
-  @include range-width(0, 450px) {
-    width: 90%;
-    text-align: center;
-    padding: 15px 16px;
-
-    &:last-child {
-      margin-top: 15px;
+          &:after{
+            content: '';
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            background: transparent;
+            // border: #fff solid 2px;
+            border-top: none;
+            border-right: none;
+            // height: 40px;
+            // width: 40px;
+            // -moz-transform: rotate(-45deg);
+            // -ms-transform: rotate(-45deg);
+            // -webkit-transform: rotate(-45deg); 
+            // transform: rotate(-45deg);
+          }
+        }
+      }
     }
   }
 }
 
-.link_blueLine {
-  color: $bright_blue;
-  background-color: white;
-  border: 1px solid $bright_blue;
-
-  &:hover {
-    color: white;
-    background-color: $bright_blue;
-    opacity: .9;
-  }
-}
-
-.link_brightBlue {
-  color: white;
-  background-color: $bright_blue;
-  border: 1px solid $bright_blue;
-
-  &:hover {
-    color: white;
-    background-color: $bright_blue;
-    opacity: .8;
-  }
-}
-
-.web_menu {
-  color: $deep_blue;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 37px;
-
-  &:hover {
-    text-decoration: underline;
-    color: $bright_blue;
-  }
-
-  &:nth-child(3) {
-    margin-right: 25px;
-    &:after {
-      display: none;
-    }
-  }
-
-  &.menu_gray {
-    cursor: auto;
-    color: $gray;
-
-    &:hover {
-      text-decoration: none;
-    }
-  }
-
-  &:after {
-    display: inline-block;
-    content: '・';
-    margin: 0 10px;
-  }
-}
-
-.footer_menu {
-  color: $deep_blue;
-  font-size: .9rem;
-  font-weight: 300;
-
-  @include range-width(0, 450px) {
-    display: none;
-  }
-
-  &:after {
-    display: inline-block;
-    content: '|';
-    margin: 0 10px;
-    color: $deep_blue;
-  }
-
-  &:hover {
-    color: $bright_blue;
-  }
-
-  &:last-child {
-    &:after {
-      display: none;
-    }
-  }
-}
-
-.team_title {
-  display: inline-block;
-  width: 100%;
-  color: $deep_blue;
-  font-size: 1.4rem;
-  font-weight: 700;
-  padding-bottom: 10px;
-}
-
-
-
-// 靠左・靠右
-.order_left {
-  float: left;
-}
-.order_right {
-  float: right;
-}
-
-
-
-// 文字
-h1, h2, h3 {
-  color: white;
-  margin: 5px 0;
-}
-
-h1, h2 {
-  font-size: 4rem;
-  @include text-shadow(2px 4px 5px 2px rgba(0, 0, 0, .3));
-
-  @include range-width(0, 450px) {
-    font-size: 2.8rem;
-  }
-}
-
-h1 {
-  font-weight: 900;
-}
-
-h2 {
-  font-weight: 400;
-  margin-top: 25%;
-
-  @include range-width(0, 450px) {
-    margin-top: 10%;
-  }
-}
-
-h3 {
-  font-size: 1.3rem;
-  font-weight: 300;
-  @include text-shadow(2px 2px 4px 2px rgba(0, 0, 0, .3));
-
-  @include range-width(0, 450px) {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-  }
-}
-
-p {
-  display: inline-block;
-  padding: 0;
-  margin: 0;
-}
-
-.footer_type {
-  color: $deep_blue;
-  font-size: .9rem;
-  font-weight: 300;
-}
-
-.team_type {
-  display: inline-block;
-  width: 100%;
-  color: $deep_blue;
-  font-size: 1.2rem;
-  font-weight: 400;
-}
-
-.bright_type13 {
-  color: $bright_blue;
-  font-size: 1.2rem;
-  font-weight: 500;
-}
-
-
-
-// 空間
-.magTop45 {
-  margin-top: 45px;
-
-  @include range-width(0, 450px) {
-    margin-top: 0;
-  }
-}
-
-.magRight20 {
-  margin-right: 20px;
-
-  @include range-width(0, 450px) {
-    margin-right: 0;
-  }
-}
-
-.padTB15 {
-  padding: 15px 0;
-}
 
 
 
