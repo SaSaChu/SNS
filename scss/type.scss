@@ -130,6 +130,10 @@ p {
   font-size: 1.4rem;
   font-weight: 700;
   color: $bright_blue;
+
+  &.type_data_gray {
+    color: $gray2;
+  }
 }
 
 
