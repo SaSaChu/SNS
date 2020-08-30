@@ -117,6 +117,11 @@ a {
   font-weight: 400;
   line-height: 37px;
 
+  &.web_a {
+    text-decoration: underline;
+    color: $bright_blue;
+  }
+
   &:hover {
     text-decoration: underline;
     color: $bright_blue;
@@ -217,6 +222,21 @@ a {
     color: $gray;
     border: 1px solid $gray;
   }
+
+  &.link_icon_save {
+    width: auto;
+    height: auto;
+    // line-height: 32px;
+    padding: 0 15px;
+  }
+
+  &.link_icon_search {
+    width: 40px;
+    height: 40px;
+    margin-top: 0;
+    font-size: 1.4rem;
+    line-height: 38px;
+  }
 }
 
 .no_event_icon {
@@ -258,6 +278,16 @@ button {
       }
     }
   }
+
+  &.c_blue {
+    color: $deep_blue2;
+  }
+
+  &.c_blue_po {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
 }
 
 .btn_add {
@@ -270,23 +300,27 @@ button {
   border: 1px solid $bright_blue;
   color: $bright_blue;
   font-size: 1.4rem;
-  // float: left;
-
-  // @include range-width(0, 450px) {
-  //   float: inherit;
-  // }
 }
+
+.no_event_btn {
+  color: $gray;
+  border: 1px solid $gray;
+  pointer-events: none;
+  cursor: default;
+}
+
 
 .btn_done {
   display: inline-block;
   font-size: 1.2rem;
-  @include border-radius(20px);
+  @include border-radius(30px);
   background-color: $deep_blue;
   color: white;
   padding: 8px 15px;
   float: right;
   cursor: pointer;
   border: 0;
+  line-height: 28px;
 
   @include range-width(0, 450px) {
     font-size: 1rem;

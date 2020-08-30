@@ -130,6 +130,12 @@ $light_blue: rgba(0, 149, 217, 1.00); // 輔助色・淺藍色
         padding: 35px 0;
         @include clearfix();
 
+        &.cent_web {
+          display: inline-block;
+          margin-bottom: 20px; 
+          padding: 20px 0;
+        }
+
         // 手機才會出現
         &.cent_mobile {
           display: none;

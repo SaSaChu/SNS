@@ -26,44 +26,49 @@
         <header>
           <a href="index.html" class='link_home'><img src="img/W_logo.png"></a>
           <nav>
-            <a href="NetWorkPage01.html" class='web_menu'>JOIN an NETWORK</a>
-            <a href="CreatQRLink01.html" class='web_menu'>CREATE QR LINK</a>
-            <a class='web_menu menu_gray'>MENU</a>
-            <a href="login.html" class='link_login order_right'>LOG IN</a>
+            <a href="on_NetWorkPage01.html" class='web_menu'>JOIN an NETWORK</a>
+            <a href="on_CreatQRLink01.html" class='web_menu web_a'>CREATE QR LINK</a>
+            <a class='web_menu'>MENU</a>
+            <a href="index.html" class='link_login order_right'>LOG OUT</a>
           </nav>
 
           <div class='m_Hamburg icon-menu'></div>
         </header>
 
         <main>
-          <!-- 手機才會顯示 -->
-          <div class='cent_boxs cent_mobile'>
-            <div class='cent_box'>
-              <a href="login.html" class='m_title_type type_uppercase'>log in</a>
-              <a href="CreatQRLink01.html" class='m_top_type order_right'>Create QR Link</a>
+          <div class='cent_boxs cent_web'>
+            <div class='cent_box cent_box50'>
+              <a href="account.html" class='m_title_type type_uppercase'>Lucy Redder</a>
+            </div>
+
+            <i class='m_border_all2'></i><!-- 手機版・虛線 -->
+
+            <div class='cent_box cent_box50'>
+              <a href="MyQRLink01.html" class='m_top_type order_right m_order_no'>QR Links You Created</a>
             </div>
           </div>
-          <!-- 手機才會顯示・end -->
 
           <div class='cent_boxs'>
-            <div class='cent_box cent_box35'>
-              <div class='all_box'>
-                <div class='team_pic_box'><img src="img/team.png"></div>
-                <div class='team_type_box'>
-                  <div class='all_box'>
-                    <a class='team_title no_event'>Intern Team</a>
-                    <a class='link_icon no_event_icon icon-qrcode---FontAwesome'></a>
-                  </div>
-                  <p class='team_type no_event'>Welcome to the new team! Let's get to know each other!</p>
+            <div class='cent_box cent_box35 borderGray_right'>
+              <div class='all_box padTB15 m_no_space'>
+                <p class='note_type note_gray'>Share the link or use camera to scan QR code:</p>
+                <div class='input_box input_box_top15 borderGray'>
+                  <div class='toEnter networklink'><a href="#" class='addEnter addEnter2' >http://selectnshare/haleyhob</a></div>
+                  <button class='btn_status_box no_event member icon-content_copy'></button>
                 </div>
-              </div>              
+
+                <div class='all_box padT15 w_cent'>
+                  <div class='link_title link_title_gray'>APR 21, 2020 @ 4:32 PM</div>
+                  <img class='img_op' src="img/qr.png">
+                </div>
+              </div>
             </div>
 
             <i class='m_border'></i><!-- 手機版・虛線 -->
 
             <div class='cent_box cent_box65 borderGray_left'>
               <div class='input_box'>
-                <a href='NetWorkPage05.html' class='btn_done'>Done</a>
+                <a href='CreatQRLink03.html' class='btn_done'>Done</a>
                 <!-- <button class='btn_done'>Done</button> -->
               </div>
 
@@ -109,17 +114,6 @@
 
                 <div class='all_box btn_cent m_cent'>
                   <button class='btn_add icon-plus' onclick="openModal();currentSlide(1)"></button>
-
-                  <!-- 桌機版型 -->
-                  <div class='box70 m_not_show'>
-                    <a href="signup.html" class='link_brightBlue order_right m_order_no'>CREATE an ACCOUNT</a>
-                    <p class='note_type lineHeight45 order_right'>Join now to access this information later!</p>
-                  </div>
-                  <!-- 手機版型 -->
-                  <div class='all_box m_magTop45 w_not_show'>
-                    <p class='note_type lineHeight45'>Join now to access this information later!</p>
-                    <a href="signup.html" class='link_brightBlue order_right m_order_no'>CREATE an ACCOUNT</a>
-                  </div>
                 </div>
               </div>
             </div>
@@ -165,7 +159,6 @@
       </div>
     </div>
 
-
     <!-- 手機menu -->
     <div class='menu_boxs'>
       <div class='all_box m_magTD30 m_padSID20'>
@@ -173,19 +166,15 @@
         <a class='icon-x'></a>
       </div>
 
-      <a href='NetWorkPage01.html' class='lastMenu type_uppercase'>Join Network</a>
-      <a href='CreatQRLink01.html' class='lastMenu type_uppercase'>Create QR Link</a>
-      <a class='lastMenu type_uppercase no_acc'>My Networks</a>
-      <a class='lastMenu type_uppercase no_acc'>Create Network</a>
-      <a class='lastMenu type_uppercase no_acc'>My QR Links</a>
-      <a class='lastMenu type_uppercase no_acc'>My Account</a>
+      <a href='on_NetWorkPage01.html' class='lastMenu type_uppercase'>Join Network</a>
+      <a href='on_CreatQRLink01.html' class='lastMenu type_uppercase'>Create QR Link</a>
+      <a href='NetWorkList01.html' class='lastMenu type_uppercase'>My Networks</a>
+      <a href='CreateNetwork01.html' class='lastMenu type_uppercase'>Create Network</a>
+      <a href='MyQRLink01.html' class='lastMenu type_uppercase'>My QR Links</a>
+      <a href='account.html' class='lastMenu type_uppercase'>My Account</a>
 
       <div class='all_box m_magTD30 m_padSID20'>
-        <a href="login.html" class='link_brightBlue no_mark type_uppercase '>log in</a>
-      </div>
-
-      <div class='all_box'>
-        <p class='team_type'>or <a href="signup.html" class='link_CreatAcc'>create an account</a></p>
+        <a href="index.html" class='link_brightBlue no_mark type_uppercase '>log out</a>
       </div>
     </div>
 

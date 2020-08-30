@@ -16,6 +16,7 @@ $light_blue: rgba(0, 149, 217, 1.00); // 輔助色・淺藍色
 // 區塊
 .cent_box {
   display: inline-block;
+  width: 100%;
   float: left;
   padding: 0 35px;
   text-align: left;
@@ -152,6 +153,11 @@ $light_blue: rgba(0, 149, 217, 1.00); // 輔助色・淺藍色
 
 
 // 空間
+.m_no_space {
+  padding: 0 !important;
+  margin: 0;
+}
+
 .magD30 {
   margin-bottom: 30px;
 }
@@ -174,6 +180,18 @@ $light_blue: rgba(0, 149, 217, 1.00); // 輔助色・淺藍色
 
 .padTB15 {
   padding: 15px 0;
+}
+
+.m_padB15 {
+  padding: 15px 0;
+
+  @include range-width(0, 450px) {
+    padding: 0 0 15px 0;
+  }
+}
+
+.padT15 {
+  padding-top: 15px;
 }
 
 .padTOP30 {
@@ -219,6 +237,10 @@ $light_blue: rgba(0, 149, 217, 1.00); // 輔助色・淺藍色
 }
 
 
+
+.img_op {
+  opacity: .3;
+}
 
 
 
