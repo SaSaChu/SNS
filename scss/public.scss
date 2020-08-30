@@ -54,6 +54,7 @@ $gray2: rgba(165, 165, 165, .5); // 主色・輔助灰(透明)
 $green: rgba(109, 181, 58, 1.00); // 輔助色・綠色
 $gray_blue: rgba(131, 143, 171, 1.00); // 輔助色・灰藍色
 $light_blue: rgba(0, 149, 217, 1.00); // 輔助色・淺藍色
+$orange: rgba(255, 152, 0, 1.00); // 輔助色・橘色
 
 
 // 內頁
@@ -220,7 +221,7 @@ $light_blue: rgba(0, 149, 217, 1.00); // 輔助色・淺藍色
       padding: 0 10px;
     }
 
-    &:nth-child(7) {
+    &:nth-child(8) {
       border-bottom: 1px solid $gray2;
     }
 

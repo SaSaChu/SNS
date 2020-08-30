@@ -81,6 +81,18 @@ a {
   }
 }
 
+.line_brightBlue {
+  padding: 12px 20px;
+  font-size: 1rem;
+  color: $bright_blue;
+  border: 1px solid $bright_blue;
+  @include border-radius(30px);
+
+  @include range-width(0, 450px) {
+    width: 90%;
+  }
+}
+
 .link_blueLine {
   color: $bright_blue;
   background-color: white;
@@ -265,6 +277,10 @@ button {
   font-size: 1.2rem;
   float: right;
 
+  &.c_blue2 {
+    color: $deep_blue;
+  }
+
   &.c_green {
     color: $green;
   }
@@ -324,6 +340,12 @@ button {
 
   @include range-width(0, 450px) {
     font-size: 1rem;
+  }
+
+  &.btn_done_qr {
+    padding: 0 15px;
+    height: 30px;
+    line-height: 30px;
   }
 }
 

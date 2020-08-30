@@ -11,6 +11,7 @@ $gray2: rgba(165, 165, 165, .5); // 主色・輔助灰(透明)
 $green: rgba(109, 181, 58, 1.00); // 輔助色・綠色
 $gray_blue: rgba(131, 143, 171, 1.00); // 輔助色・灰藍色
 $light_blue: rgba(0, 149, 217, 1.00); // 輔助色・淺藍色
+$orange: rgba(255, 152, 0, 1.00); // 輔助色・橘色
 
 
 
@@ -134,6 +135,10 @@ p {
   &.type_data_gray {
     color: $gray2;
   }
+
+  &.type_data_thin {
+    font-weight: 400;
+  }
 }
 
 
@@ -193,6 +198,12 @@ input {
     padding: 0;
     line-height: 40px;
   }
+
+  @include range-width(0, 450px) {
+    font-size: 1rem;
+    line-height: 25px;
+    padding: 7px 0;
+  }
 }
 
 .addEnter {
@@ -211,7 +222,8 @@ input {
   width: 100%;
   @include border-radius(30px);
   margin-bottom: 18px;
-
+  @include clearfix();
+  
   position: relative;
 
   &.input_box_top15 {
@@ -221,10 +233,20 @@ input {
 
   &.input_search {
     width: calc(100% - 50px);
+    text-align: left;
+
+    @include range-width(0, 450px) {
+      float: left;
+    }
   }
 
   &.input_search90 {
     width: calc(100% - 90px);
+    text-align: left;
+
+    @include range-width(0, 450px) {
+      float: left;
+    }
   }
 }
 .social_box {
@@ -250,6 +272,10 @@ input {
     background-color: transparent;
     border: 0;
     color: $bright_blue;
+  }
+
+  &.team_box {
+    color: $orange;
   }
 }
 

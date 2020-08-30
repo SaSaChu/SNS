@@ -11,9 +11,22 @@ $gray2: rgba(165, 165, 165, .5); // 主色・輔助灰(透明)
 $green: rgba(109, 181, 58, 1.00); // 輔助色・綠色
 $gray_blue: rgba(131, 143, 171, 1.00); // 輔助色・灰藍色
 $light_blue: rgba(0, 149, 217, 1.00); // 輔助色・淺藍色
+$orange: rgba(255, 152, 0, 1.00); // 輔助色・橘色
 
 
 // 區塊
+.cent_serch_box {
+  display: inline-block;
+  width: 100%;
+  padding: 0 35px;
+  margin-bottom: 20px;
+
+  @include range-width(0, 450px) {
+    padding: 0 20px;
+    margin-bottom: 10px;
+  }
+}
+
 .cent_box {
   display: inline-block;
   width: 100%;
@@ -64,12 +77,22 @@ $light_blue: rgba(0, 149, 217, 1.00); // 輔助色・淺藍色
   float: right;
 }
 
+
 .all_box, .team_pic_box, .team_type_box {
   display: inline-block;
   width: 100%;
 
   &.w_cent {text-align: center;}
   &.m_cent {}
+
+  &.box50 {
+    display: inline-block;
+    width: 50%;
+
+    @include range-width(0, 450px) {
+      width: 100%;
+    }
+  }
 
   @include range-width(0, 450px) {
 
@@ -170,11 +193,23 @@ $light_blue: rgba(0, 149, 217, 1.00); // 輔助色・淺藍色
   }
 }
 
+.magD15 {
+  margin-bottom: 15px;
+}
+
 .magRight20 {
   margin-right: 20px;
 
   @include range-width(0, 450px) {
     margin-right: 0;
+  }
+}
+
+.padSID35 {
+  padding: 0 35px;
+
+  @include range-width(0, 450px) {
+    padding: 0;
   }
 }
 
@@ -211,6 +246,14 @@ $light_blue: rgba(0, 149, 217, 1.00); // 輔助色・淺藍色
 
   @include range-width(0, 450px) {
     margin: 30px 0;
+  }
+}
+
+.m_magTD20 {
+  margin: 0;
+
+  @include range-width(0, 450px) {
+    margin: 20px 0 15px 0;
   }
 }
 

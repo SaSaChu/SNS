@@ -35,7 +35,7 @@ body.bg_color_p { /* Permalink - use to edit and share this gradient: https://co
 .menu_boxs .icon-x { display: inline-block; width: 30px; height: 30px; font-size: 1.6rem; line-height: 30px; color: #2d4488; font-weight: 600; float: right; margin-top: 2px; }
 .menu_boxs .lastMenu, .menu_boxs .threeMenu { display: inline-block; width: 100%; padding: 20px 20px; border-top: 1px solid rgba(165, 165, 165, 0.5); text-align: center; font-size: 1.2rem; color: #092058; text-decoration: none; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; font-weight: 600; }
 .menu_boxs .lastMenu:first-child, .menu_boxs .threeMenu:first-child { padding: 0 10px; }
-.menu_boxs .lastMenu:nth-child(7), .menu_boxs .threeMenu:nth-child(7) { border-bottom: 1px solid rgba(165, 165, 165, 0.5); }
+.menu_boxs .lastMenu:nth-child(8), .menu_boxs .threeMenu:nth-child(8) { border-bottom: 1px solid rgba(165, 165, 165, 0.5); }
 .menu_boxs .lastMenu.otherMenu, .menu_boxs .threeMenu.otherMenu { padding-left: 30px; border-bottom: 1px dotted white; }
 .menu_boxs .lastMenu.otherMenu:last-child, .menu_boxs .threeMenu.otherMenu:last-child { border-bottom: 1px solid white; }
 .menu_boxs .lastMenu:hover, .menu_boxs .threeMenu:hover { color: #2f31e5; }

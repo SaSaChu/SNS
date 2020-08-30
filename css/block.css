@@ -1,5 +1,8 @@
 *, *:after, *:before { vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
 
+.cent_serch_box { display: inline-block; width: 100%; padding: 0 35px; margin-bottom: 20px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .cent_serch_box { padding: 0 20px; margin-bottom: 10px; } }
+
 .cent_box { display: inline-block; width: 100%; float: left; padding: 0 35px; text-align: left; *zoom: 1; }
 .cent_box:after { display: table; content: ""; line-height: 0; clear: both; }
 @media screen and (max-width: 449px) and (min-width: 0) { .cent_box { width: 100%; padding: 0 20px; } }
@@ -15,6 +18,8 @@
 
 .all_box, .team_pic_box, .team_type_box { display: inline-block; width: 100%; }
 .all_box.w_cent, .team_pic_box.w_cent, .team_type_box.w_cent { text-align: center; }
+.all_box.box50, .team_pic_box.box50, .team_type_box.box50 { display: inline-block; width: 50%; }
+@media screen and (max-width: 449px) and (min-width: 0) { .all_box.box50, .team_pic_box.box50, .team_type_box.box50 { width: 100%; } }
 @media screen and (max-width: 449px) and (min-width: 0) { .all_box.m_cent, .team_pic_box.m_cent, .team_type_box.m_cent { text-align: center; }
   .all_box .team_pic_box, .team_pic_box .team_pic_box, .team_type_box .team_pic_box { width: 30%; float: left; } }
 @media screen and (max-width: 449px) and (min-width: 0) and (max-width: 449px) and (min-width: 0) { .all_box .team_pic_box, .team_pic_box .team_pic_box, .team_type_box .team_pic_box { width: 20%; } }
@@ -47,8 +52,13 @@
 .magTop45 { margin-top: 45px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .magTop45 { margin-top: 0; } }
 
+.magD15 { margin-bottom: 15px; }
+
 .magRight20 { margin-right: 20px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .magRight20 { margin-right: 0; } }
+
+.padSID35 { padding: 0 35px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .padSID35 { padding: 0; } }
 
 .padTB15 { padding: 15px 0; }
 
@@ -64,6 +74,9 @@
 
 .m_magTD30 { margin: 0; }
 @media screen and (max-width: 449px) and (min-width: 0) { .m_magTD30 { margin: 30px 0; } }
+
+.m_magTD20 { margin: 0; }
+@media screen and (max-width: 449px) and (min-width: 0) { .m_magTD20 { margin: 20px 0 15px 0; } }
 
 .m_magTop15 { margin-top: 0; }
 @media screen and (max-width: 449px) and (min-width: 0) { .m_magTop15 { margin-top: 15px; } }
