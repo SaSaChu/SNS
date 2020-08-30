@@ -104,6 +104,123 @@ $orange: rgba(255, 152, 0, 1.00); // 輔助色・橘色
         @include range-width(0, 450px) {
           display: none;
         }
+
+        .nav_boxs {
+          display: inline-block;
+          width: 100%;
+          float: left;
+          @include clearfix();
+
+          > span {
+            position: relative;
+
+            div {display: none;}
+
+            &:hover {
+              > div {
+                display: block;
+                width: 140px;
+                background-color: white;
+                margin-left: -52px;
+                z-index: 888;
+                position: absolute;
+                @include border-radius(4px);
+                @include box-shadow(0 0px 4px 0 rgba(0, 35, 11, .2));
+
+                > a {
+                  display: block;
+                  width: 100%;
+                  height: 50px;
+                  line-height: 50px;
+                  font-size: .9rem;
+                  float: none;
+                  text-align: left;
+                  color: $deep_blue;
+                  text-decoration: none;
+                  border-bottom: 1px solid $gray2;
+                  text-align: center;
+
+                  &:last-child {
+                    border-bottom: 0;
+                  }
+
+                  &:hover {
+                    color: $bright_blue;
+                  }
+
+                  @include transition(background-color .3s);        
+                }
+              }
+            }
+          }
+
+          > span, > a {
+            display: inline-block;
+            cursor: pointer;
+            // float: right;
+            // padding: 0 30px;
+            height: 37px;
+            line-height: 37px;
+
+            @include transition(all .3s);
+            @include clearfix();
+            
+            color: $deep_blue;
+            font-size: 1rem;
+            font-weight: 400;
+
+            &:hover, &:active {
+              color: $bright_blue;
+              text-decoration: underline;
+            }
+
+            &:last-child {
+              &:after {
+                display: none;
+              }
+            }
+
+            &:after {
+              display: inline-block;
+              content: '・';
+              margin: 0 10px;
+              line-height: 37px;
+            }
+
+            &.web_ac {
+              color: $bright_blue;
+              text-decoration: underline;
+            }
+
+            &.web_no {
+              color: $gray;
+              pointer-events: none;
+              cursor: default;
+
+              &:after {
+                display: inline-block;
+                content: '・';
+                color: $deep_blue;
+              }
+            }
+
+            &.link_login2 {
+              padding: 0 14px;
+              background-color: white;
+              @include border-radius(30px);
+              color: $bright_blue;
+              font-size: 1rem;
+              font-weight: 500;
+              line-height: 37px;
+
+              &:hover {
+                background-color: $bright_blue;
+                color: white;
+                text-decoration: none;
+              }
+            }
+          }
+        }
       }
 
       .m_Hamburg {
