@@ -23,7 +23,7 @@ $bright_blue: rgba(47, 49, 229, 1); // 主色・亮藍
 
   margin:0px;
   padding:0px;
-  background-image: url('../img/w_bg.png'); // 需要再調整
+  background-image: url('../img/w_bg.png');
   background-repeat: no-repeat;
   background-attachment:fixed;
   background-position: 0 0; 
@@ -34,8 +34,13 @@ $bright_blue: rgba(47, 49, 229, 1); // 主色・亮藍
   }
 
   @include range-width(0, 450px) {
-    background-size: 107% 58%; 
+    background-size: 101% 58%; 
     background-position: 0 bottom; 
+    background-image: url('../img/m_bg.png'); // 需要再調整
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    // background-position: 0 0; 
+    // background-size: contain;
   }
 
   .i_box_l, .i_box_r {

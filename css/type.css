@@ -27,6 +27,7 @@ p { display: inline-block; padding: 0; margin: 0; }
 
 .team_type { display: inline-block; width: 100%; color: #092058; font-size: 1.2rem; font-weight: 400; }
 @media screen and (max-width: 449px) and (min-width: 0) { .team_type { font-size: 1rem; } }
+.team_type.team_gray { color: #a5a5a5; }
 
 .link_title { display: inline-block; color: #092058; font-size: 1.2rem; font-weight: 700; padding-bottom: 5px; }
 .link_title.link_title_gray { color: rgba(165, 165, 165, 0.5); }
@@ -39,6 +40,8 @@ p { display: inline-block; padding: 0; margin: 0; }
 .type_data_title { font-size: 1.4rem; font-weight: 700; color: #2f31e5; }
 .type_data_title.type_data_gray { color: rgba(165, 165, 165, 0.5); }
 .type_data_title.type_data_thin { font-weight: 400; }
+
+.big_blue_type { font-size: 2.8rem; font-weight: 700; color: #092058; }
 
 .link_code { font-size: 2.8rem; font-weight: 900; color: #858ea6; }
 

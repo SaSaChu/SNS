@@ -45,7 +45,12 @@
 .m_not_show { display: inline-block; }
 @media screen and (max-width: 449px) and (min-width: 0) { .m_not_show { display: none; } }
 
+.in_btn_r { float: right; }
+@media screen and (max-width: 449px) and (min-width: 0) { .in_btn_r { float: none; } }
+
 .m_no_space { padding: 0 !important; margin: 0; }
+
+.magTop15 { margin-top: 15px; }
 
 .magD30 { margin-bottom: 30px; }
 
@@ -56,6 +61,11 @@
 
 .magRight20 { margin-right: 20px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .magRight20 { margin-right: 0; } }
+
+.magRight10 { margin-right: 10px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .magRight10 { margin-right: 0; } }
+
+.magL23 { margin-left: 23px; }
 
 .padSID35 { padding: 0 35px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .padSID35 { padding: 0; } }

@@ -8,6 +8,9 @@ a { display: inline-block; cursor: pointer; text-decoration: none; -moz-transiti
 
 .link_CreatAcc { font-size: 1.2rem; font-weight: 400; color: #0095d9; margin-top: -2px; }
 
+.link_little { font-size: 1.2rem; font-weight: 400; color: #0095d9; }
+@media screen and (max-width: 449px) and (min-width: 0) { .link_little { font-size: 1rem; } }
+
 .link_login { padding: 8px 14px; background-color: white; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; color: #2f31e5; font-size: 1rem; font-weight: 500; }
 .link_login:hover { background-color: #2f31e5; color: white; }
 

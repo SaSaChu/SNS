@@ -172,6 +172,13 @@ $orange: rgba(255, 152, 0, 1.00); // 輔助色・橘色
     display: none;
   }
 }
+.in_btn_r {
+  float: right;
+
+  @include range-width(0, 450px) {
+    float: none;
+  }
+}
 
 
 
@@ -179,6 +186,10 @@ $orange: rgba(255, 152, 0, 1.00); // 輔助色・橘色
 .m_no_space {
   padding: 0 !important;
   margin: 0;
+}
+
+.magTop15 {
+  margin-top: 15px;
 }
 
 .magD30 {
@@ -203,6 +214,18 @@ $orange: rgba(255, 152, 0, 1.00); // 輔助色・橘色
   @include range-width(0, 450px) {
     margin-right: 0;
   }
+}
+
+.magRight10 {
+  margin-right: 10px;
+
+  @include range-width(0, 450px) {
+    margin-right: 0;
+  }
+}
+
+.magL23 {
+  margin-left: 23px; 
 }
 
 .padSID35 {
