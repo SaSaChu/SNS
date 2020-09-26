@@ -30,7 +30,7 @@
               <a href="on_NetWorkPage01.html">JOIN an NETWORK</a>
               <a href="on_CreatQRLink01.html">CREATE QR LINK</a> 
               <span>
-                MENU
+                MORE
                 <div>
                   <a href='NetWorkList01.html' class='type_uppercase'>My Networks</a>
                   <a href='CreateNetwork01.html' class='type_uppercase'>Create Network</a>
@@ -59,9 +59,17 @@
               <div class='input_box'>
                 <input class='toEnter borderGray' type="text" value="Intern Team">
               </div>
-              <div class='input_box'>
-                <textarea class='toEnter no_hid borderGray'>Welcome to the new team! Let's get to know each other!</textarea>
-              </div>              
+
+              <!-- 9/26 新增樣式修正。已填寫過資料 -->
+              <textarea class='text_box' id="textarea" onkeyup="
+              var textarea=this; 
+              var adjustedHeight=textarea.clientHeight;
+
+              adjustedHeight=Math.max(textarea.scrollHeight,adjustedHeight);
+              if (adjustedHeight>textarea.clientHeight){
+                textarea.style.height=adjustedHeight+'px';
+              }">Welcome to the new team! Let's get to know each other!
+              </textarea>             
             </div>
 
             <i class='m_border'></i><!-- 手機版・虛線 -->

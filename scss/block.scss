@@ -47,7 +47,7 @@ $orange: rgba(255, 152, 0, 1.00); // 輔助色・橘色
   }
 
   &.cent_box35 {
-    width: 35%;
+    width: 40%;
 
     @include range-width(0, 450px) {
       width: 100%;
@@ -55,7 +55,7 @@ $orange: rgba(255, 152, 0, 1.00); // 輔助色・橘色
   }
 
   &.cent_box65 {
-    width: 65%;
+    width: 60%;
 
     @include range-width(0, 450px) {
       width: 100%;
@@ -192,6 +192,10 @@ $orange: rgba(255, 152, 0, 1.00); // 輔助色・橘色
   margin-top: 15px;
 }
 
+.magTop18 {
+  margin-top: 18px;
+}
+
 .magD30 {
   margin-bottom: 30px;
 }
@@ -228,6 +232,10 @@ $orange: rgba(255, 152, 0, 1.00); // 輔助色・橘色
   margin-left: 23px; 
 }
 
+.magL15 {
+  margin-left: 15px; 
+}
+
 .padSID35 {
   padding: 0 35px;
 
@@ -235,6 +243,7 @@ $orange: rgba(255, 152, 0, 1.00); // 輔助色・橘色
     padding: 0;
   }
 }
+
 
 .padTB15 {
   padding: 15px 0;
@@ -246,6 +255,18 @@ $orange: rgba(255, 152, 0, 1.00); // 輔助色・橘色
   @include range-width(0, 450px) {
     padding: 0 0 15px 0;
   }
+}
+
+.pad815 {
+  padding: 8px 15px !important;
+}
+
+.padD15 {
+  padding-bottom: 15px;
+}
+
+.padTD10 {
+  padding: 10px 0;
 }
 
 .padT15 {

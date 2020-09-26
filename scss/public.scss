@@ -218,6 +218,10 @@ $orange: rgba(255, 152, 0, 1.00); // 輔助色・橘色
                 color: white;
                 text-decoration: none;
               }
+
+              &:after {
+                display: none;
+              }
             }
           }
         }

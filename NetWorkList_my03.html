@@ -30,7 +30,7 @@
               <a href="on_NetWorkPage01.html">JOIN an NETWORK</a>
               <a href="on_CreatQRLink01.html">CREATE QR LINK</a> 
               <span>
-                MENU
+                MORE
                 <div>
                   <a href='NetWorkList01.html' class='type_uppercase'>My Networks</a>
                   <a href='CreateNetwork01.html' class='type_uppercase'>Create Network</a>
@@ -66,9 +66,17 @@
                 <div class='input_box'>
                   <input class='toEnter borderBlue' type="text" value="Intern Team">
                 </div>
-                <div class='input_box'>
-                  <textarea class='toEnter no_hid borderBlue'>Welcome to the new team! Let's get to know each other!</textarea>
-                </div>
+
+                <!-- 9/26 新增樣式修正 -->
+                <textarea class='text_box' id="textarea" onkeyup="
+                var textarea=this; 
+                var adjustedHeight=textarea.clientHeight;
+
+                adjustedHeight=Math.max(textarea.scrollHeight,adjustedHeight);
+                if (adjustedHeight>textarea.clientHeight){
+                  textarea.style.height=adjustedHeight+'px';
+                }">Welcome to the new team! Let's get to know each other!
+                </textarea>
               </div>
 
               <div class='all_box padTB15 borderGray_T'>
@@ -93,7 +101,8 @@
                 </div>
               </div>
 
-              <div class='all_box'>
+              <!-- 9/26 只有創辦人：多加 padD15  borderGray_D -->
+              <div class='all_box padD15 borderGray_D'>
                 <p class='type_data_title'>Admin</p>
 
                 <div class='input_box input_box_top15 borderGray'>
@@ -102,6 +111,12 @@
                   <a href='on_NetWorkPage04_1.html' class='btn_status_box c_gray member icon-Address-Card---FontAwesomeCopy-3'></a>
                 </div>
               </div>
+
+              <!-- 9/26 新增區域:只有創辦人會出現 -->
+              <div class='all_box w_cent'>
+                <button class='link_gray2 type_uppercase' style='width:100%;' onclick="openModal();currentSlide(1)">delete network page</button>
+              </div>
+
             </div>
           </div>
         </main>
@@ -114,6 +129,18 @@
             <a href="#" class='footer_menu'>Contact Us</a>
           </div>
         </footer>
+      </div>
+    </div>
+
+    <!-- 光箱・增加社群內容 -->
+    <div id="myModal" class="modal">
+      <div class='modal_boxs'>
+
+        <div class='modal_box'>
+          
+        </div>
+
+        <span class="lightbox_done" onclick="closeModal()">OK, Delete network</span>
       </div>
     </div>
 
@@ -137,6 +164,17 @@
       </div>
     </div>
 
+
+    <!-- lightbox -->
+    <script>
+      function openModal() {
+        document.getElementById("myModal").style.display = "block";
+      }
+
+      function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+      }
+    </script>
   </body>
 </html>
 

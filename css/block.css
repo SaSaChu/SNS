@@ -7,9 +7,9 @@
 .cent_box:after { display: table; content: ""; line-height: 0; clear: both; }
 @media screen and (max-width: 449px) and (min-width: 0) { .cent_box { width: 100%; padding: 0 20px; } }
 @media screen and (max-width: 449px) and (min-width: 0) { .cent_box.btn_cent { text-align: center; } }
-.cent_box.cent_box35 { width: 35%; }
+.cent_box.cent_box35 { width: 40%; }
 @media screen and (max-width: 449px) and (min-width: 0) { .cent_box.cent_box35 { width: 100%; } }
-.cent_box.cent_box65 { width: 65%; }
+.cent_box.cent_box65 { width: 60%; }
 @media screen and (max-width: 449px) and (min-width: 0) { .cent_box.cent_box65 { width: 100%; } }
 .cent_box.cent_box50 { width: 50%; }
 @media screen and (max-width: 449px) and (min-width: 0) { .cent_box.cent_box50 { width: 100%; } }
@@ -52,6 +52,8 @@
 
 .magTop15 { margin-top: 15px; }
 
+.magTop18 { margin-top: 18px; }
+
 .magD30 { margin-bottom: 30px; }
 
 .magTop45 { margin-top: 45px; }
@@ -67,6 +69,8 @@
 
 .magL23 { margin-left: 23px; }
 
+.magL15 { margin-left: 15px; }
+
 .padSID35 { padding: 0 35px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .padSID35 { padding: 0; } }
 
@@ -74,6 +78,12 @@
 
 .m_padB15 { padding: 15px 0; }
 @media screen and (max-width: 449px) and (min-width: 0) { .m_padB15 { padding: 0 0 15px 0; } }
+
+.pad815 { padding: 8px 15px !important; }
+
+.padD15 { padding-bottom: 15px; }
+
+.padTD10 { padding: 10px 0; }
 
 .padT15 { padding-top: 15px; }
 

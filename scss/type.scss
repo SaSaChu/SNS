@@ -73,11 +73,7 @@ p {
 .note_type {
   display: inline-block;
   color: $deep_blue;
-  font-size: 1rem;
-
-  @include range-width(0, 450px) {
-    font-size: .9rem;
-  }
+  font-size: .9rem;
 
   &.note_gray {
     color: $gray2;
@@ -92,7 +88,7 @@ p {
   display: inline-block;
   width: 100%;
   color: $deep_blue;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 400;
 
   @include range-width(0, 450px) {
@@ -183,6 +179,10 @@ input {
     padding: 12px 0 0 10px;
     width: calc(100% - 50px);
     // line-height: 30px;
+
+    @include range-width(0, 450px) {
+      width: calc(100% - 45px);
+    }
   }
 
   &.on_net01 {
@@ -220,10 +220,38 @@ input {
   color: $gray;
   font-weight: 400;
 
+  &.enter_hid {
+    width: calc(100% - 8px);
+    display: -webkit-box;
+    -webkit-box-orient: vertical; 
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
   &.addEnter2 {
     color: $gray2;
     pointer-events: none;
     cursor: default;
+  }
+}
+
+.text_box {
+  display: inline-block;
+  width: 100%;
+  @include border-radius(10px);
+  border: 1px solid $deep_blue;
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  font-family: 'Roboto';
+  color: $deep_blue;
+  outline: 0;
+  overflow:auto;
+  resize:none;
+
+  &.text_box_gray {
+    border: 1px solid $gray2;
+    color: $gray;
   }
 }
 

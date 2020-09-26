@@ -29,8 +29,10 @@
             <div class='nav_boxs'>
               <a href="NetWorkPage01.html">JOIN an NETWORK</a>
               <a href="CreatQRLink01.html">CREATE QR LINK</a> 
-              <span class='web_no'>MENU</span> 
-              <a href="login.html" class='link_login2 order_right'>LOG IN</a> 
+              <span class='web_no'>MORE</span> 
+              <a href="login.html" class='link_login2'>LOG IN</a>
+              <!-- 9/26 新增 -->
+              <a href="#" class='link_login2 order_right magL15'>Create an Account</a> 
             </div>
           </nav>
 
@@ -42,21 +44,35 @@
             <div class='cent_box borderGray_right'>
               <div class='all_box padTB15 m_no_space'>
                 <p class='big_blue_type'>Log in</p>
-                <p class='team_type'>or <a href="#" class='link_little'>create an account</a></p>
+                <!-- 9/26 新增 padTD10 樣式 -->
+                <p class='team_type padTD10'>or <a href="#" class='link_little'>create an account</a></p>
               
                 <div class='input_box magTop15'>
                   <input class='toEnter addEnter borderGray' value="Email" onfocus="this.value=''" onblur="this.value='Email'" >
                 </div>
 
-                <div class='input_box'>
-                  <input class='toEnter addEnter borderGray' value="Password" onfocus="this.value=''" onblur="this.value='Password'" >
+                <!-- 9/26 icon預設是閉起來 -->
+                <div class='input_box borderGray'>
+                  <input class='inEnter addEnter pad815' value="Password" onfocus="this.value=''" onblur="this.value='Password'" >
+                  <button class='btn_status_box w_50 c_gray icon-eye-slash'></button>
+                </div>
+
+                <!-- 9/26 icon點開眼睛的樣式 -->
+                <div class='input_box borderGray'>
+                  <input class='inEnter addEnter pad815' value="Password" onfocus="this.value=''" onblur="this.value='Password'" >
+                  <button class='btn_status_box w_50 c_gray icon-eye'></button>
                 </div>
               </div>
 
-              <div class='all_box' style='height:130px;'>
-                <input type="radio" id="huey" name="drone" value="huey">
-                <label for="huey" class='team_type' style='width:auto;'>Remember me</label>
-                <a href="#" class='link_little magL23' style='width:100%;'>Forgot password?</a>
+              <div class='all_box' style='height:150px;'>
+                <!-- 9/26 新增 magTop18 樣式 -->
+                <input class='magTop18' type="radio" id="huey" name="drone" value="huey">
+                <!-- 9/26 新增 padT15 樣式 -->
+                <label for="huey" class='team_type padT15' style='width:auto;'>Remember me</label>
+                <!-- 9/26 新增 padT15 樣式 -->
+                <a href="#" class='link_little magL23 padT15' style='width:100%;'>Forgot password?</a>
+                <!-- 9/26 新增 padT15 樣式 -->
+                <a href="#" class='link_little magL23 padT15' style='width:100%;'>Verify Email address</a>
               </div>
 
               <div class='all_box w_cent'>

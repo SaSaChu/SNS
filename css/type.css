@@ -19,13 +19,12 @@ p { display: inline-block; padding: 0; margin: 0; }
 
 .footer_type { color: #092058; font-size: .9rem; font-weight: 300; }
 
-.note_type { display: inline-block; color: #092058; font-size: 1rem; }
-@media screen and (max-width: 449px) and (min-width: 0) { .note_type { font-size: .9rem; } }
+.note_type { display: inline-block; color: #092058; font-size: .9rem; }
 .note_type.note_gray { color: rgba(165, 165, 165, 0.5); }
 
 .lineHeight45 { line-height: 45px; }
 
-.team_type { display: inline-block; width: 100%; color: #092058; font-size: 1.2rem; font-weight: 400; }
+.team_type { display: inline-block; width: 100%; color: #092058; font-size: 1rem; font-weight: 400; }
 @media screen and (max-width: 449px) and (min-width: 0) { .team_type { font-size: 1rem; } }
 .team_type.team_gray { color: #a5a5a5; }
 
@@ -49,6 +48,7 @@ input { outline: 0; background-color: transparent; }
 
 .toEnter { display: inline-block; width: 100%; padding: 8px 15px; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; font-size: 1.2rem; color: #092058; font-weight: 700; text-align: left; overflow: hidden; }
 .toEnter.networklink { font-size: 1rem; padding: 12px 0 0 10px; width: calc(100% - 50px); }
+@media screen and (max-width: 449px) and (min-width: 0) { .toEnter.networklink { width: calc(100% - 45px); } }
 .toEnter.on_net01 { border: 0; }
 
 .inEnter { display: inline-block; width: calc(100% - 50px * 2); padding: 8px 15px 8px 0; border: 0; font-size: 1.2rem; color: #092058; font-weight: 700; text-align: left; overflow: hidden; }
@@ -56,7 +56,11 @@ input { outline: 0; background-color: transparent; }
 @media screen and (max-width: 449px) and (min-width: 0) { .inEnter { font-size: 1rem; line-height: 25px; padding: 7px 0; } }
 
 .addEnter { color: #a5a5a5; font-weight: 400; }
+.addEnter.enter_hid { width: calc(100% - 8px); display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; overflow: hidden; text-overflow: ellipsis; }
 .addEnter.addEnter2 { color: rgba(165, 165, 165, 0.5); pointer-events: none; cursor: default; }
+
+.text_box { display: inline-block; width: 100%; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; border: 1px solid #092058; padding: 10px 15px; font-size: 1.2rem; font-family: 'Roboto'; color: #092058; outline: 0; overflow: auto; resize: none; }
+.text_box.text_box_gray { border: 1px solid rgba(165, 165, 165, 0.5); color: #a5a5a5; }
 
 .input_box { display: inline-block; width: 100%; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; margin-bottom: 18px; *zoom: 1; position: relative; }
 .input_box:after { display: table; content: ""; line-height: 0; clear: both; }

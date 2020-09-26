@@ -30,7 +30,7 @@
               <a href="on_NetWorkPage01.html">JOIN an NETWORK</a>
               <a href="on_CreatQRLink01.html">CREATE QR LINK</a> 
               <span>
-                MENU
+                MORE
                 <div>
                   <a href='NetWorkList01.html' class='type_uppercase'>My Networks</a>
                   <a href='CreateNetwork01.html' class='type_uppercase'>Create Network</a>
@@ -57,7 +57,16 @@
           <div class='cent_boxs'>
             <div class='cent_box cent_box35'>
               <input class='toEnter addEnter borderGray magD15' value="Team Name" onfocus="this.value=''" onblur="this.value='ex: Team Name'" >
-              <input class='toEnter addEnter borderGray' value="brief introduction" onfocus="this.value=''" onblur="this.value='brief introduction'" >
+
+              <!-- 9/26 新增樣式修正。寫過資料 -->
+              <textarea class='text_box text_box_gray' id="textarea" placeholder="Brief Introduction" onkeyup="
+              var textarea=this; 
+              var adjustedHeight=textarea.clientHeight;
+
+              adjustedHeight=Math.max(textarea.scrollHeight,adjustedHeight);
+              if (adjustedHeight>textarea.clientHeight){
+                textarea.style.height=adjustedHeight+'px';
+              }"></textarea> 
             </div>
 
             <i class='m_border'></i><!-- 手機版・虛線 -->

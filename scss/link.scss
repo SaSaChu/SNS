@@ -25,16 +25,41 @@ a {
   display: inline-block;
   float: left;
   width: 100%;
-  max-width: 191px;
+  max-width: 188px;
   cursor: pointer;
   text-decoration: none;
   border: 0;
 
+  @include range-width(0, 450px) {
+    display: none;
+  }
+
   img {
     display: inline-block;
     width: 100%;
-    max-width: 191px;
-    margin-top: 7px;
+    max-width: 188px;
+    margin-top: 8px;
+  }
+}
+
+.m_link_home {
+  display: none;
+
+  @include range-width(0, 450px) {
+    display: inline-block;
+    float: left;
+    width: 100%;
+    max-width: 188px;
+    cursor: pointer;
+    text-decoration: none;
+    border: 0;
+
+    img {
+      display: inline-block;
+      width: 100%;
+      max-width: 188px;
+      margin-top: 8px;
+    }
   }
 }
 
@@ -46,12 +71,12 @@ a {
 }
 
 .link_little {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 400;
   color: $light_blue;
 
   @include range-width(0, 450px) {
-    font-size: 1rem;
+    font-size: .9rem;
   }
 }
 
@@ -69,7 +94,7 @@ a {
   }
 }
 
-.link_blueLine, .link_brightBlue, .link_gray {
+.link_blueLine, .link_brightBlue, .link_gray, .link_gray2, .link_deepBlue, .link_brightBlue2 {
   padding: 12px 20px;
   font-size: 1rem;
   @include border-radius(30px);
@@ -88,6 +113,18 @@ a {
     width: 90%;
     text-align: center;
     padding: 15px 16px;
+  }
+}
+
+.link_deepBlue {
+  padding: 12px 20px;
+  font-size: 1rem;
+  color: $deep_blue;
+  border: 1px solid $deep_blue;
+  @include border-radius(30px);
+
+  @include range-width(0, 450px) {
+    width: 90%;
   }
 }
 
@@ -127,10 +164,32 @@ a {
   }
 }
 
+.link_brightBlue2 {
+  color: white;
+  background-color: $bright_blue;
+  border: 1px solid $bright_blue;
+
+  &:hover {
+    background-color: white;
+    color: $bright_blue;
+    border: 1px solid $bright_blue;
+  }
+}
+
 .link_gray {
   cursor: not-allowed;
   color: white;
   background-color: $gray2;
+}
+
+.link_gray2 {
+  color: white;
+  background-color: $gray2;
+  @include transition(all .3s);
+
+  &:hover {
+    background-color: $deep_blue;
+  }
 }
 
 .web_menu {
@@ -274,6 +333,7 @@ button {
   display: inline-block;
   outline: 0;
   cursor: pointer;
+  border: 0;
 }
 
 .btn_status_box {
@@ -286,6 +346,11 @@ button {
   background-color: transparent;
   font-size: 1.2rem;
   float: right;
+
+  &.w_50 {
+    width: 50px;
+    line-height: 0;
+  }
 
   &.c_blue2 {
     color: $deep_blue;
