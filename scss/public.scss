@@ -70,10 +70,14 @@ $orange: rgba(255, 152, 0, 1.00); // 輔助色・橘色
               url('../img/Oval03.png') 3% 110% no-repeat;
 
   @include range-width(0, 450px) {
-    background: url('../img/Oval01.png') left 15% no-repeat,
-                url('../img/Oval02.png') right 35% no-repeat,
-                url('../img/Oval03.png') 1% 83% no-repeat;
+    background: url('../img/Oval01@2x.png') left 15% no-repeat,
+                url('../img/Oval02@2x.png') right 35% no-repeat,
+                url('../img/Oval03@2x.png') 1% 83% no-repeat;
+    background-size: 265px 265px,
+                     177px 177px,
+                     88px 88px;
   }
+
 
   .page_box {
     display: inline-block;
