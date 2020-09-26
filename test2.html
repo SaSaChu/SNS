@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>滑鼠移到文字上彈出提示層</title>
+<style type="text/css">
+<!--
+#box{
+display:none;
+width: 315px;
+height: 180px; 
+background:#CCC;
+border:1px solid #333;
+padding:12px;
+text-align:center;
+}
+
+p {
+  cursor: pointer;
+}
+-->
+</style>
+<script type="text/javascript" language="javascript" >
+<!--
+function display(){
+document.getElementById("box").style.display="block"; 
+}
+function disappear(){
+document.getElementById("box").style.display="none"; 
+}
+-->
+</script>
+</head>
+<body>
+<p href="#" onmouseover="display()" onmouseout="disappear()">
+滑鼠放到這兒！
+</p>
+<div id="box" onmouseover="display()" onmouseout="disappear()">
+效果不錯吧？這裡面你可以設定一張圖片，也可以是一段文字，
+而且原始碼很簡單哦！
+</div>
+</body>
+</html>
