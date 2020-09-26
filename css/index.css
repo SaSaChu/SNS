@@ -20,7 +20,10 @@ html { height: 100%; margin: 0; padding: 0; }
 .i_bg .i_box_r .i_cent_type .ir_boxs { display: inline-block; width: 100%; *zoom: 1; text-align: left; }
 .i_bg .i_box_r .i_cent_type .ir_boxs:after { display: table; content: ""; line-height: 0; clear: both; }
 @media screen and (max-width: 449px) and (min-width: 0) { .i_bg .i_box_r .i_cent_type .ir_boxs { text-align: center; } }
-.i_bg .i_box_r .i_cent_type .ir_boxs img { display: inline-block; width: 100%; max-width: 191px; padding-top: 5px; }
+.i_bg .i_box_r .i_cent_type .ir_boxs .ir_img { display: inline-block; width: 100%; max-width: 188px; padding-top: 5px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .i_bg .i_box_r .i_cent_type .ir_boxs .ir_img { display: none; } }
+.i_bg .i_box_r .i_cent_type .ir_boxs .m_ir_img { display: none; }
+@media screen and (max-width: 449px) and (min-width: 0) { .i_bg .i_box_r .i_cent_type .ir_boxs .m_ir_img { display: inline-block; width: 100%; max-width: 188px; padding-top: 5px; } }
 .i_bg .i_footer { display: inline-block; width: 100%; position: absolute; bottom: 0; left: 0; *zoom: 1; margin: 20px 0; }
 .i_bg .i_footer:after { display: table; content: ""; line-height: 0; clear: both; }
 @media screen and (max-width: 449px) and (min-width: 0) { .i_bg .i_footer { padding: 15px; position: static; margin: 0; } }

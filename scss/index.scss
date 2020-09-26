@@ -112,11 +112,26 @@ $bright_blue: rgba(47, 49, 229, 1); // 主色・亮藍
           text-align: center;
         }
 
-        img {
+        .ir_img {
           display: inline-block;
           width: 100%;
-          max-width: 191px;
+          max-width: 188px;
           padding-top: 5px;
+
+          @include range-width(0, 450px) {
+            display: none;
+          }
+        }
+
+        .m_ir_img {
+          display: none;
+
+          @include range-width(0, 450px) {
+            display: inline-block;
+            width: 100%;
+            max-width: 188px;
+            padding-top: 5px;
+          }
         }
       }
     }
