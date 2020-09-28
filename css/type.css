@@ -69,9 +69,10 @@ input { outline: 0; background-color: transparent; }
 @media screen and (max-width: 449px) and (min-width: 0) { .input_box.input_search { float: left; } }
 .input_box.input_search90 { width: calc(100% - 90px); text-align: left; }
 @media screen and (max-width: 449px) and (min-width: 0) { .input_box.input_search90 { float: left; } }
-.input_box .tip_box { display: inline-block; position: absolute; top: 0; left: 0; width: 40px; height: 40px; background-color: rgba(255, 0, 0, 0.2); }
+.input_box .tip_box { display: inline-block; position: absolute; top: 0; left: 0; width: 40px; height: 40px; }
 
 .social_box { display: inline-block; width: 40px; height: 40px; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; line-height: 40px; text-align: center; background-color: #092058; border: 1px solid #092058; margin-right: 9px; color: white; font-size: 1.2rem; }
+.social_box.social_box2 { background-color: #2f31e5; border: 1px solid #2f31e5; }
 .social_box.member_box { background-color: #858ea6; border: 1px solid #858ea6; }
 .social_box.serch_box { background-color: transparent; border: 0; color: #2f31e5; }
 .social_box.team_box { color: #ff9800; }

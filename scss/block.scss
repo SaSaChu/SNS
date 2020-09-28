@@ -201,6 +201,10 @@ $orange: rgba(255, 152, 0, 1.00); // 輔助色・橘色
   margin-top: 15px;
 }
 
+.magTop30 {
+  margin-top: 15px;
+}
+
 .magTop18 {
   margin-top: 18px;
 }
@@ -344,8 +348,6 @@ $orange: rgba(255, 152, 0, 1.00); // 輔助色・橘色
   width: 40px;
   height: 40px;
 
-  border: 1px solid rgba(255, 0, 0, .3);
-
   &:hover {
     cursor: pointer;
 
@@ -362,6 +364,11 @@ $orange: rgba(255, 152, 0, 1.00); // 輔助色・橘色
       white-space: pre;
       line-height: 25px;
       @include border-radius(5px);
+
+      @include range-width(0, 450px) {
+        right: 50%;
+        top: -33px;
+      }
     }
 
     &:after {
@@ -375,6 +382,13 @@ $orange: rgba(255, 152, 0, 1.00); // 輔助色・橘色
       border-left: 5px solid #2f31e5;
       border-top: 5px solid transparent;
       border-bottom: 5px solid transparent;
+
+      @include range-width(0, 450px) {
+        right: 17px;
+        top: -8px;
+        border-width: 5px 5px 0 5px;
+        border-color: #2f31e5 transparent transparent transparent;
+      }
     }
   }
 }

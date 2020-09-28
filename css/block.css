@@ -54,6 +54,8 @@
 
 .magTop15 { margin-top: 15px; }
 
+.magTop30 { margin-top: 15px; }
+
 .magTop18 { margin-top: 18px; }
 
 .magD30 { margin-bottom: 30px; }
@@ -110,7 +112,9 @@
 
 .img_op { opacity: .3; }
 
-.prompt { position: relative; display: inline-block; width: 40px; height: 40px; border: 1px solid rgba(255, 0, 0, 0.3); }
+.prompt { position: relative; display: inline-block; width: 40px; height: 40px; }
 .prompt:hover { cursor: pointer; }
 .prompt:hover:before { content: attr(data-showtip); background-color: #2f31e5; color: white; padding: 0 5px; position: absolute; font-size: .9rem; right: 60px; top: 16%; margin-right: -8px; white-space: pre; line-height: 25px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .prompt:hover:before { right: 50%; top: -33px; } }
 .prompt:hover:after { display: inline-block; content: ''; position: absolute; right: 48px; top: 36%; width: 0; height: 0; border-left: 5px solid #2f31e5; border-top: 5px solid transparent; border-bottom: 5px solid transparent; }
+@media screen and (max-width: 449px) and (min-width: 0) { .prompt:hover:after { right: 17px; top: -8px; border-width: 5px 5px 0 5px; border-color: #2f31e5 transparent transparent transparent; } }

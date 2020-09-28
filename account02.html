@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta http-equiv="Content-Language" content="zh-tw">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+
+    <title>Select N Share</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/icon.css">
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+    <link rel="stylesheet" type="text/css" href="css/block.css">
+    <link rel="stylesheet" type="text/css" href="css/type.css">
+    <link rel="stylesheet" type="text/css" href="css/link.css">
+
+    <script language="javascript" type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script language="javascript" type="text/javascript" src="js/public.js"></script>
+
+  </head>
+
+  <body class='bg_color_p'>
+
+    <div class='page_boxs'>
+      <div class='page_box'>
+        <header>
+          <a href="index.html" class='link_home'><img src="img/W_logo.png"></a>
+          <!-- 9/26 新增 -->
+          <a href="index.html" class='m_link_home'><img src="img/W_logo@2x.png"></a>
+          <nav>
+            <div class='nav_boxs'>
+              <a href="on_NetWorkPage01.html">JOIN an NETWORK</a>
+              <a href="on_CreatQRLink01.html">CREATE QR LINK</a> 
+              <span>
+                MORE
+                <div>
+                  <a href='NetWorkList01.html' class='type_uppercase'>My Networks</a>
+                  <a href='CreateNetwork01.html' class='type_uppercase'>Create Network</a>
+                  <a href='SavePage01.html' class='type_uppercase'>saved contacts</a>
+                  <a href='MyQRLink01.html' class='type_uppercase'>My QR Links</a>
+                  <a href='account.html' class='type_uppercase'>My Account</a>
+                </div>
+              </span> 
+              <a href="index.html" class='link_login2 order_right'>LOG OUT</a> 
+            </div>
+          </nav> 
+
+          <div class='m_Hamburg icon-menu'></div>
+        </header>
+
+        <main>
+          <div class='cent_boxs cent_web'>
+            <div class='cent_box'>
+              <p class='m_title_type type_uppercase' style='line-height:42px;'>My Account</p>
+              <button class='link_gray2 type_uppercase order_right' onclick="openModal();currentSlide(1)">delete My Account</button>
+            </div>
+          </div>
+
+          <div class='cent_boxs'>
+            <div class='cent_box cent_box35'>
+              <div class='all_box magD30'>
+                <p class='type_data_title'>Change My Password</p>
+                <a href='account.html' class='btn_done'>Done</a>
+              </div>
+
+              <div class='input_box borderGray'>
+                <input class='inEnter addEnter pad815' value="******" onfocus="this.value=''" onblur="this.value='******'" >
+                <button class='btn_status_box w_50 c_gray icon-eye-slash'></button>
+              </div>
+               
+              <div class='input_box borderGray'>
+                <input class='inEnter addEnter pad815' value="New password" onfocus="this.value=''" onblur="this.value='New password'" >
+                <button class='btn_status_box w_50 c_gray icon-eye-slash'></button>
+              </div>
+
+              <div class='input_box borderGray'>
+                <input class='inEnter addEnter pad815' value="Confirm new password" onfocus="this.value=''" onblur="this.value='Confirm new password'" >
+                <button class='btn_status_box w_50 c_gray icon-eye-slash'></button>
+              </div>
+            </div>
+
+            <div class='cent_box cent_box65 borderGray_left'>
+              <div class='all_box magD30'>
+                <p class='type_data_title'>Lucy Redder</p>
+                <a href='account03.html' class='link_icon icon-createmode_editedit'></a>
+              </div>
+
+              <div class='all_box'>
+                <!-- social data -->
+                <!-- 01.email-->
+                <div class='input_box borderGray'>
+                  <div class='social_box icon-email'></div>
+                  <input class='inEnter addEnter in_all' type="text" value="abcdef568328@gmail.com">
+                </div>
+
+                <!-- 02.Instagram -->
+                <div class='input_box borderGray'>
+                  <div class='social_box icon-instagram'></div>
+                  <input class='inEnter addEnter in_all' type="text" value="LucyRedde">
+                </div>
+
+                <!-- 03.Snapchat -->
+                <div class='input_box borderGray'>
+                  <div class='social_box icon-snapchat'></div>
+                  <input class='inEnter addEnter in_all' type="text" value="lucyredde23">
+                </div>
+
+                <!-- 04.Facebook -->
+                <div class='input_box borderGray'>
+                  <div class='social_box icon-facebook'></div>
+                  <input class='inEnter addEnter in_all' type="text" value="lr123">
+                </div>
+
+                <!-- 05.Phone -->
+                <div class='input_box borderGray'>
+                  <div class='social_box icon-phone'></div>
+                  <input class='inEnter addEnter in_all' type="text" value="0912345678">
+                </div>
+              </div>  
+            </div>
+          </div>
+        </main>
+
+        <footer>
+          <p class='footer_type'>© 2020 Select N Share™</p>
+          <div class='footer_box'>
+            <a href="#" class='footer_menu'>Terms of Service</a>
+            <a href="#" class='footer_menu'>Privacy </a>
+            <a href="#" class='footer_menu'>Contact Us</a>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- 手機menu -->
+    <div class='menu_boxs'>
+      <div class='all_box m_magTD30 m_padSID20'>
+        <a href="index.html" class='link_home'><img src="img/W_logo.png"></a>
+        <a class='icon-x'></a>
+      </div>
+
+      <a href='on_NetWorkPage01.html' class='lastMenu type_uppercase'>Join Network</a>
+      <a href='on_CreatQRLink01.html' class='lastMenu type_uppercase'>Create QR Link</a>
+      <a href='NetWorkList01.html' class='lastMenu type_uppercase'>My Networks</a>
+      <a href='CreateNetwork01.html' class='lastMenu type_uppercase'>Create Network</a>
+      <a href='SavePage01.html' class='lastMenu type_uppercase'>saved contacts</a>
+      <a href='MyQRLink01.html' class='lastMenu type_uppercase'>My QR Links</a>
+      <a href='account.html' class='lastMenu type_uppercase'>My Account</a>
+
+      <div class='all_box m_magTD30 m_padSID20'>
+        <a href="index.html" class='link_brightBlue no_mark type_uppercase '>log out</a>
+      </div>
+    </div>
+
+  </body>
+</html>
+
+

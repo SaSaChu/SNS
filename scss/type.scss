@@ -294,7 +294,6 @@ input {
     left: 0;
     width: 40px;
     height: 40px;
-    background-color: rgba(255, 0, 0, 0.2);
   }
 }
 .social_box {
@@ -310,6 +309,11 @@ input {
   
   color: white;
   font-size: 1.2rem;
+
+  &.social_box2 {
+    background-color: $bright_blue;
+    border: 1px solid $bright_blue;
+  }
 
   &.member_box {
     background-color: $deep_blue3;

@@ -265,6 +265,21 @@ a {
   font-size: 1.4rem;
   font-weight: 700;
   padding-bottom: 10px;
+
+  &.title_link_icon {
+    &:hover {
+      color: $bright_blue;
+    }
+
+    &:before {
+      content: '\f0c1';
+      font-family: 'icon';
+      font-size: 1.2rem;
+      margin-right: 10px;
+      line-height: 27px;
+      color: $deep_blue3;
+    }
+  }
 }
 
 .no_event {
