@@ -261,7 +261,7 @@ input {
   @include border-radius(30px);
   margin-bottom: 18px;
   @include clearfix();
-  
+
   position: relative;
 
   &.input_box_top15 {
@@ -285,6 +285,16 @@ input {
     @include range-width(0, 450px) {
       float: left;
     }
+  }
+
+  .tip_box {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 0, 0, 0.2);
   }
 }
 .social_box {

@@ -1,44 +1,54 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>滑鼠移到文字上彈出提示層</title>
+<meta charset=" utf-8">
+<meta name="author" content="http://www.softwhy.com/" />
+<title>螞蟻部落</title>
 <style type="text/css">
-<!--
-#box{
-display:none;
-width: 315px;
-height: 180px; 
-background:#CCC;
-border:1px solid #333;
-padding:12px;
-text-align:center;
+ul li{
+  height:40px;
+  line-height:40px;
+  list-style:none;
 }
-
-p {
-  cursor: pointer;
-}
--->
-</style>
-<script type="text/javascript" language="javascript" >
-<!--
-function display(){
-document.getElementById("box").style.display="block"; 
-}
-function disappear(){
-document.getElementById("box").style.display="none"; 
-}
--->
-</script>
+#tooltip{ 
+  position:absolute; 
+  border:1px #solid #333; 
+  background:#f7f5d1; 
+  padding:1px; 
+  color:#333; 
+  display:none; 
+} 
+</style> 
+<script type="text/javascript" src="mytest/jQuery/jquery-1.8.3.js"></script>
+<script type="text/javascript">
+$(function (){ 
+  var x = 10; 
+  var y = 10; 
+  $("a.tooltip").mouseover(function(e){
+    this.myTitle = this.title; 
+    this.title = ""; 
+    var tooltip = "<div id='tooltip'>" + this.myTitle + "</div>"; 
+    $("body").append(tooltip); 
+    $("#tooltip").css({ 
+      "top": (e.pageY + y) + "px", 
+      "left": (e.pageX + x) + "px" 
+    }).show("fast"); 
+  }).mouseout(function (){
+    this.title = this.myTitle; 
+    $("#tooltip").remove(); 
+  }).mousemove(function (e){
+    $("#tooltip").css({ 
+      "top": (e.pageY + y) + "px", 
+      "left": (e.pageX + x) + "px" 
+    }); 
+  }); 
+}) 
+</script> 
 </head>
 <body>
-<p href="#" onmouseover="display()" onmouseout="disappear()">
-滑鼠放到這兒！
-</p>
-<div id="box" onmouseover="display()" onmouseout="disappear()">
-效果不錯吧？這裡面你可以設定一張圖片，也可以是一段文字，
-而且原始碼很簡單哦！
-</div>
+<ul> 
+  <li><a href="#" class="tooltip" title="螞蟻部落歡迎您">螞蟻部落一</a></li> 
+  <li><a href="#" class="tooltip" title="分享和互助是最大的胸懷">螞蟻部落二</a></li> 
+</ul> 
 </body>
 </html>

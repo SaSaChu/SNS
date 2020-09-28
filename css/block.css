@@ -20,6 +20,8 @@
 .all_box.w_cent, .team_pic_box.w_cent, .team_type_box.w_cent { text-align: center; }
 .all_box.box50, .team_pic_box.box50, .team_type_box.box50 { display: inline-block; width: 50%; }
 @media screen and (max-width: 449px) and (min-width: 0) { .all_box.box50, .team_pic_box.box50, .team_type_box.box50 { width: 100%; } }
+.all_box.box60, .team_pic_box.box60, .team_type_box.box60 { display: inline-block; width: 60%; }
+@media screen and (max-width: 449px) and (min-width: 0) { .all_box.box60, .team_pic_box.box60, .team_type_box.box60 { width: 100%; } }
 @media screen and (max-width: 449px) and (min-width: 0) { .all_box.m_cent, .team_pic_box.m_cent, .team_type_box.m_cent { text-align: center; }
   .all_box .team_pic_box, .team_pic_box .team_pic_box, .team_type_box .team_pic_box { width: 30%; float: left; } }
 @media screen and (max-width: 449px) and (min-width: 0) and (max-width: 449px) and (min-width: 0) { .all_box .team_pic_box, .team_pic_box .team_pic_box, .team_type_box .team_pic_box { width: 20%; } }
@@ -107,3 +109,8 @@
 @media screen and (max-width: 449px) and (min-width: 0) { .m_padSID20 { padding: 0 20px; } }
 
 .img_op { opacity: .3; }
+
+.prompt { position: relative; display: inline-block; width: 40px; height: 40px; border: 1px solid rgba(255, 0, 0, 0.3); }
+.prompt:hover { cursor: pointer; }
+.prompt:hover:before { content: attr(data-showtip); background-color: #2f31e5; color: white; padding: 0 5px; position: absolute; font-size: .9rem; right: 60px; top: 16%; margin-right: -8px; white-space: pre; line-height: 25px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
+.prompt:hover:after { display: inline-block; content: ''; position: absolute; right: 48px; top: 36%; width: 0; height: 0; border-left: 5px solid #2f31e5; border-top: 5px solid transparent; border-bottom: 5px solid transparent; }

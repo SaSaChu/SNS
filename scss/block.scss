@@ -94,6 +94,15 @@ $orange: rgba(255, 152, 0, 1.00); // 輔助色・橘色
     }
   }
 
+  &.box60 {
+    display: inline-block;
+    width: 60%;
+
+    @include range-width(0, 450px) {
+      width: 100%;
+    }
+  }
+
   @include range-width(0, 450px) {
 
     &.m_cent {
@@ -323,13 +332,52 @@ $orange: rgba(255, 152, 0, 1.00); // 輔助色・橘色
   }
 }
 
-
-
 .img_op {
   opacity: .3;
 }
 
 
+// 提示框
+.prompt {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+
+  border: 1px solid rgba(255, 0, 0, .3);
+
+  &:hover {
+    cursor: pointer;
+
+    &:before {
+      content: attr(data-showtip);
+      background-color: $bright_blue;
+      color: white;
+      padding: 0 5px;
+      position: absolute;
+      font-size: .9rem;
+      right: 60px;
+      top: 16%;
+      margin-right: -8px;
+      white-space: pre;
+      line-height: 25px;
+      @include border-radius(5px);
+    }
+
+    &:after {
+      display: inline-block;
+      content: '';
+      position: absolute;
+      right: 48px;
+      top: 36%;
+      width: 0;
+      height: 0;
+      border-left: 5px solid #2f31e5;
+      border-top: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+    }
+  }
+}
 
 
 
