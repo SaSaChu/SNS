@@ -3,7 +3,7 @@
 $(function() {
   
     // 手機選單
-  $('.m_Hamburg').click(function() {
+  $('.m_Hamburg, .log_m_Hamburg').click(function() {
     $('.menu_boxs').addClass ('hovermenu');
     $('.cover').addClass('show');
     scrollLock();

@@ -9,7 +9,15 @@ html {
 
 // 顏色
 $deep_blue: rgba(9, 32, 88, 1); // 主色・深藍
+$deep_blue2: rgba(9, 32, 88, .8); // 主色・深藍(透明)
+$deep_blue3: rgba(133, 142, 166, 1.00); // 主色・深藍(透明1/2)
 $bright_blue: rgba(47, 49, 229, 1); // 主色・亮藍
+$gray: rgba(165, 165, 165, 1.00); // 主色・輔助灰
+$gray2: rgba(165, 165, 165, .5); // 主色・輔助灰(透明)
+$green: rgba(109, 181, 58, 1.00); // 輔助色・綠色
+$gray_blue: rgba(131, 143, 171, 1.00); // 輔助色・灰藍色
+$light_blue: rgba(0, 149, 217, 1.00); // 輔助色・淺藍色
+$orange: rgba(255, 152, 0, 1.00); // 輔助色・橘色
 
 
 
@@ -110,6 +118,144 @@ $bright_blue: rgba(47, 49, 229, 1); // 主色・亮藍
 
         @include range-width(0, 450px) {
           text-align: center;
+        }
+
+        .log_box {
+          display: inline-block;
+          // float: right;
+
+          @include range-width(0, 450px) {
+            display: none;
+          }
+
+          > span {
+            position: relative;
+            // float: right;
+
+            div {display: none;}
+
+            &:hover {
+              > div {
+                display: block;
+                width: 140px;
+                background-color: white;
+                margin-left: -52px;
+                z-index: 888;
+                position: absolute;
+                @include border-radius(4px);
+                @include box-shadow(0 0px 4px 0 rgba(0, 35, 11, .2));
+
+                > .log_a {
+                  display: block;
+                  width: 100%;
+                  height: 50px;
+                  line-height: 50px;
+                  font-size: .9rem;
+                  float: none;
+                  text-align: left;
+                  color: $deep_blue;
+                  text-decoration: none;
+                  border-bottom: 1px solid $gray2;
+                  text-align: center;
+
+                  &:last-child {
+                    border-bottom: 0;
+                  }
+
+                  &:hover {
+                    color: $bright_blue;
+                  }
+
+                  @include transition(background-color .3s);        
+                }
+              }
+            }
+          }
+
+          > span, > .log_a {
+            display: inline-block;
+            cursor: pointer;
+            // float: right;
+            // padding: 0 30px;
+            height: 37px;
+            line-height: 37px;
+
+            @include transition(all .3s);
+            @include clearfix();
+            
+            color: $deep_blue;
+            font-size: 1rem;
+            font-weight: 400;
+
+            &:hover, &:active {
+              color: $bright_blue;
+              text-decoration: underline;
+            }
+
+            &:last-child {
+              &:after {
+                display: none;
+              }
+            }
+
+            &:after {
+              display: inline-block;
+              content: '・';
+              margin: 0 10px;
+              line-height: 37px;
+            }
+
+            &.web_ac {
+              color: $bright_blue;
+              text-decoration: underline;
+            }
+
+            &.web_no {
+              color: $gray;
+              pointer-events: none;
+              cursor: default;
+
+              &:after {
+                display: inline-block;
+                content: '・';
+                color: $deep_blue;
+              }
+            }
+
+            &.link_login2 {
+              padding: 0 14px;
+              background-color: white;
+              @include border-radius(30px);
+              color: $bright_blue;
+              font-size: 1rem;
+              font-weight: 500;
+              line-height: 37px;
+
+              &:hover {
+                background-color: $bright_blue;
+                color: white;
+                text-decoration: none;
+              }
+
+              &:after {
+                display: none;
+              }
+            }
+          }
+        }
+
+        .log_m_Hamburg {
+          display: none;
+
+          @include range-width(0, 450px) {
+            display: inline-block;
+            float: right;
+            width: 30px;
+            height: 30px;
+            color: $deep_blue;
+            font-size: 1.6rem;
+            margin-top: 6px;
+          }
         }
 
         .ir_img {
