@@ -82,6 +82,27 @@ $orange: rgba(255, 152, 0, 1.00); // 輔助色・橘色
   display: inline-block;
   width: 100%;
 
+  &.bottom_box {
+    width: 33%;
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    float: left;
+
+    @include range-width(0, 450px) {
+      display: none;
+    }
+  }
+
+  &.bottom_box2 {
+    display: none;
+
+    @include range-width(0, 450px) {
+      display: inline-block;
+      width: 100%;
+    }
+  }
+
   &.w_cent {text-align: center;}
   &.m_cent {}
 
@@ -271,7 +292,11 @@ $orange: rgba(255, 152, 0, 1.00); // 輔助色・橘色
 }
 
 .pad815 {
-  padding: 8px 15px !important;
+  padding: 0 15px !important;
+
+  @include range-width(0, 450px) {
+    padding: 7px 15px !important;
+  }
 }
 
 .padD15 {

@@ -62,6 +62,8 @@ p {
 
 .icon-chain {
    transform: rotateY(180deg);
+   line-height: 43px !important;
+   padding-left: 10px;
 }
 
 .footer_type {
@@ -88,11 +90,11 @@ p {
   display: inline-block;
   width: 100%;
   color: $deep_blue;
-  font-size: 1rem;
+  font-size: .9rem;
   font-weight: 400;
 
   @include range-width(0, 450px) {
-    font-size: 1rem;
+    font-size: .9rem;
   }
 
   &.team_gray {
@@ -104,7 +106,7 @@ p {
   display: inline-block;
   // width: 100%;
   color: $deep_blue;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 700;
   padding-bottom: 5px;
 
@@ -119,7 +121,7 @@ p {
 
 .bright_type13 {
   color: $bright_blue;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -128,7 +130,7 @@ p {
 }
 
 .type_data_title {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: $bright_blue;
 
@@ -139,6 +141,14 @@ p {
   &.type_data_thin {
     font-weight: 400;
   }
+}
+
+.type_13 {
+  display: inline-block;
+  width: 100%;
+  color: $gray;
+  font-size: .9rem;
+  padding-bottom: 10px;
 }
 
 .big_blue_type {
@@ -164,21 +174,24 @@ input {
 .toEnter {
   display: inline-block;
   width: 100%;
-  padding: 8px 15px;
+  padding: 0 15px;
   @include border-radius(30px);
 
-  font-size: 1.2rem;
+  line-height: 40px;
+
+  font-size: .9rem;
   color: $deep_blue;
   font-weight: 700;
   text-align: left;
 
   overflow: hidden;
 
+
   &.networklink {
-    font-size: 1rem;
-    padding: 12px 0 0 10px;
+    font-size: .9rem;
+    padding-left: 20px;
     width: calc(100% - 50px);
-    // line-height: 30px;
+    // line-height: 42px;
 
     @include range-width(0, 450px) {
       width: calc(100% - 45px);
@@ -193,15 +206,27 @@ input {
 .inEnter {
   display: inline-block;
   width: calc(100% - 50px * 2);
-  padding: 8px 15px 8px 0;
+  // padding: 8px 15px 8px 0;
   border: 0;
 
-  font-size: 1.2rem;
+  // display: flex;
+  line-height: 40px;
+
+  font-size: .9rem;
   color: $deep_blue;
   font-weight: 700;
   text-align: left;
 
   overflow: hidden;
+
+  &.in_LH42 {
+    // font-size: .9rem;
+    line-height: 42px !important;
+
+    @include range-width(0, 450px) {
+      line-height: 28px !important;
+    }
+  }
 
   &.in_all {
     width: calc(100% - 70px);
@@ -210,7 +235,7 @@ input {
   }
 
   @include range-width(0, 450px) {
-    font-size: 1rem;
+    font-size: .9rem;
     line-height: 25px;
     padding: 7px 0;
   }
@@ -219,6 +244,12 @@ input {
 .addEnter {
   color: $gray;
   font-weight: 400;
+  // line-height: 40px;
+
+  @include range-width(0, 450px) {
+    // line-height: 24px;
+    // padding: 7px 10px;
+  }
 
   &.enter_hid {
     width: calc(100% - 8px);
@@ -242,7 +273,7 @@ input {
   @include border-radius(10px);
   border: 1px solid $deep_blue;
   padding: 10px 15px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: 'Roboto';
   color: $deep_blue;
   outline: 0;
@@ -298,10 +329,10 @@ input {
 }
 .social_box {
   display: inline-block;
-  width: 40px;
-  height: 40px;
-  @include border-radius(20px);
-  line-height: 40px;
+  width: 42px;
+  height: 42px;
+  @include border-radius(25px);
+  line-height: 42px;
   text-align: center;
   background-color: $deep_blue;
   border: 1px solid $deep_blue;
@@ -331,6 +362,13 @@ input {
   }
 }
 
+.icon-Address-Card---FontAwesomeCopy-3 {
+  font-size: 1rem !important;
+  padding-right: 10px;
+}
+.icon-save {
+  font-size: 1rem !important;
+}
 
 
 

@@ -11,22 +11,22 @@ a { display: inline-block; cursor: pointer; text-decoration: none; -moz-transiti
 @media screen and (max-width: 449px) and (min-width: 0) { .m_link_home { display: inline-block; float: left; width: 100%; max-width: 188px; cursor: pointer; text-decoration: none; border: 0; }
   .m_link_home img { display: inline-block; width: 100%; max-width: 188px; margin-top: 8px; } }
 
-.link_CreatAcc { font-size: 1.2rem; font-weight: 400; color: #0095d9; margin-top: -2px; }
+.link_CreatAcc { font-size: 1rem; font-weight: 400; color: #0095d9; margin-top: -2px; }
 
-.link_little { font-size: 1rem; font-weight: 400; color: #0095d9; }
+.link_little { font-size: .9rem; font-weight: 400; color: #0095d9; }
 @media screen and (max-width: 449px) and (min-width: 0) { .link_little { font-size: .9rem; } }
 
-.link_login { padding: 8px 14px; background-color: white; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; color: #2f31e5; font-size: 1rem; font-weight: 500; }
+.link_login { padding: 8px 14px; background-color: white; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; color: #2f31e5; font-size: .9rem; font-weight: 500; }
 .link_login:hover { background-color: #2f31e5; color: white; }
 
-.link_blueLine, .link_brightBlue, .link_gray, .link_gray2, .link_deepBlue, .link_brightBlue2 { padding: 12px 20px; font-size: 1rem; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; }
-.link_blueLine.have_mark:after, .link_brightBlue.have_mark:after, .link_gray.have_mark:after, .link_gray2.have_mark:after, .link_deepBlue.have_mark:after, .link_brightBlue2.have_mark:after { display: inline-block; content: '\e906'; font-family: 'icon'; font-size: 1rem; margin-left: 3px; }
+.link_blueLine, .link_brightBlue, .link_gray, .link_gray2, .link_deepBlue, .link_brightBlue2 { padding: 12px 20px; font-size: .9rem; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; }
+.link_blueLine.have_mark:after, .link_brightBlue.have_mark:after, .link_gray.have_mark:after, .link_gray2.have_mark:after, .link_deepBlue.have_mark:after, .link_brightBlue2.have_mark:after { display: inline-block; content: '\e906'; font-family: 'icon'; font-size: .9rem; margin-left: 3px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .link_blueLine, .link_brightBlue, .link_gray, .link_gray2, .link_deepBlue, .link_brightBlue2 { width: 90%; text-align: center; padding: 15px 16px; } }
 
-.link_deepBlue { padding: 12px 20px; font-size: 1rem; color: #092058; border: 1px solid #092058; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; }
+.link_deepBlue { padding: 12px 20px; font-size: .9rem; color: #092058; border: 1px solid #092058; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .link_deepBlue { width: 90%; } }
 
-.line_brightBlue { padding: 12px 20px; font-size: 1rem; color: #2f31e5; border: 1px solid #2f31e5; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; }
+.line_brightBlue { padding: 12px 20px; font-size: .9rem; color: #2f31e5; border: 1px solid #2f31e5; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .line_brightBlue { width: 90%; } }
 
 .link_blueLine { color: #2f31e5; background-color: white; border: 1px solid #2f31e5; }
@@ -43,7 +43,7 @@ a { display: inline-block; cursor: pointer; text-decoration: none; -moz-transiti
 .link_gray2 { color: white; background-color: rgba(165, 165, 165, 0.5); -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
 .link_gray2:hover { background-color: #092058; }
 
-.web_menu { color: #092058; font-size: 1rem; font-weight: 400; line-height: 37px; }
+.web_menu { color: #092058; font-size: .9rem; font-weight: 400; line-height: 37px; }
 .web_menu.web_a { text-decoration: underline; color: #2f31e5; }
 .web_menu:hover { text-decoration: underline; color: #2f31e5; }
 .web_menu:nth-child(3) { margin-right: 25px; }
@@ -58,20 +58,20 @@ a { display: inline-block; cursor: pointer; text-decoration: none; -moz-transiti
 .footer_menu:hover { color: #2f31e5; }
 .footer_menu:last-child:after { display: none; }
 
-.team_title { display: inline-block; color: #092058; font-size: 1.4rem; font-weight: 700; padding-bottom: 10px; }
+.team_title { display: inline-block; color: #092058; font-size: 1.2rem; font-weight: 700; padding-bottom: 10px; }
 .team_title.title_link_icon:hover { color: #2f31e5; }
-.team_title.title_link_icon:before { content: '\f0c1'; font-family: 'icon'; font-size: 1.2rem; margin-right: 10px; line-height: 27px; color: #858ea6; }
+.team_title.title_link_icon:before { content: '\f0c1'; font-family: 'icon'; font-size: 1rem; margin-right: 10px; line-height: 27px; color: #858ea6; }
 
 .no_event { color: #a5a5a5; pointer-events: none; cursor: default; }
 
-.m_title_type { font-size: 1.2rem; font-weight: 700; color: #092058; float: left; }
+.m_title_type { font-size: 1rem; font-weight: 700; color: #092058; float: left; }
 
-.m_top_type { font-size: 1.2rem; font-weight: 400; color: #838fab; }
+.m_top_type { font-size: 1rem; font-weight: 400; color: #838fab; }
 
-.link_icon { width: 30px; height: 30px; background-color: transparent; border: 1px solid #2f31e5; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; color: #2f31e5; font-size: 1rem; line-height: 28px; float: right; text-align: center; margin-top: -5px; }
+.link_icon { width: 30px; height: 30px; background-color: transparent; border: 1px solid #2f31e5; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; color: #2f31e5; font-size: .9rem; line-height: 28px; float: right; text-align: center; margin-top: -5px; }
 .link_icon.link_iocn_gray { color: #a5a5a5; border: 1px solid #a5a5a5; }
-.link_icon.link_icon_save { width: auto; height: auto; padding: 0 15px; }
-.link_icon.link_icon_search { width: 40px; height: 40px; margin-top: 0; font-size: 1.4rem; line-height: 38px; }
+.link_icon.link_icon_save { width: auto; height: auto; line-height: 29px; padding: 0 15px; font-weight: 600; }
+.link_icon.link_icon_search { width: 40px; height: 40px; margin-top: 0; font-size: 1.2rem; line-height: 38px; }
 
 .no_event_icon { color: #a5a5a5; border: 1px solid #a5a5a5; pointer-events: none; cursor: default; }
 
@@ -86,10 +86,11 @@ button { display: inline-block; outline: 0; cursor: pointer; border: 0; }
 .btn_status_box.c_blue { color: rgba(9, 32, 88, 0.8); }
 .btn_status_box.c_blue_po { position: absolute; bottom: 0; right: 0; }
 
-.btn_add { width: 40px; height: 40px; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; line-height: 36px; text-align: center; background-color: transparent; border: 1px solid #2f31e5; color: #2f31e5; font-size: 1.4rem; }
+.btn_add { width: 40px; height: 40px; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; line-height: 36px; text-align: center; background-color: transparent; border: 1px solid #2f31e5; color: #2f31e5; font-size: 1.2rem; }
 
 .no_event_btn { color: #a5a5a5; border: 1px solid #a5a5a5; pointer-events: none; cursor: default; }
 
-.btn_done { display: inline-block; font-size: 1.2rem; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; background-color: #092058; color: white; padding: 8px 15px; float: right; cursor: pointer; border: 0; line-height: 28px; }
-@media screen and (max-width: 449px) and (min-width: 0) { .btn_done { font-size: 1rem; } }
+.btn_done { display: inline-block; font-size: .9rem; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; background-color: #092058; color: white; padding: 0 15px; float: right; cursor: pointer; border: 0; line-height: 35px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .btn_done { font-size: .9rem; } }
 .btn_done.btn_done_qr { padding: 0 15px; height: 30px; line-height: 30px; }
+.btn_done.btn_done_ser { height: 42px; line-height: 42px; }

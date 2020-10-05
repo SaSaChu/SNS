@@ -3,7 +3,7 @@
 
 html { height: 100%; margin: 0; padding: 0; }
 
-.i_bg { display: inline-block; width: 100%; height: 100%; *zoom: 1; position: relative; margin: 0px; padding: 0px; background-image: url("../img/w_bg.png"); background-repeat: no-repeat; background-attachment: fixed; background-position: 0 0; background-size: contain; }
+.i_bg { display: inline-block; width: 100%; height: 100%; *zoom: 1; position: relative; margin: 0px; padding: 0px; background-image: url("../img/w_bg.png"); background-repeat: no-repeat; background-attachment: fixed; background-position: -70px 0; background-size: contain; }
 .i_bg:after { display: table; content: ""; line-height: 0; clear: both; }
 @media screen and (max-width: 1399px) and (min-width: 450px) { .i_bg { background-size: 60% 100%; } }
 @media screen and (max-width: 449px) and (min-width: 0) { .i_bg { background-size: 101% 58%; background-position: 0 bottom; background-image: url("../img/m_bg.png"); background-repeat: no-repeat; background-attachment: fixed; } }
@@ -29,7 +29,7 @@ html { height: 100%; margin: 0; padding: 0; }
 .i_bg .i_box_r .i_cent_type .ir_boxs .log_box > span:hover > div > .log_a { display: block; width: 100%; height: 50px; line-height: 50px; font-size: .9rem; float: none; text-align: left; color: #092058; text-decoration: none; border-bottom: 1px solid rgba(165, 165, 165, 0.5); text-align: center; -moz-transition: background-color 0.3s; -o-transition: background-color 0.3s; -webkit-transition: background-color 0.3s; transition: background-color 0.3s; }
 .i_bg .i_box_r .i_cent_type .ir_boxs .log_box > span:hover > div > .log_a:last-child { border-bottom: 0; }
 .i_bg .i_box_r .i_cent_type .ir_boxs .log_box > span:hover > div > .log_a:hover { color: #2f31e5; }
-.i_bg .i_box_r .i_cent_type .ir_boxs .log_box > span, .i_bg .i_box_r .i_cent_type .ir_boxs .log_box > .log_a { display: inline-block; cursor: pointer; height: 37px; line-height: 37px; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; *zoom: 1; color: #092058; font-size: 1rem; font-weight: 400; }
+.i_bg .i_box_r .i_cent_type .ir_boxs .log_box > span, .i_bg .i_box_r .i_cent_type .ir_boxs .log_box > .log_a { display: inline-block; cursor: pointer; height: 37px; line-height: 37px; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; *zoom: 1; color: #092058; font-size: .9rem; font-weight: 400; }
 .i_bg .i_box_r .i_cent_type .ir_boxs .log_box > span:after, .i_bg .i_box_r .i_cent_type .ir_boxs .log_box > .log_a:after { display: table; content: ""; line-height: 0; clear: both; }
 .i_bg .i_box_r .i_cent_type .ir_boxs .log_box > span:hover, .i_bg .i_box_r .i_cent_type .ir_boxs .log_box > span:active, .i_bg .i_box_r .i_cent_type .ir_boxs .log_box > .log_a:hover, .i_bg .i_box_r .i_cent_type .ir_boxs .log_box > .log_a:active { color: #2f31e5; text-decoration: underline; }
 .i_bg .i_box_r .i_cent_type .ir_boxs .log_box > span:last-child:after, .i_bg .i_box_r .i_cent_type .ir_boxs .log_box > .log_a:last-child:after { display: none; }
@@ -37,7 +37,7 @@ html { height: 100%; margin: 0; padding: 0; }
 .i_bg .i_box_r .i_cent_type .ir_boxs .log_box > span.web_ac, .i_bg .i_box_r .i_cent_type .ir_boxs .log_box > .log_a.web_ac { color: #2f31e5; text-decoration: underline; }
 .i_bg .i_box_r .i_cent_type .ir_boxs .log_box > span.web_no, .i_bg .i_box_r .i_cent_type .ir_boxs .log_box > .log_a.web_no { color: #a5a5a5; pointer-events: none; cursor: default; }
 .i_bg .i_box_r .i_cent_type .ir_boxs .log_box > span.web_no:after, .i_bg .i_box_r .i_cent_type .ir_boxs .log_box > .log_a.web_no:after { display: inline-block; content: '・'; color: #092058; }
-.i_bg .i_box_r .i_cent_type .ir_boxs .log_box > span.link_login2, .i_bg .i_box_r .i_cent_type .ir_boxs .log_box > .log_a.link_login2 { padding: 0 14px; background-color: white; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; color: #2f31e5; font-size: 1rem; font-weight: 500; line-height: 37px; }
+.i_bg .i_box_r .i_cent_type .ir_boxs .log_box > span.link_login2, .i_bg .i_box_r .i_cent_type .ir_boxs .log_box > .log_a.link_login2 { padding: 0 14px; background-color: white; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; color: #2f31e5; font-size: .9rem; font-weight: 500; line-height: 37px; }
 .i_bg .i_box_r .i_cent_type .ir_boxs .log_box > span.link_login2:hover, .i_bg .i_box_r .i_cent_type .ir_boxs .log_box > .log_a.link_login2:hover { background-color: #2f31e5; color: white; text-decoration: none; }
 .i_bg .i_box_r .i_cent_type .ir_boxs .log_box > span.link_login2:after, .i_bg .i_box_r .i_cent_type .ir_boxs .log_box > .log_a.link_login2:after { display: none; }
 .i_bg .i_box_r .i_cent_type .ir_boxs .log_m_Hamburg { display: none; }

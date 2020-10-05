@@ -64,14 +64,14 @@ a {
 }
 
 .link_CreatAcc {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 400;
   color: $light_blue;
   margin-top: -2px;
 }
 
 .link_little {
-  font-size: 1rem;
+  font-size: .9rem;
   font-weight: 400;
   color: $light_blue;
 
@@ -85,7 +85,7 @@ a {
   background-color: white;
   @include border-radius(30px);
   color: $bright_blue;
-  font-size: 1rem;
+  font-size: .9rem;
   font-weight: 500;
 
   &:hover {
@@ -96,7 +96,7 @@ a {
 
 .link_blueLine, .link_brightBlue, .link_gray, .link_gray2, .link_deepBlue, .link_brightBlue2 {
   padding: 12px 20px;
-  font-size: 1rem;
+  font-size: .9rem;
   @include border-radius(30px);
 
   &.have_mark {
@@ -104,7 +104,7 @@ a {
       display: inline-block;
       content: '\e906';
       font-family: 'icon';
-      font-size: 1rem;
+      font-size: .9rem;
       margin-left: 3px;
     }
   }
@@ -118,7 +118,7 @@ a {
 
 .link_deepBlue {
   padding: 12px 20px;
-  font-size: 1rem;
+  font-size: .9rem;
   color: $deep_blue;
   border: 1px solid $deep_blue;
   @include border-radius(30px);
@@ -130,7 +130,7 @@ a {
 
 .line_brightBlue {
   padding: 12px 20px;
-  font-size: 1rem;
+  font-size: .9rem;
   color: $bright_blue;
   border: 1px solid $bright_blue;
   @include border-radius(30px);
@@ -194,7 +194,7 @@ a {
 
 .web_menu {
   color: $deep_blue;
-  font-size: 1rem;
+  font-size: .9rem;
   font-weight: 400;
   line-height: 37px;
 
@@ -262,7 +262,7 @@ a {
   display: inline-block;
   // width: 100%;
   color: $deep_blue;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 700;
   padding-bottom: 10px;
 
@@ -274,7 +274,7 @@ a {
     &:before {
       content: '\f0c1';
       font-family: 'icon';
-      font-size: 1.2rem;
+      font-size: 1rem;
       margin-right: 10px;
       line-height: 27px;
       color: $deep_blue3;
@@ -289,14 +289,14 @@ a {
 }
 
 .m_title_type {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 700;
   color: $deep_blue;
   float: left;
 }
 
 .m_top_type {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 400;
   color: $gray_blue;
 }
@@ -308,7 +308,7 @@ a {
   border: 1px solid $bright_blue;
   @include border-radius(20px);
   color: $bright_blue;
-  font-size: 1rem;
+  font-size: .9rem;
   line-height: 28px;
   float: right;
   text-align: center;
@@ -322,15 +322,16 @@ a {
   &.link_icon_save {
     width: auto;
     height: auto;
-    // line-height: 32px;
+    line-height: 29px;
     padding: 0 15px;
+    font-weight: 600;
   }
 
   &.link_icon_search {
     width: 40px;
     height: 40px;
     margin-top: 0;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 38px;
   }
 }
@@ -405,7 +406,7 @@ button {
   background-color: transparent;
   border: 1px solid $bright_blue;
   color: $bright_blue;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .no_event_btn {
@@ -418,24 +419,29 @@ button {
 
 .btn_done {
   display: inline-block;
-  font-size: 1.2rem;
+  font-size: .9rem;
   @include border-radius(30px);
   background-color: $deep_blue;
   color: white;
-  padding: 8px 15px;
+  padding: 0 15px;
   float: right;
   cursor: pointer;
   border: 0;
-  line-height: 28px;
+  line-height: 35px;
 
   @include range-width(0, 450px) {
-    font-size: 1rem;
+    font-size: .9rem;
   }
 
   &.btn_done_qr {
     padding: 0 15px;
     height: 30px;
     line-height: 30px;
+  }
+
+  &.btn_done_ser {
+    height: 42px;
+    line-height: 42px;
   }
 }
 

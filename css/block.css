@@ -17,6 +17,10 @@
 .box70 { display: inline-block; width: 70%; float: right; }
 
 .all_box, .team_pic_box, .team_type_box { display: inline-block; width: 100%; }
+.all_box.bottom_box, .team_pic_box.bottom_box, .team_type_box.bottom_box { width: 33%; position: absolute; left: 30px; bottom: 30px; float: left; }
+@media screen and (max-width: 449px) and (min-width: 0) { .all_box.bottom_box, .team_pic_box.bottom_box, .team_type_box.bottom_box { display: none; } }
+.all_box.bottom_box2, .team_pic_box.bottom_box2, .team_type_box.bottom_box2 { display: none; }
+@media screen and (max-width: 449px) and (min-width: 0) { .all_box.bottom_box2, .team_pic_box.bottom_box2, .team_type_box.bottom_box2 { display: inline-block; width: 100%; } }
 .all_box.w_cent, .team_pic_box.w_cent, .team_type_box.w_cent { text-align: center; }
 .all_box.box50, .team_pic_box.box50, .team_type_box.box50 { display: inline-block; width: 50%; }
 @media screen and (max-width: 449px) and (min-width: 0) { .all_box.box50, .team_pic_box.box50, .team_type_box.box50 { width: 100%; } }
@@ -83,7 +87,8 @@
 .m_padB15 { padding: 15px 0; }
 @media screen and (max-width: 449px) and (min-width: 0) { .m_padB15 { padding: 0 0 15px 0; } }
 
-.pad815 { padding: 8px 15px !important; }
+.pad815 { padding: 0 15px !important; }
+@media screen and (max-width: 449px) and (min-width: 0) { .pad815 { padding: 7px 15px !important; } }
 
 .padD15 { padding-bottom: 15px; }
 

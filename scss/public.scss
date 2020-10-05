@@ -170,7 +170,7 @@ $orange: rgba(255, 152, 0, 1.00); // 輔助色・橘色
             @include clearfix();
             
             color: $deep_blue;
-            font-size: 1rem;
+            font-size: .9rem;
             font-weight: 400;
 
             &:hover, &:active {
@@ -213,7 +213,7 @@ $orange: rgba(255, 152, 0, 1.00); // 輔助色・橘色
               background-color: white;
               @include border-radius(30px);
               color: $bright_blue;
-              font-size: 1rem;
+              font-size: .9rem;
               font-weight: 500;
               line-height: 37px;
 
@@ -260,6 +260,10 @@ $orange: rgba(255, 152, 0, 1.00); // 輔助色・橘色
           display: inline-block;
           margin-bottom: 20px; 
           padding: 20px 0;
+        }
+
+        &.cent_bottom_box {
+          position: relative;
         }
 
         // 手機才會出現
@@ -336,7 +340,7 @@ $orange: rgba(255, 152, 0, 1.00); // 輔助色・橘色
     padding: 20px 20px;
     border-top:1px solid $gray2;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: $deep_blue;
     text-decoration: none;
     @include transition(all .3s);
@@ -434,11 +438,12 @@ $orange: rgba(255, 152, 0, 1.00); // 輔助色・橘色
     }
     .lightbox_done {
       display: inline-block;
-      font-size: 1.2rem;
+      font-size: .9rem;
       @include border-radius(20px);
       background-color: $deep_blue;
       color: white;
-      padding: 8px 15px;
+      padding: 0 15px;
+      line-height: 35px;
       float: right;
       cursor: pointer;
 
@@ -467,8 +472,8 @@ $orange: rgba(255, 152, 0, 1.00); // 輔助色・橘色
 
       input[type="checkbox"]{
         display: inline-block;
-        width: 100px;
-        height: 100px;
+        width: 90px;
+        height: 90px;
         @include border-radius(50px);
         outline: 0;
         border: 0;
@@ -480,9 +485,9 @@ $orange: rgba(255, 152, 0, 1.00); // 輔助色・橘色
         background: $deep_blue3;
 
         color: white;
-        font-size: 3rem;
+        font-size: 2.4rem;
         text-align: center;
-        line-height: 90px;
+        line-height: 80px;
 
         @include range-width(0, 450px) {
           width: 80px;
