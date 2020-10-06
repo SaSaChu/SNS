@@ -280,6 +280,10 @@ a {
       color: $deep_blue3;
     }
   }
+
+  &.no_pb10 {
+    padding-bottom: 0;
+  }
 }
 
 .no_event {

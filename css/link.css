@@ -61,6 +61,7 @@ a { display: inline-block; cursor: pointer; text-decoration: none; -moz-transiti
 .team_title { display: inline-block; color: #092058; font-size: 1.2rem; font-weight: 700; padding-bottom: 10px; }
 .team_title.title_link_icon:hover { color: #2f31e5; }
 .team_title.title_link_icon:before { content: '\f0c1'; font-family: 'icon'; font-size: 1rem; margin-right: 10px; line-height: 27px; color: #858ea6; }
+.team_title.no_pb10 { padding-bottom: 0; }
 
 .no_event { color: #a5a5a5; pointer-events: none; cursor: default; }
 

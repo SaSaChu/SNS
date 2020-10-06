@@ -69,11 +69,13 @@ input { outline: 0; background-color: transparent; }
 .input_box { display: inline-block; width: 100%; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; margin-bottom: 18px; *zoom: 1; position: relative; }
 .input_box:after { display: table; content: ""; line-height: 0; clear: both; }
 .input_box.input_box_top15 { margin-top: 15px; margin-bottom: 5px; }
+.input_box.input_box_TD85 { margin-top: 8px; margin-bottom: 5px; }
 .input_box.input_search { width: calc(100% - 50px); text-align: left; }
 @media screen and (max-width: 449px) and (min-width: 0) { .input_box.input_search { float: left; } }
 .input_box.input_search90 { width: calc(100% - 90px); text-align: left; }
 @media screen and (max-width: 449px) and (min-width: 0) { .input_box.input_search90 { float: left; } }
 .input_box .tip_box { display: inline-block; position: absolute; top: 0; left: 0; width: 40px; height: 40px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .input_box .tip_box { display: none; } }
 
 .social_box { display: inline-block; width: 42px; height: 42px; -moz-border-radius: 25px; -webkit-border-radius: 25px; border-radius: 25px; line-height: 42px; text-align: center; background-color: #092058; border: 1px solid #092058; margin-right: 9px; color: white; font-size: 1.2rem; }
 .social_box.social_box2 { background-color: #2f31e5; border: 1px solid #2f31e5; }

@@ -300,6 +300,11 @@ input {
     margin-bottom: 5px;
   }
 
+  &.input_box_TD85 {
+    margin-top: 8px;
+    margin-bottom: 5px;
+  }
+
   &.input_search {
     width: calc(100% - 50px);
     text-align: left;
@@ -325,6 +330,10 @@ input {
     left: 0;
     width: 40px;
     height: 40px;
+
+    @include range-width(0, 450px) {
+      display: none;
+    }
   }
 }
 .social_box {
