@@ -133,6 +133,11 @@ p {
   font-size: 1.2rem;
   font-weight: 700;
   color: $bright_blue;
+  line-height: 35px;
+
+  @include range-width(0, 450px) {
+    line-height: 28px;
+  }
 
   &.type_data_gray {
     color: $gray2;
@@ -205,6 +210,7 @@ input {
 
 .inEnter {
   display: inline-block;
+  // width: calc(100% - 50px);
   width: calc(100% - 50px * 2);
   // padding: 8px 15px 8px 0;
   border: 0;
@@ -216,7 +222,7 @@ input {
   color: $deep_blue;
   font-weight: 700;
   text-align: left;
-
+  padding: 1px 2px 1px 50px;
   overflow: hidden;
 
   &.in_LH42 {
@@ -230,14 +236,20 @@ input {
 
   &.in_all {
     width: calc(100% - 70px);
-    padding: 0;
+    padding: 1px 2px 1px 50px;
     line-height: 40px;
+
+    @include range-width(0, 450px) {
+      width: calc(100% - 27px);
+      line-height: 39px;
+    }
   }
 
   @include range-width(0, 450px) {
     font-size: .9rem;
     line-height: 25px;
-    padding: 7px 0;
+    padding: 7px 0 7px 50px;
+    width: calc(100% - 27px * 2);
   }
 }
 
@@ -330,6 +342,7 @@ input {
     left: 0;
     width: 40px;
     height: 40px;
+    z-index: 999;
 
     @include range-width(0, 450px) {
       display: none;
@@ -338,17 +351,30 @@ input {
 }
 .social_box {
   display: inline-block;
-  width: 42px;
-  height: 42px;
+  width: 44px;
+  height: 44px;
   @include border-radius(25px);
-  line-height: 42px;
+  line-height: 40px;
   text-align: center;
   background-color: $deep_blue;
   border: 1px solid $deep_blue;
   margin-right: 9px;
+  margin-top: -1px;
+  margin-left: -1px;
   
   color: white;
   font-size: 1.2rem;
+
+  z-index: 888;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  @include range-width(0, 450px) {
+    width: 42px;
+    height: 42px;
+    line-height: 39px;
+  }
 
   &.social_box2 {
     background-color: $bright_blue;
@@ -364,6 +390,13 @@ input {
     background-color: transparent;
     border: 0;
     color: $bright_blue;
+    line-height: 45px;
+
+    @include range-width(0, 450px) {
+      width: 42px;
+      height: 42px;
+      line-height: 39px;
+    }
   }
 
   &.team_box {

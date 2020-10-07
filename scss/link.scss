@@ -265,6 +265,11 @@ a {
   font-size: 1.2rem;
   font-weight: 700;
   padding-bottom: 10px;
+  line-height: 35px;
+
+  @include range-width(0, 450px) {
+    line-height: 28px;
+  }
 
   &.title_link_icon {
     &:hover {
@@ -306,14 +311,14 @@ a {
 }
 
 .link_icon {
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   background-color: transparent;
   border: 1px solid $bright_blue;
   @include border-radius(20px);
   color: $bright_blue;
-  font-size: .9rem;
-  line-height: 28px;
+  font-size: 1rem;
+  line-height: 32px;
   float: right;
   text-align: center;
   margin-top: -5px;
@@ -361,7 +366,7 @@ button {
   height: 40px;
   border: 0;
   @include border-radius(20px);
-  line-height: 40px;
+  line-height: 36px;
   text-align: center;
   background-color: transparent;
   font-size: 1.2rem;

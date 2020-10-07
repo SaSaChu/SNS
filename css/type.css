@@ -36,7 +36,8 @@ p { display: inline-block; padding: 0; margin: 0; }
 
 .type_uppercase { text-transform: uppercase; }
 
-.type_data_title { font-size: 1.2rem; font-weight: 700; color: #2f31e5; }
+.type_data_title { font-size: 1.2rem; font-weight: 700; color: #2f31e5; line-height: 35px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .type_data_title { line-height: 28px; } }
 .type_data_title.type_data_gray { color: rgba(165, 165, 165, 0.5); }
 .type_data_title.type_data_thin { font-weight: 400; }
 
@@ -53,11 +54,12 @@ input { outline: 0; background-color: transparent; }
 @media screen and (max-width: 449px) and (min-width: 0) { .toEnter.networklink { width: calc(100% - 45px); } }
 .toEnter.on_net01 { border: 0; }
 
-.inEnter { display: inline-block; width: calc(100% - 50px * 2); border: 0; line-height: 40px; font-size: .9rem; color: #092058; font-weight: 700; text-align: left; overflow: hidden; }
+.inEnter { display: inline-block; width: calc(100% - 50px * 2); border: 0; line-height: 40px; font-size: .9rem; color: #092058; font-weight: 700; text-align: left; padding: 1px 2px 1px 50px; overflow: hidden; }
 .inEnter.in_LH42 { line-height: 42px !important; }
 @media screen and (max-width: 449px) and (min-width: 0) { .inEnter.in_LH42 { line-height: 28px !important; } }
-.inEnter.in_all { width: calc(100% - 70px); padding: 0; line-height: 40px; }
-@media screen and (max-width: 449px) and (min-width: 0) { .inEnter { font-size: .9rem; line-height: 25px; padding: 7px 0; } }
+.inEnter.in_all { width: calc(100% - 70px); padding: 1px 2px 1px 50px; line-height: 40px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .inEnter.in_all { width: calc(100% - 27px); line-height: 39px; } }
+@media screen and (max-width: 449px) and (min-width: 0) { .inEnter { font-size: .9rem; line-height: 25px; padding: 7px 0 7px 50px; width: calc(100% - 27px * 2); } }
 
 .addEnter { color: #a5a5a5; font-weight: 400; }
 .addEnter.enter_hid { width: calc(100% - 8px); display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; overflow: hidden; text-overflow: ellipsis; }
@@ -74,13 +76,15 @@ input { outline: 0; background-color: transparent; }
 @media screen and (max-width: 449px) and (min-width: 0) { .input_box.input_search { float: left; } }
 .input_box.input_search90 { width: calc(100% - 90px); text-align: left; }
 @media screen and (max-width: 449px) and (min-width: 0) { .input_box.input_search90 { float: left; } }
-.input_box .tip_box { display: inline-block; position: absolute; top: 0; left: 0; width: 40px; height: 40px; }
+.input_box .tip_box { display: inline-block; position: absolute; top: 0; left: 0; width: 40px; height: 40px; z-index: 999; }
 @media screen and (max-width: 449px) and (min-width: 0) { .input_box .tip_box { display: none; } }
 
-.social_box { display: inline-block; width: 42px; height: 42px; -moz-border-radius: 25px; -webkit-border-radius: 25px; border-radius: 25px; line-height: 42px; text-align: center; background-color: #092058; border: 1px solid #092058; margin-right: 9px; color: white; font-size: 1.2rem; }
+.social_box { display: inline-block; width: 44px; height: 44px; -moz-border-radius: 25px; -webkit-border-radius: 25px; border-radius: 25px; line-height: 40px; text-align: center; background-color: #092058; border: 1px solid #092058; margin-right: 9px; margin-top: -1px; margin-left: -1px; color: white; font-size: 1.2rem; z-index: 888; position: absolute; top: 0; left: 0; }
+@media screen and (max-width: 449px) and (min-width: 0) { .social_box { width: 42px; height: 42px; line-height: 39px; } }
 .social_box.social_box2 { background-color: #2f31e5; border: 1px solid #2f31e5; }
 .social_box.member_box { background-color: #858ea6; border: 1px solid #858ea6; }
-.social_box.serch_box { background-color: transparent; border: 0; color: #2f31e5; }
+.social_box.serch_box { background-color: transparent; border: 0; color: #2f31e5; line-height: 45px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .social_box.serch_box { width: 42px; height: 42px; line-height: 39px; } }
 .social_box.team_box { color: #ff9800; }
 
 .icon-Address-Card---FontAwesomeCopy-3 { font-size: 1rem !important; padding-right: 10px; }

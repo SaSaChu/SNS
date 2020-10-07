@@ -353,6 +353,12 @@ $orange: rgba(255, 152, 0, 1.00); // 輔助色・橘色
   }
 }
 
+.m_magD45 {
+  @include range-width(0, 450px) {
+    margin-bottom: 45px !important;
+  }
+}
+
 .m_padSID20 {
   padding: 0;
 
