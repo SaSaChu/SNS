@@ -398,8 +398,8 @@ $orange: rgba(255, 152, 0, 1.00); // 輔助色・橘色
   display: none;
   // display: inline-block;
   position: fixed;
-  z-index: 1;
-  padding-top: 30%;
+  z-index: 999;
+  padding-top: 20%;
   left: 0;
   top: 0;
   width: 100%;

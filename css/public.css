@@ -65,7 +65,7 @@ body.bg_color_p { /* Permalink - use to edit and share this gradient: https://co
 .menu_boxs .lastMenu_boxs { display: none; width: 100%; }
 .menu_boxs .lastMenu_boxs.showMenu { display: inline-block; }
 
-.modal { display: none; position: fixed; z-index: 1; padding-top: 30%; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(33, 33, 33, 0.8); }
+.modal { display: none; position: fixed; z-index: 999; padding-top: 20%; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(33, 33, 33, 0.8); }
 @media screen and (max-width: 449px) and (min-width: 0) { .modal { padding-left: 20px; padding-right: 20px; padding-top: 10%; } }
 .modal .modal_boxs { display: inline-block; width: 100%; max-width: 800px; background-color: white; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; padding: 20px 30px; *zoom: 1; }
 .modal .modal_boxs:after { display: table; content: ""; line-height: 0; clear: both; }

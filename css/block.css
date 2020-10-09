@@ -56,6 +56,8 @@
 
 .m_no_space { padding: 0 !important; margin: 0; }
 
+.magTop7 { margin-top: 7px; }
+
 .magTop15 { margin-top: 15px; }
 
 .magTop30 { margin-top: 15px; }
@@ -81,6 +83,8 @@
 
 .padSID35 { padding: 0 35px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .padSID35 { padding: 0; } }
+
+.padT10 { padding-top: 10px; }
 
 .padTB15 { padding: 15px 0; }
 
