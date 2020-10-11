@@ -134,19 +134,26 @@
       </div>
     </div>
 
-    <!-- 光箱・增加社群內容 -->
+    <!-- 光箱・刪除社團內容 -->
     <div id="myModal" class="modal">
       <div class='modal_boxs'>
         <p class='team_title'>Delete Network?</p>
         <p class='team_type text_left'>This action can not be undone. All contacts will be removed and network information will be deleted permanently. Are you sure you want to delete <i>[network name]</i> ?</p>
-        <label class="container">
-          <input type="checkbox" checked="checked">
-          <span class="team_type">I understand</span>
+        <label class="input_box magTop15">
+          <input class='order_left dark_check' type="checkbox" checked="checked">
+          <span class="link_little order_left" style="margin-top: -2px;">I understand</span>
         </label>
 
-          [Cancel] [Delete] (placement and color? should there be a network deleted banner? "[network name] deleted")
+        <p class='team_type text_left'>Please type <i>[network name]</i> to Confirm.</p>
 
-        <span class="lightbox_done" onclick="closeModal()">OK, Delete network</span>
+        <div class='all_box'>
+          <div class='input_box magTop7'>
+            <input class='toEnter addEnter borderGray' value="" >
+          </div>
+        </div>
+
+        <span class="link_gray order_right m_order_no" onclick="closeModal()">Delete</span>
+        <span class="link_deepBlue2 order_left" onclick="closeModal()">Cancel</span>  
       </div>
     </div>
 

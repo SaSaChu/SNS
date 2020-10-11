@@ -128,6 +128,15 @@ a {
   }
 }
 
+.link_deepBlue2 {
+  padding: 12px 20px;
+  font-size: .9rem;
+  color: white;
+  background-color: $deep_blue;
+  // border: 1px solid $deep_blue;
+  @include border-radius(30px);
+}
+
 .line_brightBlue {
   padding: 12px 20px;
   font-size: .9rem;

@@ -15,6 +15,8 @@ h3 { font-size: 1.3rem; font-weight: 300; text-shadow: 2px 2px 4px rgba(0, 0, 0,
 
 p { display: inline-block; padding: 0; margin: 0; }
 
+i { display: inline-block; font-size: .9rem; font-weight: 900; margin: 0 10px; }
+
 .text_left { text-align: left !important; }
 
 .icon-chain { transform: rotateY(180deg); line-height: 43px !important; padding-left: 10px; }
@@ -92,6 +94,8 @@ input { outline: 0; background-color: transparent; }
 .icon-Address-Card---FontAwesomeCopy-3 { font-size: 1rem !important; padding-right: 10px; }
 
 .icon-save { font-size: 1rem !important; }
+
+.dark_check { display: inline-block; margin: 0 10px 0 0; }
 
 .borderGray_TD { border-top: 1px dotted rgba(165, 165, 165, 0.5); border-bottom: 1px dotted rgba(165, 165, 165, 0.5); margin: 20px 0; }
 

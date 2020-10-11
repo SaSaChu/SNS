@@ -138,6 +138,29 @@
       </div>
     </div>
 
+    <!-- 光箱・刪除帳號 -->
+    <div id="myModal" class="modal">
+      <div class='modal_boxs'>
+        <p class='team_title'>Delete Account?</p>
+        <p class='team_type text_left'>This action can not be undone. All information will be deleted permanently. Are you sure you want to delete the account <i>[user account/email]</i>?</p>
+        <label class="input_box magTop15">
+          <input class='order_left dark_check' type="checkbox" checked="checked">
+          <span class="link_little order_left" style="margin-top: -2px;">I understand</span>
+        </label>
+
+        <p class='team_type text_left'>Please type <i>user account email</i> to Confirm.</p>
+
+        <div class='all_box'>
+          <div class='input_box magTop7'>
+            <input class='toEnter addEnter borderGray' value="" >
+          </div>
+        </div>
+
+        <span class="link_gray order_right m_order_no" onclick="closeModal()">Delete</span>
+        <span class="link_deepBlue2 order_left" onclick="closeModal()">Cancel</span>  
+      </div>
+    </div>
+
     <!-- 手機menu -->
     <div class='menu_boxs'>
       <div class='all_box m_magTD30 m_padSID20'>
@@ -157,6 +180,17 @@
         <a href="index.html" class='link_brightBlue no_mark type_uppercase '>log out</a>
       </div>
     </div>
+
+    <!-- lightbox -->
+    <script>
+      function openModal() {
+        document.getElementById("myModal").style.display = "block";
+      }
+
+      function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+      }
+    </script>
 
   </body>
 </html>

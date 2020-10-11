@@ -60,6 +60,13 @@ p {
   margin: 0;
 }
 
+i {
+  display: inline-block;
+  font-size: .9rem;
+  font-weight: 900;
+  margin: 0 10px;
+}
+
 .text_left {
   text-align: left !important;
 }
@@ -416,6 +423,10 @@ input {
   font-size: 1rem !important;
 }
 
+.dark_check {
+  display: inline-block;
+  margin: 0 10px 0 0;
+}
 
 
 // 線條
