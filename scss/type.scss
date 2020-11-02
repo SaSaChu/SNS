@@ -270,6 +270,7 @@ input {
 .addEnter {
   color: $gray;
   font-weight: 400;
+  margin: 0;
   // line-height: 40px;
 
   @include range-width(0, 450px) {

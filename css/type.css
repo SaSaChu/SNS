@@ -66,7 +66,7 @@ input { outline: 0; background-color: transparent; -webkit-appearance: none; /* 
 @media screen and (max-width: 449px) and (min-width: 0) { .inEnter.in_all { width: calc(100% - 27px); line-height: 39px; } }
 @media screen and (max-width: 449px) and (min-width: 0) { .inEnter { font-size: .9rem; line-height: 25px; padding: 7px 0 7px 50px; width: calc(100% - 27px * 2); } }
 
-.addEnter { color: #a5a5a5; font-weight: 400; }
+.addEnter { color: #a5a5a5; font-weight: 400; margin: 0; }
 .addEnter.enter_hid { width: calc(100% - 8px); display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; overflow: hidden; text-overflow: ellipsis; }
 .addEnter.addEnter2 { color: rgba(165, 165, 165, 0.5); pointer-events: none; cursor: default; }
 
