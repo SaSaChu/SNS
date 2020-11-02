@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *, *:after, *:before { vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
 
 h1, h2, h3 { color: white; margin: 5px 0; }
@@ -51,7 +52,7 @@ i { display: inline-block; font-size: .9rem; font-weight: 900; margin: 0 10px; }
 
 .link_code { font-size: 2.8rem; font-weight: 900; color: #858ea6; }
 
-input { outline: 0; background-color: transparent; }
+input { outline: 0; background-color: transparent; -webkit-appearance: none; /* Safari 和 Chrome，常用於iOS下移除內建樣式 */ -moz-appearance: none; /* FireFox */ appearance: none; }
 
 .toEnter { display: inline-block; width: 100%; padding: 0 15px; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; line-height: 40px; font-size: .9rem; color: #092058; font-weight: 700; text-align: left; overflow: hidden; }
 .toEnter.networklink { font-size: .9rem; padding-left: 20px; width: calc(100% - 50px); }
