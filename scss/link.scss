@@ -432,13 +432,14 @@ button {
 .btn_add {
   width: 40px;
   height: 40px;
-  @include border-radius(20px);
-  line-height: 36px;
+  // @include border-radius(20px);
+  // line-height: 36px;
   text-align: center;
   background-color: transparent;
-  border: 1px solid $bright_blue;
+  // border: 1px solid $bright_blue;
   color: $bright_blue;
-  font-size: 1.2rem;
+  font-size: 2.2rem;
+  padding: 0;
 }
 
 .no_event_btn {

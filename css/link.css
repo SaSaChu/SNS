@@ -93,7 +93,7 @@ button { display: inline-block; outline: 0; cursor: pointer; border: 0; }
 .btn_status_box.c_blue { color: rgba(9, 32, 88, 0.8); }
 .btn_status_box.c_blue_po { position: absolute; bottom: 0; right: 0; }
 
-.btn_add { width: 40px; height: 40px; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; line-height: 36px; text-align: center; background-color: transparent; border: 1px solid #2f31e5; color: #2f31e5; font-size: 1.2rem; }
+.btn_add { width: 40px; height: 40px; text-align: center; background-color: transparent; color: #2f31e5; font-size: 2.2rem; padding: 0; }
 
 .no_event_btn { color: #a5a5a5; border: 1px solid #a5a5a5; pointer-events: none; cursor: default; }
 
