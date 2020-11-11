@@ -59,7 +59,7 @@ input { outline: 0; background-color: transparent; -webkit-appearance: none; /* 
 @media screen and (max-width: 449px) and (min-width: 0) { .toEnter.networklink { width: calc(100% - 45px); } }
 .toEnter.on_net01 { border: 0; }
 
-.inEnter { display: inline-block; width: calc(100% - 50px * 2); border: 0; line-height: 40px; font-size: .9rem; color: #092058; font-weight: 700; text-align: left; padding: 1px 2px 1px 50px; overflow: hidden; }
+.inEnter { display: inline-block; width: calc(100% - 50px * 2); border: 0; line-height: 40px; font-size: .9rem; color: #092058; font-weight: 700; text-align: left; padding: 1px 2px 1px 50px; overflow: hidden; margin: 0; }
 .inEnter.in_LH42 { line-height: 42px !important; }
 @media screen and (max-width: 449px) and (min-width: 0) { .inEnter.in_LH42 { line-height: 28px !important; } }
 .inEnter.in_all { width: calc(100% - 70px); padding: 1px 2px 1px 50px; line-height: 40px; }
