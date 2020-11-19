@@ -54,8 +54,11 @@ i { display: inline-block; font-size: .9rem; font-weight: 900; margin: 0 10px; }
 
 input { outline: 0; background-color: transparent; -webkit-appearance: none; /* Safari 和 Chrome，常用於iOS下移除內建樣式 */ -moz-appearance: none; /* FireFox */ appearance: none; }
 
+input:-webkit-autofill { transition: background-color 5000s ease-in-out 0s; }
+input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active { transition: background-color 5000s ease-in-out 0s; }
+
 .toEnter { display: inline-block; width: 100%; padding: 0 15px; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; line-height: 40px; font-size: .9rem; color: #092058; font-weight: 700; text-align: left; overflow: hidden; }
-.toEnter.networklink { font-size: .9rem; padding-left: 20px; width: calc(100% - 50px); }
+.toEnter.networklink { font-size: .9rem; padding-left: 20px; width: calc(100% - 50px); overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
 @media screen and (max-width: 449px) and (min-width: 0) { .toEnter.networklink { width: calc(100% - 45px); } }
 .toEnter.on_net01 { border: 0; }
 
@@ -67,7 +70,7 @@ input { outline: 0; background-color: transparent; -webkit-appearance: none; /* 
 @media screen and (max-width: 449px) and (min-width: 0) { .inEnter { font-size: .9rem; line-height: 25px; padding: 7px 0 7px 50px; width: calc(100% - 27px * 2); } }
 
 .addEnter { color: #a5a5a5; font-weight: 400; margin: 0; }
-.addEnter.enter_hid { width: calc(100% - 8px); display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; overflow: hidden; text-overflow: ellipsis; }
+.addEnter.enter_hid { width: calc(100% - 8px); overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
 .addEnter.addEnter2 { color: rgba(165, 165, 165, 0.5); pointer-events: none; cursor: default; }
 
 .text_box { display: inline-block; width: 100%; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; border: 1px solid #092058; padding: 10px 15px; font-size: 1rem; font-family: 'Roboto'; color: #092058; outline: 0; overflow: auto; resize: none; }

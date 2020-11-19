@@ -466,7 +466,7 @@ $orange: rgba(255, 152, 0, 1.00); // 輔助色・橘色
         margin-bottom: 30px;
 
         @include range-width(0, 450px) {
-          width: calc(100% / 3);
+          width: calc(100% / 4);
         }
       }
 
@@ -490,10 +490,10 @@ $orange: rgba(255, 152, 0, 1.00); // 輔助色・橘色
         line-height: 80px;
 
         @include range-width(0, 450px) {
-          width: 80px;
-          height: 80px;
-          line-height: 70px;
-          font-size: 2.6rem;
+          width: 50px;
+          height: 50px;
+          line-height: 40px;
+          font-size: 1.8rem;
         }
 
         &:checked {

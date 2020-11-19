@@ -276,6 +276,10 @@ a {
   padding-bottom: 10px;
   line-height: 35px;
 
+  &.t-under {
+    text-decoration: underline;
+  }
+
   @include range-width(0, 450px) {
     line-height: 28px;
   }
@@ -444,7 +448,7 @@ button {
 
 .no_event_btn {
   color: $gray;
-  border: 1px solid $gray;
+  // border: 1px solid $gray;
   pointer-events: none;
   cursor: default;
 }

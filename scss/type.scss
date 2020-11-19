@@ -190,6 +190,14 @@ input {
   appearance: none;
 }
 
+input:-webkit-autofill {
+  transition: background-color 5000s ease-in-out 0s;
+
+  &:hover, &:focus, &:active {
+    transition: background-color 5000s ease-in-out 0s;
+  }
+}
+
 .toEnter {
   display: inline-block;
   width: 100%;
@@ -210,6 +218,9 @@ input {
     font-size: .9rem;
     padding-left: 20px;
     width: calc(100% - 50px);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     // line-height: 42px;
 
     @include range-width(0, 450px) {
@@ -281,10 +292,8 @@ input {
 
   &.enter_hid {
     width: calc(100% - 8px);
-    display: -webkit-box;
-    -webkit-box-orient: vertical; 
-    -webkit-line-clamp: 1;
     overflow: hidden;
+    white-space: nowrap;
     text-overflow: ellipsis;
   }
 

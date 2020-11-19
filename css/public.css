@@ -76,8 +76,8 @@ body.bg_color_p { /* Permalink - use to edit and share this gradient: https://co
 .modal .modal_boxs .modal_box { display: inline-block; width: 100%; margin-top: 30px; *zoom: 1; }
 .modal .modal_boxs .modal_box:after { display: table; content: ""; line-height: 0; clear: both; }
 .modal .modal_boxs .modal_box .check_social { display: inline-block; width: calc(100% / 6); float: left; margin-bottom: 30px; }
-@media screen and (max-width: 449px) and (min-width: 0) { .modal .modal_boxs .modal_box .check_social { width: calc(100% / 3); } }
+@media screen and (max-width: 449px) and (min-width: 0) { .modal .modal_boxs .modal_box .check_social { width: calc(100% / 4); } }
 .modal .modal_boxs .modal_box input[type="checkbox"] { display: inline-block; width: 90px; height: 90px; -moz-border-radius: 50px; -webkit-border-radius: 50px; border-radius: 50px; outline: 0; border: 0; -webkit-appearance: none; vertical-align: middle; margin-top: 0; padding: 5px 10px; background: #858ea6; color: white; font-size: 2.4rem; text-align: center; line-height: 80px; }
-@media screen and (max-width: 449px) and (min-width: 0) { .modal .modal_boxs .modal_box input[type="checkbox"] { width: 80px; height: 80px; line-height: 70px; font-size: 2.6rem; } }
+@media screen and (max-width: 449px) and (min-width: 0) { .modal .modal_boxs .modal_box input[type="checkbox"] { width: 50px; height: 50px; line-height: 40px; font-size: 1.8rem; } }
 .modal .modal_boxs .modal_box input[type="checkbox"]:checked { background: #092058; }
 .modal .modal_boxs .modal_box input[type="checkbox"]:checked:after { content: ''; top: 50%; left: 50%; position: absolute; background: transparent; border-top: none; border-right: none; }
