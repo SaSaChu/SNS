@@ -470,6 +470,10 @@ button {
     font-size: .9rem;
   }
 
+  &.btn_close_g {
+    background-color: $gray;
+  }
+
   &.btn_done_qr {
     padding: 0 15px;
     height: 30px;
@@ -482,5 +486,88 @@ button {
   }
 }
 
+.bread {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  padding: 10px 35px 0 35px;
 
+  @include range-width(0, 450px) {
+    padding: 0 20px 10px 20px;
+  }
+
+  .bread_box {
+    display: inline-block;
+
+    &:after {
+      display: inline-block;
+      content: '\e906';
+      font-family: 'icon';
+      margin-top: 2px;
+      margin-left: 2px;
+      color: $gray;
+    }
+
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+
+    .bread_link {
+      display: inline-block;
+      font-size: 13px;
+      color: $gray;
+      @include transition(all .3s);
+      text-decoration: none;
+
+      &:hover, &:active {
+        color: $deep_blue;
+      }
+    }
+  }
+}
+
+.bread2 {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  padding: 10px 32px;
+
+  @include range-width(0, 450px) {
+    padding: 10px;
+    text-align: right;
+  }
+
+  .bread_box2 {
+    display: inline-block;
+
+    &:after {
+      display: inline-block;
+      content: '\e906';
+      font-family: 'icon';
+      margin-top: 2px;
+      margin-left: 2px;
+      color: #4b4c47;
+    }
+
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+
+    .bread_link2 {
+      display: inline-block;
+      font-size: 13px;
+      color: #4b4c47;
+      @include transition(all .3s);
+      text-decoration: none;
+
+      &:hover, &:active {
+        color: $bright_blue;
+      }
+    }
+  }
+}
 

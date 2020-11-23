@@ -56,6 +56,19 @@ $gray_blue: rgba(131, 143, 171, 1.00); // 輔助色・灰藍色
 $light_blue: rgba(0, 149, 217, 1.00); // 輔助色・淺藍色
 $orange: rgba(255, 152, 0, 1.00); // 輔助色・橘色
 
+.mob-close {
+  display: inline-block  !important;
+  @include range-width(0, 450px) {
+    display: none !important;
+  }
+}
+
+.mob-open {
+  display: none  !important;
+  @include range-width(0, 450px) {
+    display: inline-block !important;
+  }
+}
 
 // 內頁
 .page_boxs {
@@ -98,7 +111,7 @@ $orange: rgba(255, 152, 0, 1.00); // 輔助色・橘色
       margin: 50px 0;
 
       @include range-width(0, 450px) {
-        margin: 15px 0 30px 0;
+        margin: 15px 0 15px 0;
       }
 
       nav {

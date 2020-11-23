@@ -100,5 +100,22 @@ button { display: inline-block; outline: 0; cursor: pointer; border: 0; }
 
 .btn_done { display: inline-block; font-size: .9rem; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; background-color: #092058; color: white; padding: 0 15px; float: right; cursor: pointer; border: 0; line-height: 35px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .btn_done { font-size: .9rem; } }
+.btn_done.btn_close_g { background-color: #a5a5a5; }
 .btn_done.btn_done_qr { padding: 0 15px; height: 30px; line-height: 30px; }
 .btn_done.btn_done_ser { height: 42px; line-height: 42px; }
+
+.bread { display: inline-block; width: 100%; text-align: left; padding: 10px 35px 0 35px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .bread { padding: 0 20px 10px 20px; } }
+.bread .bread_box { display: inline-block; }
+.bread .bread_box:after { display: inline-block; content: '\e906'; font-family: 'icon'; margin-top: 2px; margin-left: 2px; color: #a5a5a5; }
+.bread .bread_box:last-child:after { display: none; }
+.bread .bread_box .bread_link { display: inline-block; font-size: 13px; color: #a5a5a5; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; text-decoration: none; }
+.bread .bread_box .bread_link:hover, .bread .bread_box .bread_link:active { color: #092058; }
+
+.bread2 { display: inline-block; width: 100%; text-align: left; padding: 10px 32px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .bread2 { padding: 10px; text-align: right; } }
+.bread2 .bread_box2 { display: inline-block; }
+.bread2 .bread_box2:after { display: inline-block; content: '\e906'; font-family: 'icon'; margin-top: 2px; margin-left: 2px; color: #4b4c47; }
+.bread2 .bread_box2:last-child:after { display: none; }
+.bread2 .bread_box2 .bread_link2 { display: inline-block; font-size: 13px; color: #4b4c47; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; text-decoration: none; }
+.bread2 .bread_box2 .bread_link2:hover, .bread2 .bread_box2 .bread_link2:active { color: #2f31e5; }

@@ -7,6 +7,12 @@ body { position: relative; display: inline-block; width: 100%; min-height: 100vh
 body.bg_color { /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#5eb8fe+0,63d9e3+100 */ background: #5eb8fe; /* Old browsers */ background: -moz-linear-gradient(top, #5eb8fe 0%, #63d9e3 100%); /* FF3.6-15 */ background: -webkit-linear-gradient(top, #5eb8fe 0%, #63d9e3 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(to bottom, #5eb8fe 0%, #63d9e3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5eb8fe', endColorstr='#63d9e3',GradientType=0 ); /* IE6-9 */ }
 body.bg_color_p { /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#5eb8fe+0,63d9e3+100 */ background: #c5e3f8; /* Old browsers */ background: -moz-linear-gradient(top, rgba(94, 184, 254, 0.5) 0%, rgba(99, 217, 227, 0.5) 100%); /* FF3.6-15 */ background: -webkit-linear-gradient(top, rgba(94, 184, 254, 0.5) 0%, rgba(99, 217, 227, 0.5) 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(to bottom, rgba(94, 184, 254, 0.5) 0%, rgba(99, 217, 227, 0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5e3f8', endColorstr='#c7ebf2',GradientType=0 ); /* IE6-9 */ }
 
+.mob-close { display: inline-block  !important; }
+@media screen and (max-width: 449px) and (min-width: 0) { .mob-close { display: none !important; } }
+
+.mob-open { display: none  !important; }
+@media screen and (max-width: 449px) and (min-width: 0) { .mob-open { display: inline-block !important; } }
+
 .page_boxs { display: inline-block; width: 100%; min-height: 100vh; max-width: 1100px; margin: 0 auto; background: url("../img/Oval01.png") left 40% no-repeat, url("../img/Oval02.png") right 50% no-repeat, url("../img/Oval03.png") 3% 110% no-repeat; }
 @media screen and (max-width: 449px) and (min-width: 0) { .page_boxs { background: url("../img/Oval01@2x.png") left 15% no-repeat, url("../img/Oval02@2x.png") right 35% no-repeat, url("../img/Oval03@2x.png") 1% 83% no-repeat; background-size: 265px 265px, 177px 177px, 88px 88px; } }
 .page_boxs .page_box { display: inline-block; width: 100%; max-width: 990px; }
@@ -14,7 +20,7 @@ body.bg_color_p { /* Permalink - use to edit and share this gradient: https://co
 .page_boxs .page_box header, .page_boxs .page_box main, .page_boxs .page_box footer { display: inline-block; width: 100%; }
 .page_boxs .page_box header { *zoom: 1; margin: 50px 0; }
 .page_boxs .page_box header:after { display: table; content: ""; line-height: 0; clear: both; }
-@media screen and (max-width: 449px) and (min-width: 0) { .page_boxs .page_box header { margin: 15px 0 30px 0; } }
+@media screen and (max-width: 449px) and (min-width: 0) { .page_boxs .page_box header { margin: 15px 0 15px 0; } }
 .page_boxs .page_box header nav { display: inline-block; float: right; }
 @media screen and (max-width: 449px) and (min-width: 0) { .page_boxs .page_box header nav { display: none; } }
 .page_boxs .page_box header nav .nav_boxs { display: inline-block; width: 100%; float: left; *zoom: 1; }
