@@ -74,10 +74,13 @@ a { display: inline-block; cursor: pointer; text-decoration: none; -moz-transiti
 .m_top_type { font-size: 1rem; font-weight: 400; color: #838fab; }
 
 .link_icon { width: 35px; height: 35px; background-color: transparent; border: 1px solid #2f31e5; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; color: #2f31e5; font-size: 1rem; line-height: 32px; float: right; text-align: center; margin-top: -5px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .link_icon { width: 40px; height: 40px; line-height: 38px; font-size: 1.2rem; } }
 .link_icon.line_admin { margin-top: 1px !important; }
 .link_icon.link_iocn_gray { color: #a5a5a5; border: 1px solid #a5a5a5; }
 .link_icon.link_icon_save { width: auto; height: auto; line-height: 29px; padding: 0 15px; font-weight: 600; }
 .link_icon.link_icon_search { width: 40px; height: 40px; margin-top: 0; font-size: 1.2rem; line-height: 38px; }
+
+.link_icon2 { width: 35px; height: 35px; background-color: transparent; border: 1px solid #2f31e5; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; color: #2f31e5; font-size: 1rem; line-height: 32px; float: right; text-align: center; margin-top: -5px; }
 
 .no_event_icon { color: #a5a5a5; border: 1px solid #a5a5a5; pointer-events: none; cursor: default; }
 
