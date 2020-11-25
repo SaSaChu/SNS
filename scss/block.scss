@@ -231,7 +231,10 @@ $orange: rgba(255, 152, 0, 1.00); // 輔助色・橘色
 }
 
 .magTop18 {
-  margin-top: 18px;
+  margin-top: 16px;
+  -webkit-appearance: auto;
+  -moz-appearance: auto;
+  appearance: auto;
 }
 
 .magD30 {

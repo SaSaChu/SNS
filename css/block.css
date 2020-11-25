@@ -62,7 +62,7 @@
 
 .magTop30 { margin-top: 15px; }
 
-.magTop18 { margin-top: 18px; }
+.magTop18 { margin-top: 16px; -webkit-appearance: auto; -moz-appearance: auto; appearance: auto; }
 
 .magD30 { margin-bottom: 30px; }
 
