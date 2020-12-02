@@ -86,7 +86,7 @@ a { display: inline-block; cursor: pointer; text-decoration: none; -moz-transiti
 
 button { display: inline-block; outline: 0; cursor: pointer; border: 0; }
 
-.btn_status_box { width: 40px; height: 40px; border: 0; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; line-height: 42px; text-align: center; background-color: transparent; font-size: 1.2rem; float: right; }
+.btn_status_box { width: 50px; height: 40px; border: 0; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; line-height: 42px; text-align: center; background-color: transparent; font-size: 1.2rem; float: right; }
 .btn_status_box.w_50 { width: 50px; line-height: 0; }
 .btn_status_box.c_blue2 { color: #092058; }
 .btn_status_box.c_green { color: #6db53a; }
@@ -116,7 +116,7 @@ button { display: inline-block; outline: 0; cursor: pointer; border: 0; }
 .bread .bread_box .bread_link:hover, .bread .bread_box .bread_link:active { color: #092058; }
 
 .bread2 { display: inline-block; width: 100%; text-align: left; padding: 10px 32px; }
-@media screen and (max-width: 449px) and (min-width: 0) { .bread2 { padding: 10px; text-align: right; } }
+@media screen and (max-width: 449px) and (min-width: 0) { .bread2 { padding: 10px; } }
 .bread2 .bread_box2 { display: inline-block; }
 .bread2 .bread_box2:after { display: inline-block; content: '\e906'; font-family: 'icon'; margin-top: 2px; margin-left: 2px; color: #4b4c47; }
 .bread2 .bread_box2:last-child:after { display: none; }

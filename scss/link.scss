@@ -400,7 +400,7 @@ button {
 }
 
 .btn_status_box {
-  width: 40px;
+  width: 50px;
   height: 40px;
   border: 0;
   @include border-radius(20px);
@@ -557,7 +557,7 @@ button {
 
   @include range-width(0, 450px) {
     padding: 10px;
-    text-align: right;
+    // text-align: right;
   }
 
   .bread_box2 {

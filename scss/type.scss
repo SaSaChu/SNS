@@ -224,7 +224,7 @@ input:-webkit-autofill {
     // line-height: 42px;
 
     @include range-width(0, 450px) {
-      width: calc(100% - 45px);
+      width: calc(100% - 50px);
     }
   }
 
@@ -250,6 +250,14 @@ input:-webkit-autofill {
   padding: 1px 2px 1px 50px;
   overflow: hidden;
   margin: 0;
+
+  &.s-bar-n {
+    line-height: 35px !important;
+
+    @include range-width(0, 450px) {
+      line-height: 20px !important;
+    }
+  }
 
   &.in_LH42 {
     // font-size: .9rem;
@@ -419,8 +427,15 @@ input:-webkit-autofill {
 
     @include range-width(0, 450px) {
       width: 42px;
-      height: 42px;
-      line-height: 39px;
+      height: 35px;
+      line-height: 35px;
+    }
+
+    &.s-btn-n {
+      line-height: 40px !important;
+      @include range-width(0, 450px) {
+        line-height: 35px !important;
+      }
     }
   }
 

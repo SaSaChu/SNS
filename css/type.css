@@ -59,10 +59,12 @@ input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofi
 
 .toEnter { display: inline-block; width: 100%; padding: 0 15px; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; line-height: 40px; font-size: .9rem; color: #092058; font-weight: 700; text-align: left; overflow: hidden; }
 .toEnter.networklink { font-size: .9rem; padding-left: 20px; width: calc(100% - 50px); overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
-@media screen and (max-width: 449px) and (min-width: 0) { .toEnter.networklink { width: calc(100% - 45px); } }
+@media screen and (max-width: 449px) and (min-width: 0) { .toEnter.networklink { width: calc(100% - 50px); } }
 .toEnter.on_net01 { border: 0; }
 
 .inEnter { display: inline-block; width: calc(100% - 50px * 2); border: 0; line-height: 40px; font-size: .9rem; color: #092058; font-weight: 700; text-align: left; padding: 1px 2px 1px 50px; overflow: hidden; margin: 0; }
+.inEnter.s-bar-n { line-height: 35px !important; }
+@media screen and (max-width: 449px) and (min-width: 0) { .inEnter.s-bar-n { line-height: 20px !important; } }
 .inEnter.in_LH42 { line-height: 42px !important; }
 @media screen and (max-width: 449px) and (min-width: 0) { .inEnter.in_LH42 { line-height: 28px !important; } }
 .inEnter.in_all { width: calc(100% - 70px); padding: 1px 2px 1px 50px; line-height: 40px; }
@@ -92,7 +94,9 @@ input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofi
 .social_box.social_box2 { background-color: #2f31e5; border: 1px solid #2f31e5; }
 .social_box.member_box { background-color: #858ea6; border: 1px solid #858ea6; }
 .social_box.serch_box { background-color: transparent; border: 0; color: #2f31e5; line-height: 45px; }
-@media screen and (max-width: 449px) and (min-width: 0) { .social_box.serch_box { width: 42px; height: 42px; line-height: 39px; } }
+@media screen and (max-width: 449px) and (min-width: 0) { .social_box.serch_box { width: 42px; height: 35px; line-height: 35px; } }
+.social_box.serch_box.s-btn-n { line-height: 40px !important; }
+@media screen and (max-width: 449px) and (min-width: 0) { .social_box.serch_box.s-btn-n { line-height: 35px !important; } }
 .social_box.team_box { color: #ff9800; }
 
 .icon-Address-Card---FontAwesomeCopy-3 { font-size: 1rem !important; padding-right: 10px; }
