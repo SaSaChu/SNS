@@ -269,18 +269,19 @@ a {
 
 .team_title {
   display: inline-block;
-  // width: 100%;
+  width: 80%;
   color: $deep_blue;
   font-size: 1.2rem;
   font-weight: 700;
-  padding-bottom: 10px;
-  line-height: 35px;
+  padding-bottom: 20px;
+  line-height: 25px;
 
   &.t-under {
     text-decoration: underline;
   }
 
   @include range-width(0, 450px) {
+    width: 80%;
     line-height: 28px;
   }
 
@@ -355,9 +356,10 @@ a {
   &.link_icon_save {
     width: auto;
     height: auto;
-    line-height: 29px;
+    line-height: 35px;
     padding: 0 15px;
     font-weight: 600;
+    font-size: .9rem;
   }
 
   &.link_icon_search {
