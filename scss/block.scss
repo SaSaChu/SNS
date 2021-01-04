@@ -27,6 +27,17 @@ $orange: rgba(255, 152, 0, 1.00); // 輔助色・橘色
   }
 }
 
+.add_text {
+  display: inline-block;
+  width: 100%;
+
+  @include range-width(0, 450px) {
+    width: 80%;
+    padding-left: 15px !important;
+    float: right;
+  }
+}
+
 .cent_box {
   display: inline-block;
   width: 100%;
@@ -81,6 +92,10 @@ $orange: rgba(255, 152, 0, 1.00); // 輔助色・橘色
 .all_box, .team_pic_box, .team_type_box {
   display: inline-block;
   width: 100%;
+
+  &.ac_cent {
+    text-align: center;
+  }
 
   &.bottom_box {
     width: 33%;
@@ -319,6 +334,10 @@ $orange: rgba(255, 152, 0, 1.00); // 輔助色・橘色
 
 .padT15 {
   padding-top: 15px;
+}
+
+.padTD15 {
+  padding: 15px 0 25px 0;
 }
 
 .padTOP30 {

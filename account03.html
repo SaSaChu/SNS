@@ -65,9 +65,7 @@
               </div>
 
               <p class='type_13'>ID:</p>
-              <div class='input_box'>
-                <input class='toEnter addEnter borderGray' value="teresa@zeusdesign.com.tw" onfocus="this.value=''" onblur="this.value='teresa@zeusdesign.com.tw'">
-              </div>
+              <p class='type_account magL23'>teresa@zeusdesign.com.tw</p>
 
               <p class='type_13'>Password:</p>
               <div class='input_box borderGray'>
@@ -75,9 +73,9 @@
                 <button class='btn_status_box w_50 c_gray icon-eye-slash'></button>
               </div>
 
-              <div class='all_box w_cent magTop30 bottom_box'>
+             <!--  <div class='all_box w_cent magTop30 bottom_box'>
                 <button class='link_gray2 type_uppercase' style='width:100%;' onclick="openModal();currentSlide(1)">delete My Account</button>
-              </div>
+              </div> -->
             </div>
 
             <i class='m_border'></i><!-- 手機版・虛線 -->
@@ -95,43 +93,47 @@
               <div class='all_box'>
                 <!-- social data -->
                 <!-- 01.email-->
-                <div class='input_box borderGray'>
+                <div class='input_box borderBlue'>
                   <div class='social_box icon-email'></div>
-                  <input class='inEnter addEnter' type="text" value="abcdef568328@gmail.com">
+                  <input class='inEnter' type="text" value="abcdef568328@gmail.com">
                   <a class='btn_status_box c_gray member icon-cancel'></a>
                 </div>
 
                 <!-- 02.Instagram -->
-                <div class='input_box borderGray'>
+                <div class='input_box borderBlue'>
                   <div class='social_box icon-instagram'></div>
-                  <input class='inEnter addEnter' type="text" value="LucyRedde">
+                  <input class='inEnter' type="text" value="LucyRedde">
                   <a class='btn_status_box c_gray member icon-cancel'></a>
                 </div>
 
                 <!-- 03.Snapchat -->
-                <div class='input_box borderGray'>
+                <div class='input_box borderBlue'>
                   <div class='social_box icon-snapchat'></div>
-                  <input class='inEnter addEnter' type="text" value="lucyredde23">
+                  <input class='inEnter' type="text" value="lucyredde23">
                   <a class='btn_status_box c_gray member icon-cancel'></a>
                 </div>
 
                 <!-- 04.Facebook -->
-                <div class='input_box borderGray'>
+                <div class='input_box borderBlue'>
                   <div class='social_box icon-facebook'></div>
-                  <input class='inEnter addEnter' type="text" value="lr123">
+                  <input class='inEnter' type="text" value="lr123">
                   <a class='btn_status_box c_gray member icon-cancel'></a>
                 </div>
 
                 <!-- 05.Phone -->
-                <div class='input_box borderGray'>
+                <div class='input_box borderBlue'>
                   <div class='social_box icon-phone'></div>
-                  <input class='inEnter addEnter' type="text" value="0912345678">
+                  <input class='inEnter' type="text" value="0912345678">
                   <a class='btn_status_box c_gray member icon-cancel'></a>
                 </div>
 
-                <div class='all_box w_cent magTop30 bottom_box2'>
-                  <button class='link_gray2 type_uppercase' style='width:100%;' onclick="openModal();currentSlide(1)">delete My Account</button>
+                <div class='all_box btn_cent m_cent'>
+                  <button class='btn_add icon-plus' onclick="openModal();currentSlide(1)"></button>
                 </div>
+
+               <!--  <div class='all_box w_cent magTop30 bottom_box2'>
+                  <button class='link_gray2 type_uppercase' style='width:100%;' onclick="openModal();currentSlide(1)">delete My Account</button>
+                </div> -->
               </div>  
             </div>
           </div>
@@ -145,6 +147,92 @@
             <a href="#" class='footer_menu'>Contact Us</a>
           </div>
         </footer>
+      </div>
+    </div>
+
+    <!-- 光箱・增加社群內容 -->
+    <div id="myModal" class="modal">
+      <div class='modal_boxs'>
+        <span class="lightbox_done" onclick="closeModal()">Done</span>
+        <p class='team_title order_left text_left'>ADD ANOTHER PLATFORM</p>
+        <p class='team_type t_ds order_left text_left'>Select the platform(s) you would like to add</p>
+        <!-- <span class="close icon-x" onclick="closeModal()"></span> -->
+
+        <div class='modal_box'>
+          <!-- 10/09 調整icon順序 ＋ 新增p -->
+          <div class='check_social'>
+            <input class='icon-email' type="checkbox" name="">
+            <p class='team_type padTD10'>E-mail</p>
+          </div>
+          <div class='check_social'>
+            <input class='icon-discord' type="checkbox" name="">
+            <p class='team_type padTD10'>Discord</p>
+          </div>
+          <div class='check_social'>
+            <input class='icon-facebook' type="checkbox" name="">
+            <p class='team_type padTD10'>Facebook</p>
+          </div>
+          <div class='check_social'>
+            <input class='icon-groupme' type="checkbox" name="">
+            <p class='team_type padTD10'>Groupme</p>
+          </div>
+          <div class='check_social'>
+            <input class='icon-instagram' type="checkbox" name="">
+            <p class='team_type padTD10'>Instagram</p>
+          </div>
+          <div class='check_social'>
+            <input class='icon-linkedin' type="checkbox" name="">
+            <p class='team_type padTD10'>Linkedin</p>
+          </div>
+          <div class='check_social'>
+            <input class='icon-line' type="checkbox" name="">
+            <p class='team_type padTD10'>Line</p>
+          </div>
+          <div class='check_social'>
+            <input class='icon-phone' type="checkbox" name="">
+            <p class='team_type padTD10'>Phone</p>
+          </div>
+          <div class='check_social'>
+            <input class='icon-reddit' type="checkbox" name="">
+            <p class='team_type padTD10'>Reddit</p>
+          </div>
+          <div class='check_social'>
+            <input class='icon-snapchat' type="checkbox" name="">
+            <p class='team_type padTD10'>Snapchat</p>
+          </div>
+          <div class='check_social'>
+            <input class='icon-slack' type="checkbox" name="">
+            <p class='team_type padTD10'>Slack</p>
+          </div>
+          <div class='check_social'>
+            <input class='icon-skype' type="checkbox" name="">
+            <p class='team_type padTD10'>Skype</p>
+          </div>
+          <div class='check_social'>
+            <input class='icon-twitter' type="checkbox" name="">
+            <p class='team_type padTD10'>Twitter</p>
+          </div>
+          <div class='check_social'>
+            <input class='icon-TikTok' type="checkbox" name="">
+            <p class='team_type padTD10'>TikTok</p>
+          </div>
+          <div class='check_social'>
+            <input class='icon-venmo' type="checkbox" name="">
+            <p class='team_type padTD10'>Venmo</p>
+          </div>
+          <div class='check_social'>
+            <input class='icon-whatsapp' type="checkbox" name="">
+            <p class='team_type padTD10'>Whatsapp</p>
+          </div>   
+          <div class='check_social'>
+            <input class='icon-youtube' type="checkbox" name="">
+            <p class='team_type padTD10'>Youtube</p>
+          </div>
+          <div class='check_social'>
+            <input class='icon-www' type="checkbox" name="">
+            <p class='team_type padTD10'>www</p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -167,6 +255,17 @@
         <a href="index.html" class='link_brightBlue no_mark type_uppercase '>log out</a>
       </div>
     </div>
+
+    <!-- lightbox -->
+    <script>
+      function openModal() {
+        document.getElementById("myModal").style.display = "block";
+      }
+
+      function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+      }
+    </script>
 
   </body>
 </html>

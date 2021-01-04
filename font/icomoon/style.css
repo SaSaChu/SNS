@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?vh6tjo');
-  src:  url('fonts/icomoon.eot?vh6tjo#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?vh6tjo') format('truetype'),
-    url('fonts/icomoon.woff?vh6tjo') format('woff'),
-    url('fonts/icomoon.svg?vh6tjo#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?nlsgnx');
+  src:  url('fonts/icomoon.eot?nlsgnx#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?nlsgnx') format('truetype'),
+    url('fonts/icomoon.woff?nlsgnx') format('woff'),
+    url('fonts/icomoon.svg?nlsgnx#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -58,7 +58,7 @@
 .icon-youtube:before {
   content: "\e910";
 }
-.icon-tiktok:before {
+.icon-TikTok:before {
   content: "\e911";
 }
 .icon-discord:before {
@@ -97,18 +97,6 @@
 .icon-qrcode---FontAwesome:before {
   content: "\e91d";
 }
-.icon-eye:before {
-  content: "\f06e";
-}
-.icon-eye-slash:before {
-  content: "\f070";
-}
-.icon-chain:before {
-  content: "\f0c1";
-}
-.icon-link:before {
-  content: "\f0c1";
-}
 .icon-error:before {
   content: "\e91e";
 }
@@ -138,4 +126,19 @@
 }
 .icon-x:before {
   content: "\e909";
+}
+.icon-home:before {
+  content: "\e908";
+}
+.icon-eye:before {
+  content: "\f06e";
+}
+.icon-eye-slash:before {
+  content: "\f070";
+}
+.icon-chain:before {
+  content: "\f0c1";
+}
+.icon-link:before {
+  content: "\f0c1";
 }

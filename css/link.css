@@ -103,6 +103,7 @@ button { display: inline-block; outline: 0; cursor: pointer; border: 0; }
 
 .btn_done { display: inline-block; font-size: .9rem; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; background-color: #092058; color: white; padding: 0 15px; float: right; cursor: pointer; border: 0; line-height: 35px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .btn_done { font-size: .9rem; } }
+.btn_done.btn_d_c { float: none; }
 .btn_done.btn_close_g { background-color: #a5a5a5; }
 .btn_done.btn_done_qr { padding: 0 15px; height: 30px; line-height: 30px; }
 .btn_done.btn_done_ser { height: 42px; line-height: 42px; }

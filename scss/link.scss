@@ -493,6 +493,10 @@ button {
     font-size: .9rem;
   }
 
+  &.btn_d_c {
+    float: none;
+  }
+
   &.btn_close_g {
     background-color: $gray;
   }
