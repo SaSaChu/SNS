@@ -20,6 +20,10 @@ a { display: inline-block; cursor: pointer; text-decoration: none; -moz-transiti
 .link_login:hover { background-color: #2f31e5; color: white; }
 
 .link_blueLine, .link_brightBlue, .link_gray, .link_gray2, .link_deepBlue, .link_brightBlue2 { padding: 12px 20px; font-size: .9rem; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; }
+.link_blueLine.l01, .link_brightBlue.l01, .link_gray.l01, .link_gray2.l01, .link_deepBlue.l01, .link_brightBlue2.l01 { position: relative; width: 198px; }
+.link_blueLine.l01:after, .link_brightBlue.l01:after, .link_gray.l01:after, .link_gray2.l01:after, .link_deepBlue.l01:after, .link_brightBlue2.l01:after { position: absolute; right: 10px; display: inline-block; content: '\e906'; font-family: 'icon'; font-size: .9rem; margin-left: 3px; }
+.link_blueLine.l02, .link_brightBlue.l02, .link_gray.l02, .link_gray2.l02, .link_deepBlue.l02, .link_brightBlue2.l02 { position: relative; width: 198px; margin-bottom: 15px; }
+.link_blueLine.l02:after, .link_brightBlue.l02:after, .link_gray.l02:after, .link_gray2.l02:after, .link_deepBlue.l02:after, .link_brightBlue2.l02:after { position: absolute; right: 10px; display: inline-block; content: '\e906'; font-family: 'icon'; font-size: .9rem; margin-left: 3px; }
 .link_blueLine.have_mark:after, .link_brightBlue.have_mark:after, .link_gray.have_mark:after, .link_gray2.have_mark:after, .link_deepBlue.have_mark:after, .link_brightBlue2.have_mark:after { display: inline-block; content: '\e906'; font-family: 'icon'; font-size: .9rem; margin-left: 3px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .link_blueLine, .link_brightBlue, .link_gray, .link_gray2, .link_deepBlue, .link_brightBlue2 { width: 90%; text-align: center; padding: 15px 16px; } }
 

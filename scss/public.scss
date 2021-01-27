@@ -70,6 +70,10 @@ $orange: rgba(255, 152, 0, 1.00); // 輔助色・橘色
   }
 }
 
+.ds {
+  display: block;
+}
+
 // 內頁
 .page_boxs {
   display: inline-block;
@@ -288,7 +292,7 @@ $orange: rgba(255, 152, 0, 1.00); // 輔助色・橘色
       display: inline-block;
       color: $deep_blue;
       text-align: center;
-      padding: 14px 16px;
+      padding: 14px 3px;
       text-decoration: none;
     }
 
@@ -312,11 +316,14 @@ $orange: rgba(255, 152, 0, 1.00); // 輔助色・橘色
       position: absolute;
       // color: $deep_blue;
       background-color: white;
-      min-width: 160px;
+      // min-width: 160px;
       box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
       z-index: 1;
       @include border-radius(4px);
       
+      &.w1 {margin-left: -32px}
+      &.w2 {margin-left: -12px}
+      &.w3 {margin-left: -50px}
 
       a {
         color: $deep_blue;

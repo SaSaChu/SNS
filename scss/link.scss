@@ -99,6 +99,37 @@ a {
   font-size: .9rem;
   @include border-radius(30px);
 
+  &.l01 {
+    position: relative;
+    width: 198px;
+
+    &:after {
+      position: absolute;
+      right: 10px;
+      display: inline-block;
+      content: '\e906';
+      font-family: 'icon';
+      font-size: .9rem;
+      margin-left: 3px;
+    }
+  }
+
+  &.l02 {
+    position: relative;
+    width: 198px;
+    margin-bottom: 15px;
+
+    &:after {
+      position: absolute;
+      right: 10px;
+      display: inline-block;
+      content: '\e906';
+      font-family: 'icon';
+      font-size: .9rem;
+      margin-left: 3px;
+    }
+  }
+
   &.have_mark {
     &:after {
       display: inline-block;

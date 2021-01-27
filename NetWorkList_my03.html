@@ -17,6 +17,7 @@
 
     <script language="javascript" type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
     <script language="javascript" type="text/javascript" src="js/public.js"></script>
+    <script language="javascript" type="text/javascript" src='js/autosize.js'></script>
   </head>
 
   <body class='bg_color_p'>
@@ -70,14 +71,7 @@
                 </div>
 
                 <!-- 9/26 新增樣式修正 -->
-                <textarea class='text_box' id="textarea" onkeyup="
-                var textarea=this; 
-                var adjustedHeight=textarea.clientHeight;
-
-                adjustedHeight=Math.max(textarea.scrollHeight,adjustedHeight);
-                if (adjustedHeight>textarea.clientHeight){
-                  textarea.style.height=adjustedHeight+'px';
-                }">Welcome to the new team! Let's get to know each other!
+                <textarea class='text_box'>小巴一長險爾女訴卻過須教，片已坐復今些灣功很法演物高所受不資大國非：它那說照倒道日除的的看再子……你整阿只家其也……那過取一：有上曾利有定古是頭頭體出戰了司著態遠形南光！方紙麼總變價；我樹臺一於？景只選筆更天最怕？今人得國組王友，細作張造人大種國考品者健；連化間子，驚此過分不她所？原是定相細多理中，不民孩意。過布者小去是活，他子明業知到背裡的的依身我製必古同大信空底定體喜孩舞我是岸是人法面遊了數到，農易何……行人球們今是，一加而一星的令質一？學手事十規靜比自沒。美大方告中期的樂少每方示方空，究來蘭了……燈名雄及直。
                 </textarea>
               </div>
 
@@ -177,7 +171,13 @@
       </div>
     </div>
 
+    
 
+    <script>
+
+      autosize(document.querySelectorAll('textarea'));
+
+    </script>
     <!-- lightbox -->
     <script>
       function openModal() {

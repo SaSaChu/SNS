@@ -89,7 +89,7 @@ input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofi
 @media screen and (max-width: 449px) and (min-width: 0) { .input_box.input_search { float: left; } }
 .input_box.input_search90 { width: calc(100% - 90px); text-align: left; }
 @media screen and (max-width: 449px) and (min-width: 0) { .input_box.input_search90 { float: left; } }
-.input_box .tip_box { display: inline-block; position: absolute; top: 0; left: 0; width: 40px; height: 40px; z-index: 888; }
+.input_box .tip_box { display: inline-block; position: absolute; top: 0; left: 0; width: 40px; height: 40px; z-index: 8888; }
 @media screen and (max-width: 449px) and (min-width: 0) { .input_box .tip_box { display: none; } }
 
 .social_box { display: inline-block; width: 44px; height: 44px; -moz-border-radius: 25px; -webkit-border-radius: 25px; border-radius: 25px; line-height: 43px; text-align: center; background-color: #092058; border: 1px solid #092058; margin-right: 9px; margin-top: -1px; margin-left: -1px; color: white; font-size: 1.2rem; z-index: 888; position: absolute; top: 0; left: 0; }
