@@ -401,7 +401,7 @@ $orange: rgba(255, 152, 0, 1.00); // 輔助色・橘色
   display: none;
   width: 100%;
   height: 100%;
-  z-index: 3;
+  z-index: 9999;
   // padding: 0 20px;
 
   position: fixed;
