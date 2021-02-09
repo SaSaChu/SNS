@@ -97,7 +97,7 @@ input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofi
 .social_box.social_box2 { background-color: #2f31e5; border: 1px solid #2f31e5; }
 .social_box.member_box { background-color: #858ea6; border: 1px solid #858ea6; }
 .social_box.serch_box { background-color: transparent; border: 0; color: #2f31e5; line-height: 45px; }
-@media screen and (max-width: 449px) and (min-width: 0) { .social_box.serch_box { width: 42px; height: 35px; line-height: 35px; } }
+@media screen and (max-width: 449px) and (min-width: 0) { .social_box.serch_box { width: 42px; height: 35px; line-height: 40px; } }
 .social_box.serch_box.s-btn-n { line-height: 40px !important; }
 @media screen and (max-width: 449px) and (min-width: 0) { .social_box.serch_box.s-btn-n { line-height: 35px !important; } }
 .social_box.team_box { color: #ff9800; }
